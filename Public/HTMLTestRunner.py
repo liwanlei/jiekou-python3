@@ -1,26 +1,27 @@
 """
-A TestRunner for use with the Python unit testing framework. It generates a HTML report to show the result at a glance.
+A TestRunner for use with the Python unit testing framework. It
+generates a HTML report to show the result at a glance.
 
 The simplest way to use this is to invoke its main method. E.g.
 
     import unittest
-    import BSTestRunner
+    import HTMLTestRunner
 
     ... define your tests ...
 
     if __name__ == '__main__':
-        BSTestRunner.main()
+        HTMLTestRunner.main()
 
 
-For more customization options, instantiates a BSTestRunner object.
-BSTestRunner is a counterpart to unittest's TextTestRunner. E.g.
+For more customization options, instantiates a HTMLTestRunner object.
+HTMLTestRunner is a counterpart to unittest's TextTestRunner. E.g.
 
     # output to a file
     fp = file('my_report.html', 'wb')
-    runner = BSTestRunner.BSTestRunner(
+    runner = HTMLTestRunner.HTMLTestRunner(
                 stream=fp,
                 title='My unit test',
-                description='This demonstrates the report output by BSTestRunner.'
+                description='This demonstrates the report output by HTMLTestRunner.'
                 )
 
     # Use an external stylesheet.
@@ -33,7 +34,6 @@ BSTestRunner is a counterpart to unittest's TextTestRunner. E.g.
 
 ------------------------------------------------------------------------
 Copyright (c) 2004-2007, Wai Yip Tung
-Copyright (c) 2016, Eason Han
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -62,19 +62,14 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
+# URL: http://tungwaiyip.info/software/HTMLTestRunner.html
 
-__author__ = "Wai Yip Tung && Eason Han"
-__version__ = "0.8.4"
+__author__ = "Wai Yip Tung"
+__version__ = "0.8.2"
 
 
 """
 Change History
-
-Version 0.8.3
-* Modify html style using bootstrap3.
-
-Version 0.8.3
-* Prevent crash on class or module-level exceptions (Darren Wurf).
 
 Version 0.8.2
 * Show output inline instead of popup window (Viorel Lupu).
@@ -89,14 +84,14 @@ Version in 0.8.0
 
 Version in 0.7.1
 * Back port to Python 2.3 (Frank Horowitz).
-* Fix missing scroll bars in detail log (Podi).
+* Fix missing scroll bars in detail Log (Podi).
 """
 
 # TODO: color stderr
 # TODO: simplify javascript using ,ore than 1 class in the class attribute?
 
 import datetime
-from io import StringIO as StringIO
+import io
 import sys
 import time
 import unittest
@@ -106,21 +101,13 @@ from xml.sax import saxutils
 # ------------------------------------------------------------------------
 # The redirectors below are used to capture output during testing. Output
 # sent to sys.stdout and sys.stderr are automatically captured. However
-# in some cases sys.stdout is already cached before BSTestRunner is
+# in some cases sys.stdout is already cached before HTMLTestRunner is
 # invoked (e.g. calling logging.basicConfig). In order to capture those
 # output, use the redirectors for the cached stream.
 #
 # e.g.
-#   >>> logging.basicConfig(stream=BSTestRunner.stdout_redirector)
+#   >>> logging.basicConfig(stream=HTMLTestRunner.stdout_redirector)
 #   >>>
-
-def to_unicode(s):
-    return s
-    # try:
-    #     return unicode(s)
-    # except UnicodeDecodeError:
-    #     # s is non ascii byte string
-    #     return s.decode('unicode_escape')
 
 class OutputRedirector(object):
     """ Wrapper to redirect stdout or stderr """
@@ -131,7 +118,6 @@ class OutputRedirector(object):
         self.fp.write(s)
 
     def writelines(self, lines):
-        lines = map(to_unicode, lines)
         self.fp.writelines(lines)
 
     def flush(self):
@@ -191,31 +177,21 @@ class Template_mixin(object):
     2: 'error',
     }
 
-    DEFAULT_TITLE = 'Unit Test Report'
+    DEFAULT_TITLE = 'Unit Test report'
     DEFAULT_DESCRIPTION = ''
 
     # ------------------------------------------------------------------------
     # HTML Template
 
-    HTML_TMPL = r"""<!DOCTYPE html>
-<html lang="zh-cn">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    HTML_TMPL = r"""<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
     <title>%(title)s</title>
     <meta name="generator" content="%(generator)s"/>
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     %(stylesheet)s
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+</head>
 <body>
 <script language="javascript" type="text/javascript"><!--
 output_list = Array();
@@ -312,11 +288,9 @@ function showOutput(id, name) {
 */
 --></script>
 
-<div class="container">
-    %(heading)s
-    %(report)s
-    %(ending)s
-</div>
+%(heading)s
+%(report)s
+%(ending)s
 
 </body>
 </html>
@@ -332,8 +306,38 @@ function showOutput(id, name) {
 
     STYLESHEET_TMPL = """
 <style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
 
 /* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
 .popup_window {
     display: none;
     position: relative;
@@ -341,27 +345,47 @@ function showOutput(id, name) {
     top: 0px;
     /*border: solid #627173 1px; */
     padding: 10px;
-    background-color: #99CCFF;
+    background-color: #E6E6D6;
     font-family: "Lucida Console", "Courier New", Courier, monospace;
     text-align: left;
-    font-size: 10pt;
-    width: 1200px;
+    font-size: 8pt;
+    width: 500px;
 }
 
+}
 /* -- report ------------------------------------------------------------------------ */
-
-#show_detail_line .label {
-    font-size: 85%;
-    cursor: pointer;
-}
-
 #show_detail_line {
-    margin: 2em auto 1em auto;
+    margin-top: 3ex;
+    margin-bottom: 1ex;
 }
-
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
 #total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
 .hiddenRow  { display: none; }
 .testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
 
 </style>
 """
@@ -380,45 +404,47 @@ function showOutput(id, name) {
 
 """ # variables: (title, parameters, description)
 
-    HEADING_ATTRIBUTE_TMPL = """<p><strong>%(name)s:</strong> %(value)s</p>
+    HEADING_ATTRIBUTE_TMPL = """<p class='attribute'><strong>%(name)s:</strong> %(value)s</p>
 """ # variables: (name, value)
 
 
 
     # ------------------------------------------------------------------------
-    # Report
+    # report
     #
 
     REPORT_TMPL = """
-<p id='show_detail_line'>
-<span class="label label-primary" onclick="showCase(0)">Summary</span>
-<span class="label label-danger" onclick="showCase(1)">Failed</span>
-<span class="label label-default" onclick="showCase(2)">All</span>
+<p id='show_detail_line'>显示
+<a href='javascript:showCase(0)'>总数</a>
+<a href='javascript:showCase(1)'>失败</a>
+<a href='javascript:showCase(2)'>所有</a>
 </p>
-<table id='result_table' class="table">
-    <thead>
-        <tr id='header_row'>
-            <th>Test Group/Test case</td>
-            <th>Count</td>
-            <th>Pass</td>
-            <th>Fail</td>
-            <th>Error</td>
-            <th>View</td>
-        </tr>
-    </thead>
-    <tbody>
-        %(test_list)s
-    </tbody>
-    <tfoot>
-        <tr id='total_row'>
-            <td>Total</td>
-            <td>%(count)s</td>
-            <td class="text text-success">%(Pass)s</td>
-            <td class="text text-danger">%(fail)s</td>
-            <td class="text text-warning">%(error)s</td>
-            <td>&nbsp;</td>
-        </tr>
-    </tfoot>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>测试组/测试用例</td>
+    <td>数量</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>查看</td>
+</tr>
+%(test_list)s
+<tr id='total_row'>
+    <td>总共</td>
+    <td>%(count)s</td>
+    <td>%(Pass)s</td>
+    <td>%(fail)s</td>
+    <td>%(error)s</td>
+    <td>&nbsp;</td>
+</tr>
 </table>
 """ # variables: (test_list, count, Pass, fail, error)
 
@@ -429,7 +455,7 @@ function showOutput(id, name) {
     <td>%(Pass)s</td>
     <td>%(fail)s</td>
     <td>%(error)s</td>
-    <td><a class="btn btn-xs btn-primary"href="javascript:showClassDetail('%(cid)s',%(count)s)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('%(cid)s',%(count)s)">Detail</a></td>
 </tr>
 """ # variables: (style, desc, count, Pass, fail, error, cid)
 
@@ -440,11 +466,11 @@ function showOutput(id, name) {
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();' href="javascript:showTestDetail('div_%(tid)s')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_%(tid)s')" >
         %(status)s</a>
 
     <div id='div_%(tid)s' class="popup_window">
-        <div style='text-align: right;cursor:pointer'>
+        <div style='text-align: right; color:red;cursor:pointer'>
         <a onfocus='this.blur();' onclick="document.getElementById('div_%(tid)s').style.display = 'none' " >
            [x]</a>
         </div>
@@ -490,7 +516,6 @@ class _TestResult(TestResult):
 
     def __init__(self, verbosity=1):
         TestResult.__init__(self)
-        self.outputBuffer = StringIO()
         self.stdout0 = None
         self.stderr0 = None
         self.success_count = 0
@@ -501,7 +526,7 @@ class _TestResult(TestResult):
         # result is a list of result in 4 tuple
         # (
         #   result code (0: success; 1: fail; 2: error),
-        #   TestCase object,
+        #   Case object,
         #   Test output (byte string),
         #   stack trace,
         # )
@@ -510,8 +535,8 @@ class _TestResult(TestResult):
 
     def startTest(self, test):
         TestResult.startTest(self, test)
-        # just one buffer for both stdout and stderr  更改
-        self.outputBuffer = StringIO()
+        # just one buffer for both stdout and stderr
+        self.outputBuffer = io.StringIO()
         stdout_redirector.fp = self.outputBuffer
         stderr_redirector.fp = self.outputBuffer
         self.stdout0 = sys.stdout
@@ -579,7 +604,7 @@ class _TestResult(TestResult):
             sys.stderr.write('F')
 
 
-class BSTestRunner(Template_mixin):
+class HTMLTestRunner(Template_mixin):
     """
     """
     def __init__(self, stream=sys.stdout, verbosity=1, title=None, description=None):
@@ -598,15 +623,13 @@ class BSTestRunner(Template_mixin):
 
 
     def run(self, test):
-        "Run the given test case or test suite."
+        "Run the given test Case or test suite."
         result = _TestResult(self.verbosity)
-        try:
-            test(result)
-        except TypeError:
-            pass
+        test(result)
         self.stopTime = datetime.datetime.now()
         self.generateReport(test, result)
-        print('\n测试耗时: %s' % (self.stopTime-self.startTime))
+        # print >> sys.stderr, '\nTime Elapsed: %s' % (self.stopTime-self.startTime)
+        print(sys.stderr, '\nTime Elapsed: %s' % (self.stopTime-self.startTime))
         return result
 
 
@@ -633,23 +656,23 @@ class BSTestRunner(Template_mixin):
         startTime = str(self.startTime)[:19]
         duration = str(self.stopTime - self.startTime)
         status = []
-        if result.success_count: status.append('<span class="text text-success">Pass <strong>%s</strong></span>'    % result.success_count)
-        if result.failure_count: status.append('<span class="text text-danger">Failure <strong>%s</strong></span>' % result.failure_count)
-        if result.error_count:   status.append('<span class="text text-warning">Error <strong>%s</strong></span>'   % result.error_count  )
+        if result.success_count: status.append('Pass %s'    % result.success_count)
+        if result.failure_count: status.append('Failure %s' % result.failure_count)
+        if result.error_count:   status.append('Error %s'   % result.error_count  )
         if status:
             status = ' '.join(status)
         else:
             status = 'none'
         return [
-            ('Start Time', startTime),
-            ('Duration', duration),
-            ('Status', status),
+            ('开始时间', startTime),
+            ('耗时', duration),
+            ('结果', status),
         ]
 
 
     def generateReport(self, test, result):
         report_attrs = self.getReportAttributes(result)
-        generator = 'BSTestRunner %s' % __version__
+        generator = 'HTMLTestRunner %s' % __version__
         stylesheet = self._generate_stylesheet()
         heading = self._generate_heading(report_attrs)
         report = self._generate_report(result)
@@ -673,10 +696,8 @@ class BSTestRunner(Template_mixin):
         a_lines = []
         for name, value in report_attrs:
             line = self.HEADING_ATTRIBUTE_TMPL % dict(
-                    name = saxutils.escape(name),####更改
-                    # value = saxutils.escape(value),
-
-                    value = value,
+                    name = saxutils.escape(name),
+                    value = saxutils.escape(value),
                 )
             a_lines.append(line)
         heading = self.HEADING_TMPL % dict(
@@ -707,7 +728,7 @@ class BSTestRunner(Template_mixin):
             desc = doc and '%s: %s' % (name, doc) or name
 
             row = self.REPORT_CLASS_TMPL % dict(
-                style = ne > 0 and 'text text-warning' or nf > 0 and 'text text-danger' or 'text text-success',
+                style = ne > 0 and 'errorClass' or nf > 0 and 'failClass' or 'passClass',
                 desc = desc,
                 count = np+nf+ne,
                 Pass = np,
@@ -743,27 +764,27 @@ class BSTestRunner(Template_mixin):
         if isinstance(o,str):
             # TODO: some problem with 'string_escape': it escape \n and mess up formating
             # uo = unicode(o.encode('string_escape'))
-            uo = o
+            # uo = o.decode('latin-1')
+            uo = e
         else:
             uo = o
         if isinstance(e,str):
             # TODO: some problem with 'string_escape': it escape \n and mess up formating
             # ue = unicode(e.encode('string_escape'))
+            # ue = e.decode('latin-1')
             ue = e
         else:
             ue = e
 
         script = self.REPORT_TEST_OUTPUT_TMPL % dict(
             id = tid,
-            output = saxutils.escape(uo+ue),
+            output = saxutils.escape(str(uo)+ue),
         )
 
         row = tmpl % dict(
             tid = tid,
             Class = (n == 0 and 'hiddenRow' or 'none'),
-            # Class = (n == 0 and 'hiddenRow' or 'text text-success'),
-            # style = n == 2 and 'errorCase' or (n == 1 and 'failCase' or 'none'),
-            style = n == 2 and 'text text-warning' or (n == 1 and 'text text-danger' or 'text text-success'),
+            style = n == 2 and 'errorCase' or (n == 1 and 'failCase' or 'none'),
             desc = desc,
             script = script,
             status = self.STATUS[n],
@@ -789,11 +810,11 @@ class TestProgram(unittest.TestProgram):
     class for command line parameters.
     """
     def runTests(self):
-        # Pick BSTestRunner as the default test runner.
+        # Pick HTMLTestRunner as the default test runner.
         # base class's testRunner parameter is not useful because it means
-        # we have to instantiate BSTestRunner before we know self.verbosity.
+        # we have to instantiate HTMLTestRunner before we know self.verbosity.
         if self.testRunner is None:
-            self.testRunner = BSTestRunner(verbosity=self.verbosity)
+            self.testRunner = HTMLTestRunner(verbosity=self.verbosity)
         unittest.TestProgram.runTests(self)
 
 main = TestProgram
