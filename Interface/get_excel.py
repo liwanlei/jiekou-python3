@@ -13,15 +13,18 @@ def datacel():
 	file=xlrd.open_workbook(filepath)
 	me=file.sheets()[0]
 	nrows=me.nrows
+	listid=[]
 	listkey=[]
 	listconeent=[]
 	listurl=[]
 	listfangshi=[]
 	listqiwang=[]
+	listrelut=[]
 	for i in range(1,nrows):
+		listid.append(me.cell(i,1).value)
 		listkey.append(me.cell(i,2).value)
 		listconeent.append(me.cell(i,3).value)
 		listurl.append(me.cell(i,4).value)
 		listfangshi.append((me.cell(i,5).value))
 		listqiwang.append((me.cell(i,6).value))
-	return listkey,listconeent,listurl,listfangshi,listqiwang
+	return listid,listkey,listconeent,listurl,listfangshi,listqiwang
