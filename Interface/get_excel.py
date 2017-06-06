@@ -20,11 +20,13 @@ def datacel():
 	listfangshi=[]
 	listqiwang=[]
 	listrelut=[]
+	listname=[]
 	for i in range(1,nrows):
-		listid.append(me.cell(i,1).value)
+		listid.append(me.cell(i,0).value)
 		listkey.append(me.cell(i,2).value)
 		listconeent.append(me.cell(i,3).value)
 		listurl.append(me.cell(i,4).value)
+		listname.append(me.cell(i,1).value)
 		listfangshi.append((me.cell(i,5).value))
 		listqiwang.append((me.cell(i,6).value))
-	return listid,listkey,listconeent,listurl,listfangshi,listqiwang
+	return listid,listkey,listconeent,listurl,listfangshi,listqiwang,listname
