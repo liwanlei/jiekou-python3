@@ -4,7 +4,7 @@
 ### 使用脚本参数分离等思想，尽可能降低代码的耦合度。
 # 首先我们来看下我们的目录
 ##
-![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/xiangmujiegoutu.png)
+![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/xiangmujiegoutu%20.png)
 ##
 ### 1.Case文件夹用来存放我们的测试用例相关的，
 ### 2.Data用来存储我们的测试数据，Excel管理测试用例，yaml文件管理测试用例，后续要把yaml管理测试用例的也封装出来。
@@ -14,10 +14,14 @@
 ### 6.main.py 主运行文件。
 ##
 
-## 产生的测试报告如下
+## 产生的html测试报告如下
 ![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/cebaogaotu.png)
 ##
 ### 增加了Excel管理测试报告的功能，目前在继续优化功能，增加了config目录，一些配置文件的目录，
+##
+## 产生的Excel测试报告如下
+![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/excel.png)
+![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/excel2.png)
 ### 现在的测试结构更加完整，更多的是对版本的优化
 
 
