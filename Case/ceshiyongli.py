@@ -4,10 +4,11 @@
 # @Site    : 
 # @File    : ceshiyongli.py
 # @Software: PyCharm
-import unittest,os
-from  Public import BSTestRunner
-from  Interface.get_excel import datacel
+import unittest
+
 from  Interface.testFengzhuang import TestApi
+from  Public.get_excel import datacel
+
 listid,listkey,listconeent,listurl,listfangshi,listqiwang,listname=datacel()
 class Testinface(unittest.TestCase):
     def setUp(self):

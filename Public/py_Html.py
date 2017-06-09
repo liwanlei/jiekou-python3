@@ -22,7 +22,7 @@ def title(titles):
 	'''%(titles)
 	return title
 connent='''
-<div style='width: 1170px;margin-left: 20%'>
+<div style='width: 1170px;margin-left: 15%'>
 <h1>接口测试的结果</h1>'''
 def time(starttime,endtime,passge,fail):
 	beijing='''
@@ -80,10 +80,8 @@ def ceshixiangqing(id,name,key,coneent,url,meth,yuqi,json,relust):
     return xiangqing
 weibu='''
 	</table>
-	
     </body>
     </html>'''
-
 def relust(titles,starttime,endtime,passge,fail,id,name,key,coneent,url,meth,yuqi,json,relust):
     if type(name) ==list:
         relus=' '

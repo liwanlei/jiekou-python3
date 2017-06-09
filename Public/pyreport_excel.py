@@ -7,7 +7,6 @@
 @time: 2017/6/7 8:47
 """
 import xlrd ,os,xlwt,yaml #导入库
-from xlutils.copy import copy
 from xlwt import *
 def yangshi1():
     style = XFStyle()
@@ -38,7 +37,7 @@ def yangshi2():
     style1.font.height = 300  #
     return style1
 def create(filename,list_pass,list_fail,listids,listnames,listkeys,listconeents,listurls,listfangshis,listqiwangs,list_json,listrelust):
-    filepath = open(r'C:\Users\Administrator\Desktop\jiekou\config\ceshibaogao.yaml', encoding='utf-8')
+    filepath = open(r'.\config\ceshibaogao.yaml', encoding='utf-8')
     file_config = yaml.load(filepath)
     file = Workbook(filename)
     table = file.add_sheet('测试结果',cell_overwrite_ok=True)

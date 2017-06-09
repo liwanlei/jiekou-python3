@@ -5,7 +5,6 @@
 # @File    : testFengzhuang.py
 # @Software: PyCharm
 from Interface.feng import reques
-import unittest
 reques=reques()
 class TestApi(object):
 	def __init__(self,url,key,connent,fangshi):
@@ -16,11 +15,11 @@ class TestApi(object):
 	def testapi(self):
 		if self.fangshi=='POST':
 			self.parem = {'key': self.key, 'info': self.connent}
-			r=reques.post(self.url,self.parem)
+			response=reques.post(self.url,self.parem)
 		elif self.fangshi=="GET":
 			self.parem = {'key': self.key, 'info': self.connent}
-			r = reques.post(self.url, self.parem)
-		return r
+			response = reques.post(self.url, self.parem)
+		return response
 	def getcode(self):
 		code=self.testapi()['code']
 		return code
