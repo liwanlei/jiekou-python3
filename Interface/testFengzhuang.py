@@ -5,6 +5,7 @@
 # @File    : testFengzhuang.py
 # @Software: PyCharm
 from Interface.feng import reques
+import unittest
 reques=reques()
 class TestApi(object):
 	def __init__(self,url,key,connent,fangshi):

@@ -14,10 +14,11 @@
 ### 6.main.py 主运行文件。
 ##
 
-# 产生的测试报告如下
+## 产生的测试报告如下
 ![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/cebaogaotu.png)
 ##
-##  后续还会有相应的优化版本，现在主要功能做出来了。
+### 增加了Excel管理测试报告的功能，目前在继续优化功能，增加了config目录，一些配置文件的目录，
+### 现在的测试结构更加完整，更多的是对版本的优化
 
 
 

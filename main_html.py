@@ -7,9 +7,7 @@ from Public.py_Html import createHtml
 这里你可以分开执行上面你case里面包含的用例。也可以单独执行里面
 的某一个的测试用例
 '''
-from Public import BSTestRunner
 from  Interface.emmail import sendemali
-from Public.py_Html import createHtml
 if __name__ == '__main__':
 	# suite = unittest.TestSuite()
 	# suite.addTest(Test_tuling("test_post4"))
