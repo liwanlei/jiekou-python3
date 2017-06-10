@@ -15,27 +15,38 @@ def yangshi1():
     fnt.bold = True
     style.font = fnt
     alignment = xlwt.Alignment()
+    alignment.horz = xlwt.Alignment.HORZ_CENTER
+    alignment.vert = xlwt.Alignment.VERT_CENTER
     style.alignment = alignment  # 给样式添加文字居中属性
     style.font.height = 430  # 设置字体大小
-    alignment = xlwt.Alignment()
-    alignment.horz = xlwt.Alignment.HORZ_CENTER
-    alignment.vert = xlwt.Alignment.VERT_CENTER
-    style.alignment = alignment  # 给样式添加文字居中属性
-    style.font.height = 430  #
     return style
 def yangshi2():
-    alignment = xlwt.Alignment()
-    alignment.horz = xlwt.Alignment.HORZ_CENTER
-    alignment.vert = xlwt.Alignment.VERT_CENTER
-    style1 = XFStyle()
-    style1.alignment = alignment  # 给样式添加文字居中属性
-    style1.font.height = 330  # 设置字体大小
-    alignment = xlwt.Alignment()
-    alignment.horz = xlwt.Alignment.HORZ_CENTER
-    alignment.vert = xlwt.Alignment.VERT_CENTER
-    style1.alignment = alignment  # 给样式添加文字居中属性
-    style1.font.height = 300  #
-    return style1
+	style1 = XFStyle()
+	alignment = xlwt.Alignment()
+	alignment.horz = xlwt.Alignment.HORZ_CENTER
+	alignment.vert = xlwt.Alignment.VERT_CENTER 
+	style1.alignment = alignment  # 给样式添加文字居中属性
+	style1.font.height = 330  # 设置字体大小
+	return style1
+def yangshi3():
+	style1 = XFStyle()
+	style1.font.height = 330  # 设置字体大小
+	return style1
+	
+def yangshique(me):
+	if me =='pass':
+		style=yangshi1()
+		Pattern=xlwt.Pattern()
+		Pattern.pattern=xlwt.Pattern.SOLID_PATTERN
+		Pattern.pattern_fore_colour=xlwt.Style.colour_map['green']
+		style.pattern=Pattern
+	else :
+		style=yangshi2()
+		Pattern=xlwt.Pattern()
+		Pattern.pattern=xlwt.Pattern.SOLID_PATTERN
+		Pattern.pattern_fore_colour=xlwt.Style.colour_map['red']
+		style.pattern=Pattern
+	return style
 def create(filename,list_pass,list_fail,listids,listnames,listkeys,listconeents,listurls,listfangshis,listqiwangs,list_json,listrelust):
     filepath = open(r'.\config\ceshibaogao.yaml', encoding='utf-8')
     file_config = yaml.load(filepath)
@@ -72,24 +83,24 @@ def create(filename,list_pass,list_fail,listids,listnames,listkeys,listconeents,
     table1.write_merge(0,0,0,8,'测试详情',style=style)
     for i in range(0, 8):
         table1.col(i).width = 400*20
-    table1.write(1,0,'用例ID',style=style1)
-    table1.write(1,1,'用例名字',style=style1)
-    table1.write(1,2,'key',style=style1)
-    table1.write(1,3,'请求内容',style=style1)
-    table1.write(1,4,'	url',style=style1)
-    table1.write(1,5,'请求方式',style=style1)
-    table1.write(1,6,'预期',style=style1)
-    table1.write(1,7,'实际返回',style=style1)
-    table1.write(1,8,'结果',style=style1)
+    table1.write(1,0,'用例ID',style=yangshi3())
+    table1.write(1,1,'用例名字',style=yangshi3())
+    table1.write(1,2,'key',style=yangshi3())
+    table1.write(1,3,'请求内容',style=yangshi3())
+    table1.write(1,4,'	url',style=yangshi3())
+    table1.write(1,5,'请求方式',style=yangshi3())
+    table1.write(1,6,'预期',style=yangshi3())
+    table1.write(1,7,'实际返回',style=yangshi3())
+    table1.write(1,8,'结果',style=yangshi3())
     for i in range(2,len(listids)):
-        table1.write(i, 0, listids[i-2], style=style1)
-        table1.write(i, 1, listnames[i-2], style=style1)
-        table1.write(i, 2, listkeys[i-2], style=style1)
-        table1.write(i, 3, listconeents[i-2], style=style1)
-        table1.write(i, 4, listurls[i-2], style=style1)
-        table1.write(i, 5, listfangshis[i-2], style=style1)
-        table1.write(i, 6, listqiwangs[i-2], style=style1)
-        table1.write(i, 7, str(list_json[i-2]), style=style1)
-        table1.write(i, 8, listrelust[i-2], style=style1)
+        table1.write(i, 0, listids[i-2],style=yangshi3())
+        table1.write(i, 1, listnames[i-2],style=yangshi3())
+        table1.write(i, 2, listkeys[i-2],style=yangshi3())
+        table1.write(i, 3, listconeents[i-2],style=yangshi3())
+        table1.write(i, 4, listurls[i-2],style=yangshi3())
+        table1.write(i, 5, listfangshis[i-2],style=yangshi3())
+        table1.write(i, 6, listqiwangs[i-2],style=yangshi3())
+        table1.write(i, 7, str(list_json[i-2]),style=yangshi3())
+        table1.write(i, 8, listrelust[i-2], style=yangshique(listrelust[i-2]))
     file.save(filename)
 
