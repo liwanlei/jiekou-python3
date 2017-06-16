@@ -103,4 +103,5 @@ def create(filename,list_pass,list_fail,listids,listnames,listkeys,listconeents,
         table1.write(i, 7, str(list_json[i-2]),style=yangshi3())
         table1.write(i, 8, listrelust[i-2], style=yangshique(listrelust[i-2]))
     file.save(filename)
-
+import  os
+os.environ()
