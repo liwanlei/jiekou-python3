@@ -22,7 +22,8 @@
 ## 产生的Excel测试报告如下
 ![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/excel.png)
 ![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/excel2.png)
-### 现在的测试结构更加完整，更多的是对版本的优化
+### 现在的测试结构更加完整，最新的一次提交增加了log日志的展示，使功能更加完善，log日志在控制台展示如下，对目录进行优化
+![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/log.png)
 
 
 
