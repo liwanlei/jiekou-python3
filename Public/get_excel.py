@@ -7,9 +7,9 @@
 import xlrd,xlwt
 import unittest,sys
 from xlutils.copy import copy
-from Interface.feng import reques
+from Interface.test_requests import reques
 def datacel():
-	filepath='.\\Data\\Data.xlsx'
+	filepath='.\\test_Data\\test_Data.xlsx'
 	file=xlrd.open_workbook(filepath)
 	me=file.sheets()[0]
 	nrows=me.nrows

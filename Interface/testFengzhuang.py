@@ -4,7 +4,7 @@
 # @Site    : 
 # @File    : testFengzhuang.py
 # @Software: PyCharm
-from Interface.feng import reques
+from Interface.test_requests import reques
 reques=reques()
 class TestApi(object):
 	def __init__(self,url,key,connent,fangshi):

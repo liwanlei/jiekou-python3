@@ -2,14 +2,15 @@
 # @Time    : 2017/6/4 20:15
 # @Author  : lileilei
 # @Site    : 
-# @File    : ceshiyongli.py
+# @File    : test_case.py
 # @Software: PyCharm
 import unittest
-
 from  Interface.testFengzhuang import TestApi
 from  Public.get_excel import datacel
-
+from  Public.tsest_log import log_re
 listid,listkey,listconeent,listurl,listfangshi,listqiwang,listname=datacel()
+title='测试日志'
+log_can=log_re(title)
 class Testinface(unittest.TestCase):
     def setUp(self):
         pass
@@ -31,6 +32,7 @@ class Testinface(unittest.TestCase):
             api=TestApi(url=listurl[i],key=listkey[i],connent=listconeent[i],fangshi=listfangshi[i])
             apicode=api.getcode()
             apijson=api.getJson()
+            log_can.info_log('inputdata> 参数:%s, url:%s ,返回:%s,预期:%s'%(listconeent[i],listurl[i],apijson,listqiwang[i]))
             if apicode==int(listqiwang[i]):
                 listids.append(listid[i])
                 listurls.append(listurl[i])

@@ -8,12 +8,15 @@
 """
 from  Public.pyreport_excel import create
 import unittest,os
-from Case.ceshiyongli import Testinface
-suite = unittest.TestSuite()
-suite.addTest(Testinface("testinterface"))
-me=Testinface()
-list_fail, list_pass, list_json, listurls, listkeys, listconeents, listfangshis, listqiwangs, listids, listrelust, listnames=me.testinterface()
-filepath =r'C:\Users\Administrator\Desktop\jiejko\report\relult.xls'
-if os.path.exists(filepath) is False:
-    os.system(r'touch %s' % filepath)
-create(filepath,list_fail=list_fail, list_pass=list_pass, list_json=list_json, listurls=listurls, listkeys=listkeys,listconeents=listconeents, listfangshis=listfangshis, listqiwangs=listqiwangs, listids=listids, listrelust=listrelust, listnames=listnames)
+from testCase.test_case import Testinface
+from Public.emmail import  sendemali
+if __name__ =='__main__':
+    suite = unittest.TestSuite()
+    suite.addTest(Testinface("testinterface"))
+    me=Testinface()
+    list_fail, list_pass, list_json, listurls, listkeys, listconeents, listfangshis, listqiwangs, listids, listrelust, listnames=me.testinterface()
+    filepath =r'C:\Users\Administrator\Desktop\jiejko\test_Report\relult.xls'
+    if os.path.exists(filepath) is False:
+        os.system(r'touch %s' % filepath)
+    create(filepath,list_fail=list_fail, list_pass=list_pass, list_json=list_json, listurls=listurls, listkeys=listkeys,listconeents=listconeents, listfangshis=listfangshis, listqiwangs=listqiwangs, listids=listids, listrelust=listrelust, listnames=listnames)
+    sendemali(filepath)

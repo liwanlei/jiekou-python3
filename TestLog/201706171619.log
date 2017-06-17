@@ -1,0 +1,60 @@
+2017-06-17 16:19:21,199 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40002.0
+2017-06-17 16:19:21,271 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '你想和我说什么呢?'},预期:40008.0
+2017-06-17 16:19:21,462 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:21,521 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:21,571 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40001.0
+2017-06-17 16:19:21,638 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '有些话，难以说出口？'},预期:40002.0
+2017-06-17 16:19:21,703 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:0.0
+2017-06-17 16:19:21,775 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:21,835 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40001.0
+2017-06-17 16:19:21,904 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '有些话，难以说出口？'},预期:40002.0
+2017-06-17 16:19:21,962 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:0.0
+2017-06-17 16:19:22,060 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:22,117 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40002.0
+2017-06-17 16:19:22,179 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '是不是有什么难言之隐呢？'},预期:40008.0
+2017-06-17 16:19:22,236 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:22,301 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:22,367 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40001.0
+2017-06-17 16:19:22,436 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '有什么想说的话，不用藏在心里，可以直接告诉我哦~'},预期:40002.0
+2017-06-17 16:19:22,497 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:0.0
+2017-06-17 16:19:22,557 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:22,612 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40001.0
+2017-06-17 16:19:22,686 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '你想和我说什么呢?'},预期:40002.0
+2017-06-17 16:19:22,750 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:0.0
+2017-06-17 16:19:22,811 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:29,024 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40002.0
+2017-06-17 16:19:29,088 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': 'what?'},预期:40008.0
+2017-06-17 16:19:29,178 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:29,238 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:29,300 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40001.0
+2017-06-17 16:19:29,365 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '是不是有什么难言之隐呢？'},预期:40002.0
+2017-06-17 16:19:29,427 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:0.0
+2017-06-17 16:19:29,486 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:29,543 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40001.0
+2017-06-17 16:19:29,601 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '有些话，难以说出口？'},预期:40002.0
+2017-06-17 16:19:33,534 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:0.0
+2017-06-17 16:19:33,617 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:33,682 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40002.0
+2017-06-17 16:19:33,757 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '干啥呀？'},预期:40008.0
+2017-06-17 16:19:33,817 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:33,915 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:33,990 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40001.0
+2017-06-17 16:19:34,051 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '有些话，难以说出口？'},预期:40002.0
+2017-06-17 16:19:34,120 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:0.0
+2017-06-17 16:19:34,182 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0
+2017-06-17 16:19:34,248 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40001.0
+2017-06-17 16:19:34,494 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '有什么想说的话，不用藏在心里，可以直接告诉我哦~'},预期:40002.0
+2017-06-17 16:19:34,553 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:0.0
+2017-06-17 16:19:34,605 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:40007.0

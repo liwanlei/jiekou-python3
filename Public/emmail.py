@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 def load_emil_setting():#从配置文件中加载获取email的相关信息
 	import yaml
-	data_file = open(r".\\Data\\email.yaml","r")
+	data_file = open(r".\\config\\email.yaml","r")
 	datas = yaml.load(data_file)
 	data_file.close()
 	return (datas['foremail'],datas['password'],datas['toeamil'],datas['title'])
@@ -30,6 +30,3 @@ def sendemali(filepath): #发送email
 	server.sendmail(from_addr, mail_to, msg.as_string())
 	server.quit()
 	print("邮件发送成功")
-if __name__ == '__main__':
-	project_path=r'..\report\pyresult.html'
-	sendemali(project_path)
