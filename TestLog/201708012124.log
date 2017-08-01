@@ -1,0 +1,7 @@
+2017-08-01 21:24:23,149 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40002.0
+2017-08-01 21:24:23,207 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40002.0
+2017-08-01 21:24:36,462 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40002.0
+2017-08-01 21:24:36,543 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40002.0
+2017-08-01 21:24:51,773 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40002.0
+2017-08-01 21:24:52,410 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40002.0
+2017-08-01 21:24:52,558 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40002.0

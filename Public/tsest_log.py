@@ -9,8 +9,8 @@ class log_re():
     def __init__(self,title):
         self.day = time.strftime("%Y%m%d%H%M", time.localtime(time.time()))
         self.logger = logging.Logger(title)
+        file = r'C:\Users\Administrator\Desktop\xuexi\jiejko\TestLog\%s.log' % self.day
         self.logger.setLevel(logging.INFO)
-        file=r'C:\Users\Administrator\Desktop\jiejko\TestLog\%s.log' % self.day
         if os.path.exists(file) is False:
             os.system(r'touch %s' % file)
         self.logfile = logging.FileHandler(file)
