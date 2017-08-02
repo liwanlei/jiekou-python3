@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2017/6/4 20:15
 # @Author  : lileilei
-# @Site    : 
 # @File    : test_case.py
-# @Software: PyCharm
-import unittest
 from  Interface.testFengzhuang import TestApi
 from  Public.get_excel import datacel
 from  Public.tsest_log import log_re
