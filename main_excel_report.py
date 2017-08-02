@@ -12,9 +12,10 @@ from testCase.test_case import testinterface
 from Public.emmail import  sendemali
 from  Public.get_excel import datacel
 def start():
+    basdir = os.path.abspath(os.path.dirname(__file__))
     listid,listkey,listconeent,listurl,listfangshi,listqiwang,listname=datacel()
     listrelust,list_fail, list_pass, list_json =testinterface()
-    filepath =r'C:\Users\Administrator\Desktop\xuexi\jiejko\test_Report\relult.xls'
+    filepath = os.path.join(basdir + '\\test_Report\\relult.xls')
     if os.path.exists(filepath) is False:
         os.system(r'touch %s' % filepath)
     create(filename=filepath,list_fail=list_fail, list_pass=list_pass, list_json=list_json, listurls=listurl,
@@ -25,6 +26,5 @@ def teThread():
     m = threading.Thread(target=start, args=())
     m.run()
     end = datetime.datetime.now()
-    print(end - st)
 if __name__ == '__main__':
-    start()
+    teThread()

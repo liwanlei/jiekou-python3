@@ -1,5 +1,6 @@
 # 接口测试框架（基于json格式、http请求,python3,不兼容python2.x版本） 
-## 注：现在基于Excel文件管理测试用例基本实现）
+## 注：现在基于Excel文件管理测试用例基本实现,)
+## (目前在部分window上会出现FileNotFoundError [Errno 2] No such file or directory，这个bug是路径过长,解决方案为吧log日志放在当前目录，或者修改动态生成的文件的名字，给了第一种方式，测试日志放在当前目录）
 ### 使用的库 requests，绝大部分是基于Python原有的库进行的，这样简单方便，
 ### 使用脚本参数分离等思想，尽可能降低代码的耦合度。
 # 首先我们来看下我们的目录

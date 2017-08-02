@@ -9,11 +9,13 @@ class log_re():
     def __init__(self,title):
         self.day = time.strftime("%Y%m%d%H%M", time.localtime(time.time()))
         self.logger = logging.Logger(title)
-        file = r'C:\Users\Administrator\Desktop\xuexi\jiejko\TestLog\%s.log' % self.day
+        # basdir = os.path.abspath(os.path.dirname(__file__))
+        # filepath=os.path.join(basdir+'\\TestLog\\%s.log'%self.day)
+        filepath = '%s.log'% self.day
+        # if os.path.exists(filepath) is False:
+        #     os.system(r'touch %s' % filepath)
         self.logger.setLevel(logging.INFO)
-        if os.path.exists(file) is False:
-            os.system(r'touch %s' % file)
-        self.logfile = logging.FileHandler(file)
+        self.logfile = logging.FileHandler(filepath)
         self.logfile.setLevel(logging.INFO)
         self.control = logging.StreamHandler()
         self.control.setLevel(logging.INFO)
