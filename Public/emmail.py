@@ -29,4 +29,4 @@ def sendemali(filepath): #发送email
 	server.login(from_addr, password)
 	server.sendmail(from_addr, mail_to, msg.as_string())
 	server.quit()
-	print("邮件发送成功")
+

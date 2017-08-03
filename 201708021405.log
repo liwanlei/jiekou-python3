@@ -1,3 +1,0 @@
-2017-08-02 14:05:35,679 - 测试日志 - INFO - inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:40002.0
-2017-08-02 14:05:53,789 - 测试日志 - INFO - inputdata> 参数:, url:http://www.tuling123.com/openapi/api
- ,返回:{'code': 40002, 'text': '是不是有什么难言之隐呢？'},预期:40008.0

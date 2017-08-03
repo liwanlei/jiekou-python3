@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2017/6/17 15:56
 # @Author  : lileilei
-# @Site    : 
 # @File    : tsest_log.py
 # @Software: PyCharm
 import  logging,time,os

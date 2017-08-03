@@ -86,10 +86,10 @@ def relust(titles,starttime,endtime,passge,fail,id,name,key,coneent,url,meth,yuq
     if type(name) ==list:
         relus=' '
         for i in range(len(name)):
-            relus+=(ceshixiangqing(id[i],name[i],key[i],coneent[i],url[i],meth[i],int(yuqi[i]),json[i],relust[i]))
+            relus+=(ceshixiangqing(id[i],name[i],key[i],coneent[i],url[i],meth[i],yuqi[i],json[i],relust[i]))
         text=title(titles)+connent+time(starttime,endtime,passge,fail)+shanghai+relus+weibu
     else:
-        text=title(titles)+connent+time(starttime,endtime,passge,fail)+shanghai+ceshixiangqing(id,name,key,coneent,url,meth,int(yuqi),json,relust)+weibu
+        text=title(titles)+connent+time(starttime,endtime,passge,fail)+shanghai+ceshixiangqing(id,name,key,coneent,url,meth,yuqi,json,relust)+weibu
     return text
 def createHtml(filepath,titles,starttime,endtime,passge,fail,id,name,key,coneent,url,meth,yuqi,json,relusts):
 	texts=relust(titles,starttime,endtime,passge,fail,id,name,key,coneent,url,meth,yuqi,json,relusts)
