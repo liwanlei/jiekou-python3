@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>接口测试报告</title>
+		<style type="text/css">
+			td{ width:40px; height:50px;}
+		</style>
+	</head>
+	<body>
+	
+<div style='width: 1170px;margin-left: 15%'>
+<h1>接口测试的结果</h1>
+		<p><strong>开始时间:</strong> 2017-08-03 20:06:36.156240</p>
+		<p><strong>结束时间:</strong> 2017-08-03 20:06:36.585264</p>
+		<p><strong>耗时:</strong> 0:00:00.429024</p>
+		<p><strong>结果:</strong>
+			<span >Pass: <strong >3</strong>
+			Fail: <strong >0</strong>
+			        </span></p>                  
+			    <p ><strong>测试详情如下</strong></p>  </div> 
+
+
+        <p>&nbsp;</p>
+        <table border='2'cellspacing='1' cellpadding='1' width='1100'align="center" >
+		<tr >
+            <td ><strong>用例ID&nbsp;</strong></td>
+            <td><strong>用例名字</strong></td>
+            <td><strong>key</strong></td>
+            <td><strong>请求内容</strong></td>
+            <td><strong>url</strong></td>
+            <td><strong>请求方式</strong></td>
+            <td><strong>预期</strong></td>
+            <td><strong>实际返回</strong></td>  
+            <td><strong>结果</strong></td>
+        </tr>
+     
+        <tr>
+            <td>1.0</td>
+            <td>图灵api接口</td>
+       
+            <td>aaaa</td>
+            <td>sasa
+           </td>
+            <td>http://www.tuling123.com/openapi/api</td>
+            <td>POST</td>
+            <td>code=40001</td>
+            <td>{'code': 40001, 'text': '亲爱的，key不对哦。'}</td>
+             <td bgcolor="green">pass</td>
+        </tr>
+        
+    
+        <tr>
+            <td>2.0</td>
+            <td>图灵api接口</td>
+       
+            <td>dfeb1cc8125943d29764a2f2f5c33739</td>
+            <td>
+           </td>
+            <td>http://www.tuling123.com/openapi/api
+</td>
+            <td>POST</td>
+            <td>code=40002</td>
+            <td>{'code': 40002, 'text': '有些话，难以说出口？'}</td>
+             <td bgcolor="green">pass</td>
+        </tr>
+        
+    
+        <tr>
+            <td>3.0</td>
+            <td>豆瓣api</td>
+       
+            <td></td>
+            <td>
+           </td>
+            <td>https://api.douban.com/v2/photo/:id</td>
+            <td>GET</td>
+            <td>code=1001&msg=uri_not_found</td>
+            <td>{'msg': 'uri_not_found', 'code': 1001, 'request': 'POST /v2/photo/:id'}</td>
+             <td bgcolor="green">pass</td>
+        </tr>
+        
+    
+	</table>
+    </body>
+    </html>
