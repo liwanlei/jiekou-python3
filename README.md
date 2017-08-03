@@ -5,7 +5,7 @@
 ### 使用脚本参数分离等思想，尽可能降低代码的耦合度。
 # 首先我们来看下我们的目录
 ##
-![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/xiangmujiegoutu%20.png)
+![Alt text](https://github.com/liwanlei/jiekou-python3/blob/master/img/xiangmujiegoutu.png)
 ##
 ### 1.Case文件夹用来存放我们的测试用例相关的，
 ### 2.Data用来存储我们的测试数据，Excel管理测试用例，yaml文件管理测试用例，后续要把yaml管理测试用例的也封装出来。
