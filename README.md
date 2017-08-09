@@ -4,6 +4,7 @@
 ## qq交流群：194704520  
 ### 使用的库 requests，绝大部分是基于Python原有的库进行的，这样简单方便，
 ### 使用脚本参数分离等思想，尽可能降低代码的耦合度。
+# 最近更新增加了记录测试结果的，后期打算加入测试数据的统计。
 # 首先我们来看下我们的目录
 ##
 ![Alt text](https://github.com/liwanlei/jiekou-python3/blob/master/img/xiangmujiegoutu.png)
