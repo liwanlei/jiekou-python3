@@ -18,7 +18,7 @@ class TestApi(object):
 			response=reques.post(self.url,self.parem)
 		elif self.fangshi=="GET":
 			self.parem = {'key': self.key, 'info': self.connent}
-			response = reques.post(self.url, self.parem)
+			response = reques.get(self.url, self.parem)
 		return response
 	def getcode(self):
 		code=self.testapi()['code']
