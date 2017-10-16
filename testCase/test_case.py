@@ -4,11 +4,10 @@
 # @File    : test_case.py
 from  Interface.testFengzhuang import TestApi
 from  Public.get_excel import datacel
-from  Public.tsest_log import log_re
+from  Public.log import LOG,logger
 listid,listkey,listconeent,listurl,listfangshi,listqiwang,listname=datacel()
 from Public.panduan import assert_in
-title='测试日志'
-log_can=log_re(title)
+@logger('测试')
 def testinterface():
     list_pass = 0
     list_fail = 0
@@ -18,7 +17,7 @@ def testinterface():
         api=TestApi(url=listurl[i],key=listkey[i],connent=listconeent[i],fangshi=listfangshi[i])
         apicode=api.getcode()
         apijson=api.getJson()
-        log_can.info_log('inputdata> 参数:%s, url:%s ,返回:%s,预期:%s'%(listconeent[i],listurl[i],apijson,listqiwang[i]))
+        LOG.info('inputdata> 参数:%s, url:%s ,返回:%s,预期:%s'%(listconeent[i],listurl[i],apijson,listqiwang[i]))
         assert_re=assert_in(asserqiwang=listqiwang[i],fanhuijson=apijson)
         if assert_re=='pass':
             list_json.append(apijson)

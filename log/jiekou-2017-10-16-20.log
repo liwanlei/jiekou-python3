@@ -1,0 +1,24 @@
+[2017-10-16 20:54:46.439386] INFO: jiekou: 当前模块 requests封装
+[2017-10-16 20:54:46.900412] INFO: jiekou: 当前模块 解析测试用例文件
+[2017-10-16 20:54:47.323436] INFO: jiekou: 当前模块 解析测试用例文件
+[2017-10-16 20:54:47.332437] INFO: jiekou: 当前模块 测试
+[2017-10-16 20:54:47.554450] INFO: jiekou: inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:code=40001
+[2017-10-16 20:54:47.556450] INFO: jiekou: 当前模块 断言测试结果
+[2017-10-16 20:54:47.654455] INFO: jiekou: inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '有啥事吗？'},预期:code=40002
+[2017-10-16 20:54:47.656455] INFO: jiekou: 当前模块 断言测试结果
+[2017-10-16 20:54:48.161484] INFO: jiekou: inputdata> 参数:, url:https://api.douban.com/v2/photo/:id ,返回:{'msg': 'uri_not_found', 'code': 1001, 'request': 'POST /v2/photo/:id'},预期:code=1001&msg=uri_not_found
+[2017-10-16 20:54:48.163484] INFO: jiekou: 当前模块 断言测试结果
+[2017-10-16 20:54:48.230488] INFO: jiekou: 当前模块 保存测试结果
+[2017-10-16 20:54:56.272948] INFO: jiekou: 当前模块 requests封装
+[2017-10-16 20:54:56.295950] INFO: jiekou: 当前模块 解析测试用例文件
+[2017-10-16 20:54:56.323951] INFO: jiekou: 当前模块 解析测试用例文件
+[2017-10-16 20:54:56.330952] INFO: jiekou: 当前模块 测试
+[2017-10-16 20:54:56.548964] INFO: jiekou: inputdata> 参数:sasa, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40001, 'text': '亲爱的，key不对哦。'},预期:code=40001
+[2017-10-16 20:54:56.548964] INFO: jiekou: 当前模块 断言测试结果
+[2017-10-16 20:54:56.636969] INFO: jiekou: inputdata> 参数:, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40002, 'text': '有些话，难以说出口？'},预期:code=40002
+[2017-10-16 20:54:56.638969] INFO: jiekou: 当前模块 断言测试结果
+[2017-10-16 20:54:56.844981] INFO: jiekou: inputdata> 参数:, url:https://api.douban.com/v2/photo/:id ,返回:{'msg': 'uri_not_found', 'code': 1001, 'request': 'POST /v2/photo/:id'},预期:code=1001&msg=uri_not_found
+[2017-10-16 20:54:56.846981] INFO: jiekou: 当前模块 断言测试结果
+[2017-10-16 20:54:56.888984] INFO: jiekou: 当前模块 保存测试结果
