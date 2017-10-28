@@ -11,7 +11,7 @@ from .log import LOG,logger
 @logger('解析测试用例文件')
 def datacel():
     try:
-        filepath='.\\test_Data\\test_Data.xlsx'
+        filepath='.\\test_case\\case.xlsx'
         file=xlrd.open_workbook(filepath)
         me=file.sheets()[0]
         nrows=me.nrows

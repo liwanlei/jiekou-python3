@@ -1,7 +1,6 @@
 # encoding: utf-8
 """
 @author: lileilei
-@software: PyCharm
 @file: pyreport_excel.py
 @time: 2017/6/7 8:47
 """

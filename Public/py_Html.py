@@ -1,8 +1,6 @@
 # encoding: utf-8
 """
 @author: lileilei
-@site: 
-@software: PyCharm
 @file: py_Html.py
 @time: 2017/6/5 17:04
 """
