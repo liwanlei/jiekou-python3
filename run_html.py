@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author  : leizi
 import unittest,os,datetime,time
-from testCase.test_case import testinterface
+from testCase.case import testinterface
 from Public.py_Html import createHtml
 from Public.get_excel import datacel
 from  Public.emmail import  sendemali

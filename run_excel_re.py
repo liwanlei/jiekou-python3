@@ -6,7 +6,7 @@
 """
 from  Public.pyreport_excel import create
 import os,threading,datetime
-from testCase.test_case import testinterface
+from testCase.case import testinterface
 from Public.emmail import  sendemali
 from  Public.get_excel import datacel
 from Public.create_report import save_result

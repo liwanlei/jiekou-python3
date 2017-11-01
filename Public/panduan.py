@@ -16,3 +16,13 @@ def assert_in(asserqiwang,fanhuijson):
     else:
         LOG.info('填写测试预期值')
         raise ('请填写期望值')
+@logger('断言测试结果')
+def assertre(asserqingwang):
+    if len(asserqingwang.split('=')) > 1:
+        data = asserqingwang.split('&')
+        result = dict([(item.split('=')) for item in data])
+        return result
+    else:
+        LOG.info('填写测试预期值')
+        raise ('请填写期望值')
+

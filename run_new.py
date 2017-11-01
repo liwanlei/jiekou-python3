@@ -1,9 +1,11 @@
-from  testCase.test import ApiTest
+# -*- coding: utf-8 -*-
+# @Author  : leizi
+from  testCase.ddt_case import MyTest
 import  unittest,time,os
 from Public import  BSTestRunner
 if __name__=='__main__':
     suite = unittest.TestSuite()
-    suite.addTests(unittest.TestLoader().loadTestsFromTestCase(ApiTest))
+    suite.addTests(unittest.TestLoader().loadTestsFromTestCase(MyTest))
     now = time.strftime('%Y-%m%d', time.localtime(time.time()))
     basedir = os.path.abspath(os.path.dirname(__file__))
     file_dir = os.path.join(basedir, 'test_Report')
