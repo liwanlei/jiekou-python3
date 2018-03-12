@@ -1,8 +1,8 @@
 from  Interface.testFengzhuang import TestApi
-from  Public.get_excel import datacel,makedata
-from  Public.log import LOG,logger
+from  Public.get_excel import makedata
+from  Public.log import LOG
 from Public.panduan import assertre
-import ddt,unittest,time,os
+import ddt,unittest
 data_test=makedata()
 @ddt.ddt
 class MyTest(unittest.TestCase):

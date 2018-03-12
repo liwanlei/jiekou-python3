@@ -3,7 +3,6 @@
 # @Author  : lileilei
 # @Site    : 
 # @File    : testFengzhuang.py
-# @Software: PyCharm
 from Interface.test_requests import requ
 reques=requ()
 class TestApi(object):

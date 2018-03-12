@@ -4,7 +4,7 @@
 @file: pyreport_excel.py
 @time: 2017/6/7 8:47
 """
-import xlrd ,os,xlwt,yaml,xlsxwriter #导入库
+import xlwt,yaml
 from xlwt import *
 def yangshi1():
     style = XFStyle()

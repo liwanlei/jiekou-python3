@@ -42,5 +42,3 @@ def makedata():
         make_data.append({'url':listurl[i],'key':listkey[i],'coneent':listconeent[i],'fangshi':listfangshi[i],'qiwang':listqiwang[i]})
         i+=1
     return make_data
-
-

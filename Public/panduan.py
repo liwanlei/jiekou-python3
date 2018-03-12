@@ -10,12 +10,12 @@ def assert_in(asserqiwang,fanhuijson):
         value1=([(str(fanhuijson[key])) for key in result.keys()])
         value2=([(str(value)) for value in result.values()])
         if value1==value2:
-            return  'pass'
+            return  { 'code':2,"result":'pass'}
         else:
-            return 'fail'
+            return {'code':0,'result':'fail'}
     else:
         LOG.info('填写测试预期值')
-        raise ('请填写期望值')
+        return  {"code":1,'result':'填写测试预期值'}
 @logger('断言测试结果')
 def assertre(asserqingwang):
     if len(asserqingwang.split('=')) > 1:
@@ -24,5 +24,4 @@ def assertre(asserqingwang):
         return result
     else:
         LOG.info('填写测试预期值')
-        raise ('请填写期望值')
-
+        raise {"code":1,'result':'填写测试预期值'}

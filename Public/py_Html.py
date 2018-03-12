@@ -7,7 +7,7 @@
 import  os
 titles='接口测试'
 def title(titles):
-	title='''<!DOCTYPE html>
+    title='''<!DOCTYPE html>
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -18,12 +18,12 @@ def title(titles):
 	</head>
 	<body>
 	'''%(titles)
-	return title
+    return title
 connent='''
 <div style='width: 1170px;margin-left: 15%'>
 <h1>接口测试的结果</h1>'''
 def time(starttime,endtime,passge,fail):
-	beijing='''
+    beijing='''
 		<p><strong>开始时间:</strong> %s</p>
 		<p><strong>结束时间:</strong> %s</p>
 		<p><strong>耗时:</strong> %s</p>
@@ -32,10 +32,8 @@ def time(starttime,endtime,passge,fail):
 			Fail: <strong >%s</strong>
 			        </span></p>                  
 			    <p ><strong>测试详情如下</strong></p>  </div> '''%(starttime,endtime,(endtime-starttime),passge,fail)
-	return beijing
+    return beijing
 shanghai='''
-
-
         <p>&nbsp;</p>
         <table border='2'cellspacing='1' cellpadding='1' width='1100'align="center" >
 		<tr >
@@ -90,6 +88,6 @@ def relust(titles,starttime,endtime,passge,fail,id,name,key,coneent,url,meth,yuq
         text=title(titles)+connent+time(starttime,endtime,passge,fail)+shanghai+ceshixiangqing(id,name,key,coneent,url,meth,yuqi,json,relust)+weibu
     return text
 def createHtml(filepath,titles,starttime,endtime,passge,fail,id,name,key,coneent,url,meth,yuqi,json,relusts):
-	texts=relust(titles,starttime,endtime,passge,fail,id,name,key,coneent,url,meth,yuqi,json,relusts)
-	with open(filepath,'wb') as f:
-		f.write(texts.encode())
+    texts=relust(titles,starttime,endtime,passge,fail,id,name,key,coneent,url,meth,yuqi,json,relusts)
+    with open(filepath,'wb') as f:
+        f.write(texts.encode())

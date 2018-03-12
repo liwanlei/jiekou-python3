@@ -14,13 +14,11 @@ if not os.path.exists(LOG_DIR):
 def get_logger(name='jiekou', file_log=file_stream, level=''):
     """ get logger Factory function """
     logbook.set_datetime_format('local')
-
     ColorizedStderrHandler(bubble=False, level=level).push_thread()
     logbook.TimedRotatingFileHandler(
-            os.path.join(LOG_DIR, '%s.log' % name),
-            date_format='%Y-%m-%d-%H', bubble=True, encoding='utf-8').push_thread()
+        os.path.join(LOG_DIR, '%s.log' % name),
+        date_format='%Y-%m-%d-%H', bubble=True, encoding='utf-8').push_thread()
     return logbook.Logger(name)
-
 LOG = get_logger(file_log=file_stream, level='INFO')
 def logger(param):
     """ fcuntion from logger meta """
@@ -35,4 +33,3 @@ def logger(param):
             return function(*args, **kwargs)
         return _wrap
     return wrap
-

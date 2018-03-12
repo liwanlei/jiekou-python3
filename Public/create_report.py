@@ -13,4 +13,3 @@ def save_result(testtime,toial,passnum,fail):
         f.close()
     except:
         LOG.info('保存测试结果出错，原因：%s'%Exception)
-        print('记录测试结果失败')
