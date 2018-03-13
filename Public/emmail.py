@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author  : leizi
-import  smtplib,time,os
+import  smtplib,time
 from  email.mime.text import MIMEText
-from email.utils import formataddr,parseaddr
 from email.mime.multipart import MIMEMultipart
-from email.mime.base import MIMEBase
 def load_emil_setting():#从配置文件中加载获取email的相关信息
 	import yaml
 	data_file = open(r".\\config\\email.yaml","r")
@@ -29,4 +27,3 @@ def sendemali(filepath): #发送email
 	server.login(from_addr, password)
 	server.sendmail(from_addr, mail_to, msg.as_string())
 	server.quit()
-

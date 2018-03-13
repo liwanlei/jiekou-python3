@@ -1,0 +1,49 @@
+[2018-03-13 12:44:37.675953] INFO: jiekou: 当前模块 requests封装
+[2018-03-13 12:44:37.698954] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-03-13 12:44:37.747957] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-03-13 12:44:37.751957] INFO: jiekou: 当前模块 测试
+[2018-03-13 12:44:37.809961] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:code=40001
+[2018-03-13 12:44:37.809961] INFO: jiekou: 当前模块 断言测试结果
+[2018-03-13 12:44:37.857963] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:code=40002
+[2018-03-13 12:44:37.857963] INFO: jiekou: 当前模块 断言测试结果
+[2018-03-13 12:44:38.016972] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'},预期:
+[2018-03-13 12:44:38.017972] INFO: jiekou: 当前模块 断言测试结果
+[2018-03-13 12:44:38.017972] INFO: jiekou: 填写测试预期值
+[2018-03-13 12:44:38.193982] INFO: jiekou: 当前模块 保存测试结果
+[2018-03-13 12:46:03.303850] INFO: jiekou: 当前模块 requests封装
+[2018-03-13 12:46:03.313851] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-03-13 12:46:03.324852] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-03-13 12:46:03.327852] INFO: jiekou: 当前模块 测试
+[2018-03-13 12:46:03.385855] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:code=40001
+[2018-03-13 12:46:03.385855] INFO: jiekou: 当前模块 断言测试结果
+[2018-03-13 12:46:03.432858] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 40007, 'text': '您的请求内容为空。'},预期:code=40002
+[2018-03-13 12:46:03.432858] INFO: jiekou: 当前模块 断言测试结果
+[2018-03-13 12:46:03.569866] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'},预期:
+[2018-03-13 12:46:03.570866] INFO: jiekou: 当前模块 断言测试结果
+[2018-03-13 12:46:03.570866] INFO: jiekou: 填写测试预期值
+[2018-03-13 12:46:48.284423] INFO: jiekou: 当前模块 requests封装
+[2018-03-13 12:46:48.322425] INFO: jiekou: 当前模块 生成数据驱动所用数据
+[2018-03-13 12:46:48.322425] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-03-13 12:46:48.363428] INFO: jiekou: 测试用例开始执行
+[2018-03-13 12:46:48.363428] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：POST
+[2018-03-13 12:46:48.363428] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：None
+[2018-03-13 12:46:48.396430] INFO: jiekou: 返回结果:{'code': 40007, 'text': '您的请求内容为空。'}
+[2018-03-13 12:46:48.396430] INFO: jiekou: 当前模块 断言测试结果
+[2018-03-13 12:46:48.396430] INFO: jiekou: 测试用例执行完毕
+[2018-03-13 12:46:48.396430] INFO: jiekou: 测试用例开始执行
+[2018-03-13 12:46:48.397430] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api
+,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：POST
+[2018-03-13 12:46:48.397430] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api
+,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：None
+[2018-03-13 12:46:48.419431] INFO: jiekou: 返回结果:{'code': 40007, 'text': '您的请求内容为空。'}
+[2018-03-13 12:46:48.419431] INFO: jiekou: 当前模块 断言测试结果
+[2018-03-13 12:46:48.419431] INFO: jiekou: 测试用例执行完毕
+[2018-03-13 12:46:48.420431] INFO: jiekou: 测试用例开始执行
+[2018-03-13 12:46:48.420431] INFO: jiekou: 输入参数：url:https://api.douban.com/v2/photo/:id,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：GET
+[2018-03-13 12:46:48.420431] INFO: jiekou: 输入参数：url:https://api.douban.com/v2/photo/:id,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：None
+[2018-03-13 12:46:49.005464] INFO: jiekou: 返回结果:{'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}
+[2018-03-13 12:46:49.005464] INFO: jiekou: 当前模块 断言测试结果
+[2018-03-13 12:46:49.005464] INFO: jiekou: 填写测试预期值
+[2018-03-13 12:46:49.006465] INFO: jiekou: 测试用例执行完毕

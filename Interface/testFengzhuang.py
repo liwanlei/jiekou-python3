@@ -19,9 +19,6 @@ class TestApi(object):
 			self.parem = {'key': self.key, 'info': self.connent}
 			response = reques.get(url=self.url,params=self.parem)
 		return response
-	def getcode(self):
-		code=self.testapi()['code']
-		return code
 	def getJson(self):
 		json_data = self.testapi()
 		return json_data

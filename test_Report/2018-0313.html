@@ -150,8 +150,8 @@ function showOutput(id, name) {
 <div class="container">
     <div class='heading'>
 <h1>接口测试报告</h1>
-<p><strong>Start Time:</strong> 2018-02-01 12:35:13</p>
-<p><strong>Duration:</strong> 0:00:00.099005</p>
+<p><strong>Start Time:</strong> 2018-03-13 13:03:38</p>
+<p><strong>Duration:</strong> 0:00:00.175010</p>
 <p><strong>Status:</strong> <span class="text text-success">Pass <strong>2</strong></span> <span class="text text-warning">Error <strong>1</strong></span></p>
 
 <p class='description'>测试结果</p>
@@ -201,12 +201,14 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-pt1.1: [2018-02-01 12:35:13.901706] INFO: jiekou: 测试用例开始执行
-[2018-02-01 12:35:13.902706] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api,key:aaaa,参数:sasa,请求方式：POST
-[2018-02-01 12:35:13.902706] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api,key:aaaa,参数:sasa,请求方式：None
-[2018-02-01 12:35:13.959709] INFO: jiekou: 返回结果:{'code': 40001, 'text': '亲爱的，key不对哦。'}
-[2018-02-01 12:35:13.960709] INFO: jiekou: 当前模块 断言测试结果
-[2018-02-01 12:35:13.960709] INFO: jiekou: 测试用例执行完毕
+pt1.1: [2018-03-13 13:03:38.506205] INFO: jiekou: 测试用例开始执行
+[2018-03-13 13:03:38.506205] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：POST
+[2018-03-13 13:03:38.506205] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：None
+[2018-03-13 13:03:38.544207] INFO: jiekou: 返回结果:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}
+[2018-03-13 13:03:38.545207] INFO: jiekou: 当前模块 断言测试结果
+[2018-03-13 13:03:38.545207] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-03-13 13:03:38.545207] INFO: jiekou: 全部kwargs参数信息 , {'asserqingwang': 'code=40001'}
+[2018-03-13 13:03:38.545207] INFO: jiekou: 测试用例执行完毕
 
 
         </pre>
@@ -231,14 +233,16 @@ pt1.1: [2018-02-01 12:35:13.901706] INFO: jiekou: 测试用例开始执行
         </div>
         <pre>
         
-pt1.2: [2018-02-01 12:35:13.961709] INFO: jiekou: 测试用例开始执行
-[2018-02-01 12:35:13.961709] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api
-,key:dfeb1cc8125943d29764a2f2f5c33739,参数:,请求方式：POST
-[2018-02-01 12:35:13.962709] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api
-,key:dfeb1cc8125943d29764a2f2f5c33739,参数:,请求方式：None
-[2018-02-01 12:35:13.994711] INFO: jiekou: 返回结果:{'code': 40002, 'text': '你想说什么就直说，不用藏在心里哈~'}
-[2018-02-01 12:35:13.994711] INFO: jiekou: 当前模块 断言测试结果
-[2018-02-01 12:35:13.995711] INFO: jiekou: 测试用例执行完毕
+pt1.2: [2018-03-13 13:03:38.545207] INFO: jiekou: 测试用例开始执行
+[2018-03-13 13:03:38.545207] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api
+,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：POST
+[2018-03-13 13:03:38.545207] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api
+,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：None
+[2018-03-13 13:03:38.580209] INFO: jiekou: 返回结果:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}
+[2018-03-13 13:03:38.580209] INFO: jiekou: 当前模块 断言测试结果
+[2018-03-13 13:03:38.580209] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-03-13 13:03:38.580209] INFO: jiekou: 全部kwargs参数信息 , {'asserqingwang': 'code=40002'}
+[2018-03-13 13:03:38.580209] INFO: jiekou: 测试用例执行完毕
 
 
         </pre>
@@ -263,20 +267,25 @@ pt1.2: [2018-02-01 12:35:13.961709] INFO: jiekou: 测试用例开始执行
         </div>
         <pre>
         
-ft1.3: [2018-02-01 12:35:13.996711] INFO: jiekou: 测试用例开始执行
-[2018-02-01 12:35:13.996711] INFO: jiekou: 输入参数：url:https://api.douban.com/v2/photo/:id,key:,参数:,请求方式：GET
-[2018-02-01 12:35:13.997711] INFO: jiekou: 输入参数：url:https://api.douban.com/v2/photo/:id,key:,参数:,请求方式：None
-[2018-02-01 12:35:13.998711] INFO: jiekou: 测试用例执行完毕
+ft1.3: [2018-03-13 13:03:38.580209] INFO: jiekou: 测试用例开始执行
+[2018-03-13 13:03:38.581209] INFO: jiekou: 输入参数：url:https://api.douban.com/v2/photo/:id,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：GET
+[2018-03-13 13:03:38.581209] INFO: jiekou: 输入参数：url:https://api.douban.com/v2/photo/:id,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：None
+[2018-03-13 13:03:38.679215] INFO: jiekou: 返回结果:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}
+[2018-03-13 13:03:38.679215] INFO: jiekou: 当前模块 断言测试结果
+[2018-03-13 13:03:38.679215] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-03-13 13:03:38.679215] INFO: jiekou: 全部kwargs参数信息 , {'asserqingwang': ''}
+[2018-03-13 13:03:38.679215] INFO: jiekou: 填写测试预期值
+[2018-03-13 13:03:38.680215] INFO: jiekou: 测试用例执行完毕
 Traceback (most recent call last):
   File "C:\Users\Administrator\AppData\Roaming\Python\Python36\site-packages\ddt.py", line 139, in wrapper
     return func(self, *args, **kwargs)
-  File "C:\Users\Administrator\Desktop\xuexi\jiejko\testCase\ddt_case.py", line 17, in test_api
-    apijson = api.getJson()
-  File "C:\Users\Administrator\Desktop\xuexi\jiejko\Interface\testFengzhuang.py", line 27, in getJson
-    json_data = self.testapi()
-  File "C:\Users\Administrator\Desktop\xuexi\jiejko\Interface\testFengzhuang.py", line 21, in testapi
-    response = reques.get(self.url,self.parem)
-TypeError: get() takes 2 positional arguments but 3 were given
+  File "C:\Users\Administrator\Desktop\jiekou-python3\testCase\ddt_case.py", line 19, in test_api
+    qingwang=assertre(asserqingwang=data_test['qiwang'])
+  File "C:\Users\Administrator\Desktop\jiekou-python3\Public\log.py", line 33, in _wrap
+    return function(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\jiekou-python3\Public\panduan.py", line 27, in assertre
+    raise {"code":1,'result':'填写测试预期值'}
+TypeError: exceptions must derive from BaseException
 
 
         </pre>

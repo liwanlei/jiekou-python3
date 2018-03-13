@@ -3,10 +3,7 @@
 # @Author  : lileilei
 # @File    : get_excel.py
 # @Software: PyCharm
-import xlrd,xlwt
-import unittest,sys
-from xlutils.copy import copy
-from Interface.test_requests import requ
+import xlrd
 from Public.log  import LOG,logger
 @logger('解析测试用例文件')
 def datacel():
@@ -36,7 +33,6 @@ def datacel():
 @logger('生成数据驱动所用数据')
 def makedata():
     listid, listkey, listconeent, listurl, listfangshi, listqiwang, listname=datacel()
-    i=0
     make_data=[]
     for i in range(len(listid)):
         make_data.append({'url':listurl[i],'key':listkey[i],'coneent':listconeent[i],'fangshi':listfangshi[i],'qiwang':listqiwang[i]})
