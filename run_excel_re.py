@@ -5,7 +5,7 @@
 @time: 2017/6/9 12:45
 """
 from  Public.pyreport_excel import create
-import os,threading,datetime
+import os,datetime
 from testCase.case import testinterface
 from  Public.get_excel import datacel
 from Public.create_report import save_result
@@ -13,7 +13,8 @@ def start():
     starttime=datetime.datetime.now()
     m=datetime.datetime.now().strftime("%Y%m%d")
     basdir = os.path.abspath(os.path.dirname(__file__))
-    listid,listkey,listconeent,listurl,listfangshi,listqiwang,listname=datacel()
+    path = os.getcwd() + '\\test_case\\case.xlsx'
+    listid,listkey,listconeent,listurl,listfangshi,listqiwang,listname=datacel(path)
     listrelust, list_fail, list_pass, list_json, list_exption, list_weizhi =testinterface()
     filepath = os.path.join(basdir + '\\test_Report\\%s-result.xls'%m)
     if os.path.exists(filepath) is False:

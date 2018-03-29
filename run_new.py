@@ -11,5 +11,5 @@ if __name__=='__main__':
     file_dir = os.path.join(basedir, 'test_Report')
     file = os.path.join(file_dir, (now + '.html'))
     re_open = open(file, 'wb')
-    runner = BSTestRunner.BSTestRunner(stream=re_open, title='接口测试报告', description='测试结果')
+    runner = BSTestRunner.BSTestRunner(stream=re_open, title='http接口测试报告', description='测试结果')
     m=runner.run(suite)

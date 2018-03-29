@@ -14,11 +14,11 @@ class TestApi(object):
 	def testapi(self):
 		if self.fangshi=='POST':
 			self.parem = {'key': self.key, 'info': self.connent}
-			response=reques.post(self.url,self.parem)
+			self.response=reques.post(self.url,self.parem)
 		elif self.fangshi=="GET":
 			self.parem = {'key': self.key, 'info': self.connent}
-			response = reques.get(url=self.url,params=self.parem)
-		return response
+			self.response = reques.get(url=self.url,params=self.parem)
+		return self.response
 	def getJson(self):
 		json_data = self.testapi()
 		return json_data
