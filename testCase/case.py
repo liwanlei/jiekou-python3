@@ -5,7 +5,9 @@
 from  Interface.testFengzhuang import TestApi
 from  Public.get_excel import datacel
 from  Public.log import LOG,logger
-listid,listkey,listconeent,listurl,listfangshi,listqiwang,listname=datacel()
+import os
+path=os.getcwd()+'\\test_case\\case.xlsx'
+listid,listkey,listconeent,listurl,listfangshi,listqiwang,listname=datacel(path)
 from Public.panduan import assert_in
 @logger('测试')
 def testinterface():
