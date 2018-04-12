@@ -8,7 +8,7 @@ from Public.log import LOG,logger
 from Public.panduan import assert_in
 from  Public.get_excel import datacel
 import os
-path=os.getcwd()+'\\test_case\\dubbocase.xlsx'
+path=os.getcwd()+'\\test_case_data\\dubbocase.xlsx'
 listid,listurl,listinterface,listmeth,listfobject,listparam,listassert=datacel(path)
 @logger('dubbo接口测试')
 def testdubbointerface():

@@ -2,11 +2,11 @@
 # @Time    : 2017/6/4 20:15
 # @Author  : lileilei
 # @File    : case.py
-from  Interface.testFengzhuang import TestApi
+from Interface.testFengzhuang import TestApi
 from  Public.get_excel import datacel
 from  Public.log import LOG,logger
 import os
-path=os.getcwd()+'\\test_case\\case.xlsx'
+path=os.getcwd()+'\\test_case_data\\case.xlsx'
 listid,listkey,listconeent,listurl,listfangshi,listqiwang,listname=datacel(path)
 from Public.panduan import assert_in
 @logger('测试')

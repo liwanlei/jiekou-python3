@@ -1,10 +1,5 @@
-# 接口测试框架（基于json格式、http请求,python3,不兼容python2.x版本） 
-<<<<<<< HEAD
-## 新增对dubbo接口的支持，由于当前调试的问题，暂时没有调试，详情可见dubbo分支。
+# 接口测试框架（基于json格式、http协议，dubbo协议请求,python3,不兼容python2.x版本） 
 
-=======
-# 支持对dubbo接口测试的相关内容，暂时存放在dubbo分支。
->>>>>>> dubbo
 ## 注：现在基于Excel文件管理测试用例基本实现,)
 # 2018-3-13版本修改
 ### 原来的测试报告更加详细的展示错误类型，对部分代码进行了优化，断言结果返回更加详细，更快的定位测试问题
@@ -45,6 +40,3 @@
 ![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/excel2.png)
 ### 现在的测试结构更加完整，最新的一次提交增加了log日志的展示，使功能更加完善，log日志在控制台展示如下，对目录进行优化
 ![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/log.png)
-
-
-
