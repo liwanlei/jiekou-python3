@@ -1,5 +1,5 @@
 # 接口测试框架（基于json格式、http协议，dubbo协议请求,python3,不兼容python2.x版本） 
-
+##  java实现版本：https://github.com/liwanlei/java_jiekou
 ## 注：现在基于Excel文件管理测试用例基本实现,)
 # 2018-3-13版本修改
 ### 原来的测试报告更加详细的展示错误类型，对部分代码进行了优化，断言结果返回更加详细，更快的定位测试问题
