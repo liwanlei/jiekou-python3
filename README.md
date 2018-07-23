@@ -7,9 +7,9 @@
 ## qq交流群：194704520  一群   683894834 二群
 ### 使用的库 requests，绝大部分是基于Python原有的库进行的，这样简单方便，
 # 友情推荐本人其他开源代码：
-#      1.python app自动化测试平台版本：![Alt text](https://github.com/liwanlei/UFATestPlan)
-#      2.python+flask 做后台，实现微信小程序：![Alt text](https://github.com/liwanlei/webchat_app)
-#      3.python接口测试非平台版本![Alt text](https://github.com/liwanlei/jiekou-python3)
+#      1.python接口测试平台版本![Alt text](https://github.com/liwanlei/FXTest)
+#      2.python app自动化测试平台版本：![Alt text](https://github.com/liwanlei/UFATestPlan)
+#      3.python+flask 做后台，实现微信小程序：![Alt text](https://github.com/liwanlei/webchat_app)
 ### 使用脚本参数分离等思想，尽可能降低代码的耦合度。
 # 2017-11-1版本修改
 ## 引入ddt数据驱动和BSTestRunner，并且测试过程使用python的unittest库，运行可以使用run_new来运行测试，新的运行更加简单，对预期结果进行了自定义，
