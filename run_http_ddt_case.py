@@ -4,6 +4,8 @@ from  testCase.ddt_case import MyTest
 import  unittest,time,os
 from Public import  BSTestRunner
 from  Public.Dingtalk import send_ding
+
+'''this is a merge request test'''
 if __name__=='__main__':
     suite = unittest.TestSuite()
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(MyTest))
