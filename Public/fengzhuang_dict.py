@@ -3,9 +3,7 @@
 @file: python_dict.py 
 @time: 2018/6/15 13:54 
 """
-dictone={'control': {'expires': 1800},
-         'status': 0, 'data': {'hasNext': 1,
-                               'movies': [{'showInfo': '今天205家影院放映5078场'}]}}
+'''字典取值'''
 def res(d,code):
     result=[]
     if isinstance(d, dict) and code in d.keys():

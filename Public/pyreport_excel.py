@@ -19,31 +19,31 @@ def yangshi1():
     style.font.height = 430  # 设置字体大小
     return style
 def yangshi2():
-	style1 = XFStyle()
-	alignment = xlwt.Alignment()
-	alignment.horz = xlwt.Alignment.HORZ_CENTER
-	alignment.vert = xlwt.Alignment.VERT_CENTER 
-	style1.alignment = alignment  # 给样式添加文字居中属性
-	style1.font.height = 330  # 设置字体大小
-	return style1
+    style1 = XFStyle()
+    alignment = xlwt.Alignment()
+    alignment.horz = xlwt.Alignment.HORZ_CENTER
+    alignment.vert = xlwt.Alignment.VERT_CENTER
+    style1.alignment = alignment  # 给样式添加文字居中属性
+    style1.font.height = 330  # 设置字体大小
+    return style1
 def yangshi3():
-	style1 = XFStyle()
-	style1.font.height = 330  # 设置字体大小
-	return style1
+    style1 = XFStyle()
+    style1.font.height = 330  # 设置字体大小
+    return style1
 def yangshique(me):
-	if me =='pass':
-		style=yangshi1()
-		Pattern=xlwt.Pattern()
-		Pattern.pattern=xlwt.Pattern.SOLID_PATTERN
-		Pattern.pattern_fore_colour=xlwt.Style.colour_map['green']
-		style.pattern=Pattern
-	else :
-		style=yangshi2()
-		Pattern=xlwt.Pattern()
-		Pattern.pattern=xlwt.Pattern.SOLID_PATTERN
-		Pattern.pattern_fore_colour=xlwt.Style.colour_map['red']
-		style.pattern=Pattern
-	return style
+    if me =='pass':
+        style=yangshi1()
+        Pattern=xlwt.Pattern()
+        Pattern.pattern=xlwt.Pattern.SOLID_PATTERN
+        Pattern.pattern_fore_colour=xlwt.Style.colour_map['green']
+        style.pattern=Pattern
+    else :
+        style=yangshi2()
+        Pattern=xlwt.Pattern()
+        Pattern.pattern=xlwt.Pattern.SOLID_PATTERN
+        Pattern.pattern_fore_colour=xlwt.Style.colour_map['red']
+        style.pattern=Pattern
+    return style
 def create(filename,list_pass,list_fail,listids,listnames,listkeys,listconeents,listurls,listfangshis,listqiwangs,list_json,listrelust):
     filepath = open(r'.\config\test_report.yaml', encoding='utf-8')
     file_config = yaml.load(filepath)

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Date    : 2017-10-14 15:35:17
 # @Author  : leizi
+'''日志模块'''
 import os
 import logbook
 from logbook.more import ColorizedStderrHandler

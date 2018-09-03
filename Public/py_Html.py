@@ -31,7 +31,7 @@ def title(titles):
 	'''%(titles)
     return title
 connent='''
-<div  class='col-md-4 col-md-offset-4'>
+<div  class='col-md-4 col-md-offset-4' style='margin-left:3%;'>
 <h1>接口测试的结果</h1>'''
 def shouye(starttime,endtime,passge,fail,excepthions,weizhicuowu):
     beijing='''

@@ -1,0 +1,10 @@
+[2018-08-10 09:01:33.547803] INFO: jiekou: 当前模块 requests封装
+[2018-08-10 09:01:33.548803] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-08-10 09:01:33.549803] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-08-10 09:01:33.704812] INFO: jiekou: 当前模块 生成数据驱动所用数据
+[2018-08-10 09:01:33.705812] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-08-10 09:01:33.705812] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-08-10 09:01:33.705812] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-08-10 09:01:33.706812] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case\\case.xlsx',)
+[2018-08-10 09:01:33.706812] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-08-10 09:01:33.706812] INFO: jiekou: 打开测试用例失败，原因是:<class 'Exception'>

@@ -2,7 +2,6 @@
 # @Time    : 2017/6/4 20:35
 # @Author  : lileilei
 # @File    : get_excel.py
-# @Software: PyCharm
 import xlrd
 from Public.log  import LOG,logger
 @logger('解析测试用例文件')
@@ -28,7 +27,9 @@ def datacel(filrpath):
             listfangshi.append((me.cell(i,5).value))
             listqiwang.append((me.cell(i,6).value))
         return listid,listkey,listconeent,listurl,listfangshi,listqiwang,listname
-    except:LOG.info('打开测试用例失败，原因是:%s'%Exception)
+    except Exception as e:
+        LOG.info('打开测试用例失败，原因是:%s'%e)
+        return
 @logger('生成数据驱动所用数据')
 def makedata():
     import os
