@@ -5,3 +5,4 @@
 """
 Dingtalk_access_token=""
 TestPlanUrl=''
+Config_Try_Num=3

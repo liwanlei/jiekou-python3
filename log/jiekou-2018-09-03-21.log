@@ -1,0 +1,728 @@
+[2018-09-03 21:00:14.979081] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:00:14.981081] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:00:14.981081] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:00:15.000082] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:00:15.001082] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:00:15.002082] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:00:15.014083] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:00:15.015083] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:00:15.016083] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:00:15.020083] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:00:15.020083] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:00:15.021083] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:00:15.063086] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:00:15.064086] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:00:15.064086] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:00:15.065086] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:00:15.095087] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:00:15.096087] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:00:15.097087] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:00:15.097087] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:00:15.448108] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:00:15.450108] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:00:15.451108] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:00:15.453108] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:00:15.455108] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:00:48.337989] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:00:48.338989] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:00:48.339989] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:00:48.358990] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:00:48.359990] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:00:48.360990] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:00:48.374991] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:00:48.375991] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:00:48.375991] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:00:48.379991] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:00:48.380991] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:00:48.381991] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:00:48.421994] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:00:48.422994] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:00:48.423994] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:00:48.424994] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:00:48.465996] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:00:48.466996] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:00:48.467996] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:00:48.467996] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:00:48.822016] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:00:48.823016] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:00:48.823016] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:00:48.824017] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:00:48.825017] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:01:42.977114] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:01:42.978114] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:01:42.979114] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:01:42.998115] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:01:42.999115] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:01:43.000115] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:01:43.013116] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:01:43.014116] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:01:43.014116] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:01:43.018116] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:01:43.019116] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:01:43.020116] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:01:43.055118] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:01:43.056118] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:01:43.057118] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:01:43.058119] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:01:43.093121] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:01:43.094121] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:01:43.094121] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:01:43.095121] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:01:43.454141] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:01:43.455141] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:01:43.456141] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:01:43.457141] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:01:43.457141] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:03:05.523835] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:03:05.524835] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:05.525835] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:03:05.544837] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:03:05.545837] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:03:05.546837] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:03:05.558837] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:03:05.559837] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:03:05.559837] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:03:05.563838] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:03:05.564838] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:05.565838] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:03:05.599840] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:03:05.600840] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:03:05.600840] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:05.601840] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:03:05.645842] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:03:05.647842] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:03:05.648842] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:05.650843] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:03:06.035865] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:03:06.037865] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:03:06.039865] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:06.041865] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:03:06.042865] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:03:20.237677] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:03:20.238677] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:20.239677] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:03:20.257678] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:03:20.257678] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:03:20.258678] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:03:20.271679] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:03:20.272679] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:03:20.272679] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:03:20.277679] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:03:20.277679] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:20.278679] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:03:20.313681] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:03:20.313681] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:03:20.314681] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:20.315681] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:03:20.346683] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:03:20.347683] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:03:20.347683] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:20.348683] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:03:20.908715] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:03:20.910715] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:03:20.912716] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:20.913716] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:03:20.915716] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:03:56.385744] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:03:56.386745] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:56.386745] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:03:56.405746] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:03:56.406746] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:03:56.407746] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:03:56.420746] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:03:56.420746] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:03:56.421747] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:03:56.425747] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:03:56.425747] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:56.426747] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:03:56.461749] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:03:56.462749] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:03:56.464749] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:56.464749] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:03:56.498751] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:03:56.499751] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:03:56.500751] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:56.500751] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:03:56.852771] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:03:56.854771] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:03:56.855771] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:03:56.857771] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:03:56.859772] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:04:18.159990] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:04:18.160990] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:04:18.160990] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:04:18.180991] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:04:18.181991] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:04:18.182991] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:04:18.195992] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:04:18.196992] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:04:18.196992] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:04:18.200992] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:04:18.201992] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:04:18.202992] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:04:18.260996] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:04:18.261996] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:04:18.262996] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:04:18.262996] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:04:18.322999] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:04:18.323999] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:04:18.324999] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:04:18.324999] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:04:18.726022] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:04:18.728022] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:04:18.730022] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:04:18.732023] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:04:18.733023] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:05:19.686509] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:05:19.687509] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:05:19.688509] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:05:19.710510] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:05:19.710510] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:05:19.711510] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:05:19.724511] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:05:19.725511] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:05:19.726511] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:05:19.730511] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:05:19.731512] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:05:19.732512] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:05:19.826517] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:05:19.827517] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:05:19.828517] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:05:19.829517] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:05:19.857519] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:05:19.857519] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:05:19.858519] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:05:19.859519] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:05:20.226540] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:05:20.227540] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:05:20.228540] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:05:20.228540] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:05:20.229540] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:06:20.885009] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:06:20.886009] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:06:20.886009] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:06:20.907011] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:06:20.907011] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:06:20.908011] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:06:20.921011] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:06:20.922011] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:06:20.923012] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:06:20.926012] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:06:20.927012] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:06:20.928012] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:06:20.964014] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:06:20.965014] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:06:20.966014] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:06:20.966014] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:06:20.998016] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:06:20.999016] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:06:20.999016] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:06:21.000016] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:06:21.400039] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:06:21.402039] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:06:21.404039] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:06:21.405039] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:06:21.407039] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:07:54.807381] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:07:54.809382] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:07:54.809382] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:07:54.829383] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:07:54.830383] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:07:54.831383] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:07:54.844384] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:07:54.845384] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:07:54.846384] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:07:54.849384] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:07:54.850384] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:07:54.851384] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:07:54.918388] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:07:54.920388] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:07:54.922388] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:07:54.924388] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:07:54.968391] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:07:54.970391] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:07:54.972391] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:07:54.974391] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:07:55.360413] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:07:55.361413] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:07:55.362413] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:07:55.362413] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:07:55.363413] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:09:20.672293] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:09:20.674293] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:09:20.674293] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:09:20.693294] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:09:20.694294] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:09:20.694294] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:09:20.708295] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:09:20.709295] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:09:20.709295] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:09:20.713295] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:09:20.714295] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:09:20.715295] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:09:20.749297] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:09:20.750297] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:09:20.750297] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:09:20.751297] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:09:20.775298] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:09:20.776299] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:09:20.777299] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:09:20.778299] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:09:21.132319] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:09:21.133319] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:09:21.134319] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:09:21.135319] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:09:21.135319] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:09:41.395478] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:09:41.396478] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:09:41.396478] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:09:41.416479] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:09:41.417479] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:09:41.417479] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:09:41.431480] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:09:41.432480] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:09:41.433480] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:09:41.436480] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:09:41.437480] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:09:41.438480] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:09:41.497484] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:09:41.498484] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:09:41.499484] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:09:41.500484] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:09:41.555487] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:09:41.557487] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:09:41.559487] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:09:41.560487] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:09:41.952510] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:09:41.952510] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:09:41.953510] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:09:41.954510] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:09:41.954510] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:10:31.548346] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:10:31.549347] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:10:31.549347] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:10:31.568348] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:10:31.569348] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:10:31.570348] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:10:31.582348] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:10:31.583348] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:10:31.584349] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:10:31.588349] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:10:31.589349] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:10:31.590349] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:10:31.627351] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:10:31.628351] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:10:31.629351] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:10:31.629351] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:10:31.658353] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:10:31.659353] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:10:31.660353] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:10:31.661353] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:10:32.039375] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:10:32.041375] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:10:32.043375] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:10:32.045375] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:10:32.046375] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:11:28.736617] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:11:28.737617] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:11:28.738618] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:11:28.757619] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:11:28.757619] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:11:28.758619] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:11:28.770619] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:11:28.771619] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:11:28.772619] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:11:28.776620] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:11:28.776620] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:11:28.777620] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:11:28.810622] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:11:28.811622] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:11:28.812622] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:11:28.813622] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:11:28.843624] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:11:28.844624] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:11:28.845624] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:11:28.845624] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:11:29.193644] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:11:29.195644] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:11:29.196644] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:11:29.198644] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:11:29.200644] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:12:06.647786] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:12:06.648786] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:12:06.648786] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:12:06.666787] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:12:06.667787] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:12:06.667787] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:12:06.679788] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:12:06.680788] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:12:06.680788] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:12:06.684788] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:12:06.685788] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:12:06.685788] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:12:06.774793] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:12:06.776793] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:12:06.777793] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:12:06.779793] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:12:06.811795] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:12:06.813795] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:12:06.815795] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:12:06.816796] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:12:07.189817] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:12:07.190817] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:12:07.190817] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:12:07.192817] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:12:07.193817] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:12:47.662132] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:12:47.663132] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:12:47.664132] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:12:47.683133] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:12:47.684133] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:12:47.685133] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:12:47.699134] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:12:47.700134] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:12:47.701134] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:12:47.705134] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:12:47.706134] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:12:47.706134] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:12:47.774138] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:12:47.776138] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:12:47.778138] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:12:47.779138] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:12:47.811140] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:12:47.812140] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:12:47.813140] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:12:47.815140] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:12:48.167161] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:12:48.167161] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:12:48.168161] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:12:48.169161] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:12:48.170161] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:13:09.575385] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:13:09.576385] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:09.577385] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:13:09.595386] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:13:09.596386] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:13:09.597386] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:13:09.610387] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:13:09.611387] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:13:09.611387] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:13:09.616387] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:13:09.617387] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:09.618388] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:13:09.655390] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:13:09.656390] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:13:09.656390] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:09.657390] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:13:09.682391] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:13:09.683391] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:13:09.684391] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:09.685391] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:13:10.041412] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:13:10.043412] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:13:10.045412] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:10.046412] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:13:10.048412] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:13:18.356887] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:13:18.358887] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:18.360888] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:13:18.384889] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:13:18.386889] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:13:18.387889] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:13:18.409890] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:13:18.410890] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:13:18.411891] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:13:18.418891] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:13:18.420891] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:18.421891] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:13:18.499896] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:13:18.501896] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:13:18.503896] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:18.505896] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:13:18.543898] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:13:18.544898] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:13:18.546898] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:18.547898] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:13:18.962922] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:13:18.964922] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:13:18.965922] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:18.967922] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:13:18.968922] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:13:52.164821] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:13:52.166821] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:52.167821] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:13:52.186822] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:13:52.187822] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:13:52.188822] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:13:52.201823] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:13:52.201823] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:13:52.202823] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:13:52.206823] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:13:52.207824] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:52.208824] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:13:52.246826] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:13:52.247826] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:13:52.248826] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:52.248826] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:13:52.278828] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:13:52.279828] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:13:52.280828] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:52.280828] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:13:52.659849] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:13:52.661849] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:13:52.663850] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:13:52.664850] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:13:52.666850] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:14:27.508843] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:14:27.509843] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:14:27.509843] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:14:27.527844] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:14:27.528844] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:14:27.529844] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:14:27.541845] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:14:27.542845] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:14:27.542845] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:14:27.546845] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:14:27.547845] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:14:27.548845] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:14:27.587847] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:14:27.588847] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:14:27.588847] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:14:27.589847] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:14:27.630850] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:14:27.632850] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:14:27.635850] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:14:27.636850] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:14:28.005871] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:14:28.006871] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:14:28.007871] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:14:28.007871] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:14:28.008871] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:16:03.132312] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:16:03.133312] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:16:03.134312] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:16:03.152313] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:16:03.153313] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:16:03.154313] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:16:03.166314] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:16:03.166314] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:16:03.167314] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:16:03.171314] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:16:03.172314] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:16:03.173314] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:16:03.541335] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:16:03.544336] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:16:03.545336] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:16:03.547336] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:16:03.577337] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:16:03.578337] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:16:03.579338] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:16:03.580338] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:16:03.938358] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:16:03.940358] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:16:03.942358] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:16:03.943358] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:16:03.945358] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:16:53.144172] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:16:53.145173] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:16:53.146173] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:16:53.164174] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:16:53.165174] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:16:53.166174] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:16:53.178174] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:16:53.179174] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:16:53.179174] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:16:53.183175] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:16:53.184175] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:16:53.185175] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:16:53.219177] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:16:53.220177] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:16:53.221177] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:16:53.221177] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:16:53.257179] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:16:53.258179] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:16:53.259179] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:16:53.260179] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:16:53.620200] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:16:53.621200] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:16:53.622200] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:16:53.623200] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:16:53.623200] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:17:30.573313] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:17:30.574313] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:17:30.575313] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:17:30.594315] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:17:30.595315] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:17:30.596315] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:17:30.609315] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:17:30.610315] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:17:30.610315] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:17:30.615316] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:17:30.616316] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:17:30.616316] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:17:30.662318] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:17:30.662318] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:17:30.663318] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:17:30.664319] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:17:30.692320] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:17:30.693320] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:17:30.693320] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:17:30.694320] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:17:31.064341] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:17:31.065341] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:17:31.066342] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:17:31.067342] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:17:31.068342] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:18:05.360303] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:18:05.361303] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:18:05.362303] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:18:05.381304] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:18:05.382304] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:18:05.383304] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:18:05.395305] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:18:05.396305] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:18:05.397305] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:18:05.401305] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:18:05.402305] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:18:05.402305] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:18:05.440308] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:18:05.441308] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:18:05.441308] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:18:05.442308] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:18:05.505311] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:18:05.507311] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:18:05.509312] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:18:05.511312] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:18:05.899334] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:18:05.900334] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:18:05.901334] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:18:05.902334] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:18:05.902334] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:18:36.510085] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:18:36.511085] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:18:36.512085] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:18:36.532086] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:18:36.533086] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:18:36.534086] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:18:36.547087] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:18:36.547087] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:18:36.548087] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:18:36.552087] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:18:36.553087] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:18:36.554087] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:18:36.599090] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:18:36.600090] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:18:36.601090] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:18:36.601090] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:18:36.634092] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:18:36.635092] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:18:36.636092] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:18:36.637092] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:18:37.019114] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:18:37.021114] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:18:37.023114] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:18:37.024114] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:18:37.026114] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:22:33.571644] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:22:33.572644] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:22:33.572644] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:22:33.595645] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:22:33.596645] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:22:33.597645] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:22:33.618647] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:22:33.619647] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:22:33.621647] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:22:33.625647] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:22:33.626647] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:22:33.627647] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:22:33.658649] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:22:33.659649] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:22:33.660649] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:22:33.661649] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:22:33.685650] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:22:33.686650] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:22:33.687650] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:22:33.688651] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:22:34.014669] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:22:34.016669] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:22:34.018669] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:22:34.019669] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:22:34.020670] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:25:22.800323] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:25:22.801323] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:25:22.802323] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:25:22.822324] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:25:22.823324] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:25:22.824325] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:25:22.838325] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:25:22.839325] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:25:22.840325] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:25:22.845326] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:25:22.845326] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:25:22.846326] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:25:22.882328] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:25:22.883328] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:25:22.884328] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:25:22.885328] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:25:22.912330] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:25:22.913330] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:25:22.914330] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:25:22.915330] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:25:23.261350] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:25:23.263350] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:25:23.264350] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:25:23.266350] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:25:23.268350] INFO: jiekou: 填写测试预期值
+[2018-09-03 21:25:58.658374] INFO: jiekou: 当前模块 requests封装
+[2018-09-03 21:25:58.659374] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:25:58.660374] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:25:58.681375] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:25:58.681375] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:25:58.682375] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:25:58.695376] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-03 21:25:58.696376] INFO: jiekou: 全部args参数参数信息 , ('F:\\xuexi\\jiejko\\test_case_data\\case.xlsx',)
+[2018-09-03 21:25:58.697376] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:25:58.703377] INFO: jiekou: 当前模块 测试
+[2018-09-03 21:25:58.704377] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:25:58.704377] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-03 21:25:58.735379] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40001
+[2018-09-03 21:25:58.736379] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:25:58.737379] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:25:58.738379] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40001', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:25:58.767380] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:http://www.tuling123.com/openapi/api
+ ,返回:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}},预期:code=40002
+[2018-09-03 21:25:58.768380] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:25:58.769380] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:25:58.770381] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': 'code=40002', 'fanhuijson': {'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}}
+[2018-09-03 21:25:59.132401] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-03 21:25:59.134401] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-03 21:25:59.136401] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-03 21:25:59.137402] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-03 21:25:59.139402] INFO: jiekou: 填写测试预期值
