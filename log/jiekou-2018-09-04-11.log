@@ -1,0 +1,392 @@
+[2018-09-04 11:06:18.228895] INFO: jiekou: 当前模块 requests封装
+[2018-09-04 11:06:18.229895] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:06:18.229895] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:06:18.242896] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:06:18.242896] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:06:18.242896] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:06:18.258897] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:06:18.258897] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:06:18.258897] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:06:18.261897] INFO: jiekou: 当前模块 测试
+[2018-09-04 11:06:18.261897] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:06:18.261897] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:06:19.266954] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047BB438>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:06:20.271012] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806518>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:06:21.276069] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:06:22.279127] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047CE048>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:06:23.283184] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806240>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:06:24.289242] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004810358>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:06:25.293299] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004810B38>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:06:26.297356] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000481B358>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:06:26.402362] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:06:26.402362] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:06:26.403363] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:06:26.403363] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:06:26.403363] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:06:27.252411] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:06:27.253411] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:06:27.253411] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:06:27.253411] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:06:27.253411] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:06:27.338416] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:06:27.338416] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:06:27.339416] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:06:27.339416] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:06:27.339416] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:06:28.168463] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:06:28.168463] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:06:28.169464] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:06:28.169464] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:06:28.169464] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:07:20.222441] INFO: jiekou: 当前模块 requests封装
+[2018-09-04 11:07:20.222441] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:07:20.223441] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:07:20.236442] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:07:20.237442] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:07:20.237442] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:07:20.247442] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:07:20.248442] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:07:20.248442] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:07:20.251442] INFO: jiekou: 当前模块 测试
+[2018-09-04 11:07:20.251442] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:07:20.251442] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:07:21.256500] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047BCB38>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:22.260557] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806518>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:23.265615] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:24.278673] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047CD240>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:25.282730] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000048064A8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:26.285788] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000048112E8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:27.289845] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004811AC8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:28.291902] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000481D2E8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:29.296960] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004811BE0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:30.301017] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000048113C8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:31.303075] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806E10>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:32.307132] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806A20>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:33.309189] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047BC0B8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:34.313247] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047CD550>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:35.330305] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000479D048>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:37.820447] INFO: jiekou: 当前模块 requests封装
+[2018-09-04 11:07:37.820447] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:07:37.820447] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:07:37.833448] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:07:37.833448] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:07:37.833448] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:07:37.843449] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:07:37.844449] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:07:37.844449] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:07:37.846449] INFO: jiekou: 当前模块 测试
+[2018-09-04 11:07:37.846449] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:07:37.847449] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:07:38.851506] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047BF6D8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:39.855564] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000048064A8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:40.860621] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806C88>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:41.863679] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047CD7B8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:42.867736] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806438>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:43.871793] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000048112E8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:44.877851] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004811AC8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:45.881908] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000481D2E8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:07:45.983914] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:07:45.983914] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:07:45.983914] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:07:45.984914] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:07:45.984914] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:07:46.047918] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:07:46.048918] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:07:46.048918] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:07:46.048918] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:07:46.049918] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:07:46.136923] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:07:46.136923] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:07:46.136923] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:07:46.137923] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:07:46.137923] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:07:46.210927] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:07:46.210927] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:07:46.210927] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:07:46.211927] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:07:46.211927] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:08:19.819850] INFO: jiekou: 当前模块 requests封装
+[2018-09-04 11:08:19.819850] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:08:19.819850] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:08:19.831850] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:08:19.831850] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:08:19.832850] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:08:19.842851] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:08:19.842851] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:08:19.842851] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:08:19.845851] INFO: jiekou: 当前模块 测试
+[2018-09-04 11:08:19.845851] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:08:19.845851] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:08:20.850909] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047BCB00>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:08:21.854966] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806518>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:08:22.857023] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:08:23.870081] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047CD5F8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:08:24.872139] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806240>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:08:25.871196] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004811358>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:08:26.875253] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004811B38>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:08:27.879311] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000481D358>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:08:27.960315] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:08:27.961315] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:08:27.961315] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:08:27.961315] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:08:27.961315] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:08:28.027319] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:08:28.028319] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:08:28.028319] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:08:28.028319] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:08:28.029319] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:08:28.110324] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:08:28.110324] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:08:28.110324] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:08:28.110324] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:08:28.110324] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:08:28.178328] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:08:28.179328] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:08:28.179328] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:08:28.179328] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:08:28.179328] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:08:28.248332] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:08:28.248332] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:08:28.249332] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:08:28.249332] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:08:28.249332] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:09:50.874058] INFO: jiekou: 当前模块 requests封装
+[2018-09-04 11:09:50.874058] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:09:50.874058] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:09:50.886058] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:09:50.887058] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:09:50.887058] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:09:50.897059] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:09:50.897059] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:09:50.897059] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:09:50.900059] INFO: jiekou: 当前模块 测试
+[2018-09-04 11:09:50.900059] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:09:50.900059] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:09:51.905117] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047BC198>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:09:52.907174] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806518>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:09:53.912231] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:09:54.915289] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047BC4A8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:09:55.919346] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806240>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:09:56.923404] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004811358>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:09:57.931461] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004811B38>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:09:58.935519] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000481D358>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:09:59.023524] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:09:59.024524] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:09:59.024524] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:09:59.024524] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:09:59.024524] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:09:59.164532] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:09:59.164532] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:09:59.164532] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:09:59.165532] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:09:59.165532] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:09:59.252537] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:09:59.253537] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:09:59.253537] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:09:59.253537] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:09:59.254537] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:09:59.337542] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:09:59.338542] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:09:59.338542] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:09:59.338542] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:09:59.339542] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:11:03.843231] INFO: jiekou: 当前模块 requests封装
+[2018-09-04 11:11:03.843231] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:11:03.843231] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:11:03.858232] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:11:03.858232] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:11:03.858232] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:11:03.869233] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:11:03.869233] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:11:03.869233] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:11:03.872233] INFO: jiekou: 当前模块 测试
+[2018-09-04 11:11:03.872233] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:11:03.872233] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:11:04.877290] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047BB780>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:05.881348] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806518>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:06.886405] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:07.889463] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047CD668>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:08.893520] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806240>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:09.897577] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004811358>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:10.901635] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004811B38>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:11.903692] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000481C358>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:12.005698] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:11:12.005698] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:11:12.006698] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:11:12.006698] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:11:12.006698] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:11:12.096703] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:11:12.097703] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:11:12.097703] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:11:12.097703] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:11:12.098703] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:11:12.177708] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:11:12.177708] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:11:12.177708] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:11:12.177708] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:11:12.178708] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:11:12.249712] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:11:12.250712] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:11:12.250712] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:11:12.250712] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:11:12.250712] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:11:32.768886] INFO: jiekou: 当前模块 requests封装
+[2018-09-04 11:11:32.768886] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:11:32.769886] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:11:32.781886] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:11:32.781886] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:11:32.781886] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:11:32.796887] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:11:32.797887] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:11:32.797887] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:11:32.800887] INFO: jiekou: 当前模块 测试
+[2018-09-04 11:11:32.800887] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:11:32.800887] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:11:33.815946] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047BB4E0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:34.820003] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004807518>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:35.824060] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004807CF8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:36.826118] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047C90F0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:37.830175] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004807240>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:38.834233] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004810358>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:39.838290] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004810B38>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:40.842347] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000481B358>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:11:40.938353] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:11:40.938353] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:11:40.939353] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:11:40.939353] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:11:40.939353] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:11:41.030358] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:11:41.031358] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:11:41.031358] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:11:41.031358] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:11:41.032358] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:11:41.109363] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:11:41.109363] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:11:41.110363] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:11:41.110363] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:11:41.110363] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:11:41.182367] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:11:41.182367] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:11:41.182367] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:11:41.183367] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:11:41.183367] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:35:26.286878] INFO: jiekou: 当前模块 requests封装
+[2018-09-04 11:35:26.286878] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:35:26.286878] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:35:26.305879] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:35:26.306879] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:35:26.306879] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:35:26.316880] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:35:26.317880] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:35:26.317880] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:35:26.320880] INFO: jiekou: 当前模块 测试
+[2018-09-04 11:35:26.320880] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:35:26.320880] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:35:27.325938] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047C06A0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:35:28.332995] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000048064A8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:35:29.335053] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806C88>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:35:30.347110] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000477CA20>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:35:31.351168] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806438>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:35:32.355225] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000048112E8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:35:33.358283] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004811AC8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:35:34.362340] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000481D2E8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:35:34.440345] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:35:34.440345] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:35:34.440345] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:35:34.441345] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:35:34.441345] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:35:34.518349] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:35:34.518349] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:35:34.519349] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:35:34.519349] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:35:34.519349] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:35:34.603354] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:35:34.603354] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:35:34.604354] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:35:34.604354] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:35:34.604354] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:35:34.911371] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:35:34.911371] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:35:34.912372] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:35:34.912372] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:35:34.912372] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:44:00.921314] INFO: jiekou: 当前模块 requests封装
+[2018-09-04 11:44:00.922314] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:44:00.922314] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:44:00.938315] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:44:00.939315] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:44:00.939315] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:44:00.949315] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:44:00.950315] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:44:00.950315] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:44:00.952315] INFO: jiekou: 当前模块 测试
+[2018-09-04 11:44:00.953315] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:44:00.953315] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:44:01.958373] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047BF160>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:44:01.958373] INFO: jiekou: 失败重试中
+[2018-09-04 11:44:02.960430] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:44:02.960430] INFO: jiekou: 失败重试中
+[2018-09-04 11:44:03.963488] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806C50>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:44:03.963488] INFO: jiekou: 失败重试中
+[2018-09-04 11:44:04.971545] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047C5198>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:44:04.972545] INFO: jiekou: 失败重试中次数用完，最后结果
+[2018-09-04 11:44:05.980603] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000048062B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:44:05.981603] INFO: jiekou: 失败重试中
+[2018-09-04 11:44:06.984660] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000048102B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:44:06.985660] INFO: jiekou: 失败重试中
+[2018-09-04 11:44:07.988718] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004810A90>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:44:07.989718] INFO: jiekou: 失败重试中
+[2018-09-04 11:44:08.992775] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api%0A?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000481D2B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:44:08.993775] INFO: jiekou: 失败重试中次数用完，最后结果
+[2018-09-04 11:44:09.078780] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:44:09.078780] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:44:09.079780] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:44:09.079780] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:44:09.079780] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:44:09.079780] INFO: jiekou: 失败重试中
+[2018-09-04 11:44:09.148784] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:44:09.149784] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:44:09.149784] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:44:09.149784] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:44:09.150784] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:44:09.150784] INFO: jiekou: 失败重试中
+[2018-09-04 11:44:09.385798] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:44:09.386798] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:44:09.386798] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:44:09.387798] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:44:09.387798] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:44:09.387798] INFO: jiekou: 失败重试中
+[2018-09-04 11:44:09.466802] INFO: jiekou: inputdata> 参数:{'password':'1222'}, url:https://api.douban.com/v2/photo/:id ,返回:{'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}},预期:
+[2018-09-04 11:44:09.466802] INFO: jiekou: 当前模块 断言测试结果
+[2018-09-04 11:44:09.467802] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:44:09.467802] INFO: jiekou: 全部kwargs参数信息 , {'asserqiwang': '', 'fanhuijson': {'code': 0, 'result': {'msg': 'uri_not_found', 'code': 1001, 'request': 'GET /v2/photo/:id'}}}
+[2018-09-04 11:44:09.467802] INFO: jiekou: 填写测试预期值
+[2018-09-04 11:44:09.467802] INFO: jiekou: 失败重试中次数用完，最后结果
+[2018-09-04 11:48:05.444300] INFO: jiekou: 当前模块 requests封装
+[2018-09-04 11:48:05.444300] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:48:05.444300] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:48:05.464301] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:48:05.464301] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:48:05.464301] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:48:05.475301] INFO: jiekou: 当前模块 解析测试用例文件
+[2018-09-04 11:48:05.475301] INFO: jiekou: 全部args参数参数信息 , ('C:\\Users\\Administrator\\Desktop\\xuesheng\\jiekou-python3\\test_case_data\\case.xlsx',)
+[2018-09-04 11:48:05.476301] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:48:05.478301] INFO: jiekou: 当前模块 测试
+[2018-09-04 11:48:05.478301] INFO: jiekou: 全部args参数参数信息 , ()
+[2018-09-04 11:48:05.479302] INFO: jiekou: 全部kwargs参数信息 , {}
+[2018-09-04 11:48:06.484359] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047CDD30>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:48:06.485359] INFO: jiekou: 失败重试中
+[2018-09-04 11:48:07.498417] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806390>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:48:07.498417] INFO: jiekou: 失败重试中
+[2018-09-04 11:48:08.502474] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806B70>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:48:08.502474] INFO: jiekou: 失败重试中
+[2018-09-04 11:48:09.506532] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000035C5BA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:48:09.507532] INFO: jiekou: 失败重试中次数用完，最后结果
+[2018-09-04 11:48:10.510589] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004806400>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:48:10.511589] INFO: jiekou: 失败重试中
+[2018-09-04 11:48:11.514647] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000480F198>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:48:11.514647] INFO: jiekou: 失败重试中
+[2018-09-04 11:48:12.517704] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000480F978>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:48:12.518704] INFO: jiekou: 失败重试中
+[2018-09-04 11:48:13.521762] INFO: jiekou: post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000481D198>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))
+[2018-09-04 11:48:13.522762] INFO: jiekou: 失败重试中次数用完，最后结果

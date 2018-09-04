@@ -1,15 +1,22 @@
 # 接口测试框架（基于json格式、http协议，dubbo协议请求,python3,不兼容python2.x版本） 
 ##  java实现版本：https://github.com/liwanlei/java_jiekou
 ## 注：现在基于Excel文件管理测试用例基本实现,)
+
+# 2018-9-14版本修改
+### 1.失败用例重试功能，失败用例可以重试，重试次数可配置
+### 2.去掉重复的功能
+### 3.基础url可以在config配置，只需要写api
+
 # 2018-3-13版本修改
 ### 原来的测试报告更加详细的展示错误类型，对部分代码进行了优化，断言结果返回更加详细，更快的定位测试问题
+
 ## (目前在部分window上会出现FileNotFoundError [Errno 2] No such file or directory，这个bug是路径过长,解决方案为吧log日志放在当前目录，或者修改动态生成的文件的名字，给了第一种方式，测试日志放在当前目录）
 ## qq交流群：194704520  一群   683894834 二群
 ### 使用的库 requests，绝大部分是基于Python原有的库进行的，这样简单方便，
 # 友情推荐本人其他开源代码：
-#      1.python接口测试平台版本!(https://github.com/liwanlei/FXTest)
-#      2.python app自动化测试平台版本：(https://github.com/liwanlei/UFATestPlan)
-#      3.python+flask 做后台，实现微信小程序：(https://github.com/liwanlei/webchat_app)
+#      1.python接口测试平台版本!https://github.com/liwanlei/FXTest
+#      2.python app自动化测试平台版本：https://github.com/liwanlei/UFATestPlan
+#      3.python+flask 做后台，实现微信小程序：https://github.com/liwanlei/webchat_app
 ### 使用脚本参数分离等思想，尽可能降低代码的耦合度。
 # 2017-11-1版本修改
 ## 引入ddt数据驱动和BSTestRunner，并且测试过程使用python的unittest库，运行可以使用run_new来运行测试，新的运行更加简单，对预期结果进行了自定义，

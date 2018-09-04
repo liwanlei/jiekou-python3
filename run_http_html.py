@@ -5,6 +5,7 @@ from testCase.case import testinterface
 from Public.py_Html import createHtml
 from Public.get_excel import datacel
 from  Public.Dingtalk import send_ding
+'''执行测试的主要文件'''
 def start_interface_html_http():
     starttime=datetime.datetime.now()
     day= time.strftime("%Y%m%d%H%M", time.localtime(time.time()))
@@ -20,8 +21,8 @@ def start_interface_html_http():
                endtime=endtime,passge=list_pass,fail=list_fail,
                id=listid,name=listname,key=listkey,coneent=listconeent,url=listurl,meth=listfangshi,
                yuqi=listqiwang,json=list_json,relusts=listrelust,weizhi=list_weizhi,exceptions=list_exption)
-    #contec = u'http接口自动化测试完成，测试通过:%s,测试失败：%s，异常:%s,未知错误：%s,详情见：%s' % (
-    #list_pass, list_fail, list_exption, list_weizhi, filepath)
-    #send_ding(content=contec)
+    contec = u'http接口自动化测试完成，测试通过:%s,测试失败：%s，异常:%s,未知错误：%s,详情见：%s' % (
+    list_pass, list_fail, list_exption, list_weizhi, filepath)
+    send_ding(content=contec)
 if __name__ == '__main__':
     start_interface_html_http()

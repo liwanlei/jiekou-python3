@@ -25,14 +25,14 @@
     <table  class="table table-hover table-condensed">
             <tbody>
                 <tr>
-		<td><strong>开始时间:</strong> 2018-09-03 21:25:58.695376</td>
+		<td><strong>开始时间:</strong> 2018-09-04 11:48:05.475301</td>
 		</tr>
-		<td><strong>结束时间:</strong> 2018-09-03 21:25:59.179404</td></tr>
-		<td><strong>耗时:</strong> 0:00:00.484028</td></tr>
+		<td><strong>结束时间:</strong> 2018-09-04 11:48:13.579765</td></tr>
+		<td><strong>耗时:</strong> 0:00:08.104464</td></tr>
 		<td><strong>结果:</strong>
 			<span >Pass: <strong >0</strong>
-			Fail: <strong >2</strong>
-			       exception: <strong >1</strong> 
+			Fail: <strong >0</strong>
+			       exception: <strong >2</strong> 
 			       weizhicuowu : <strong >0</strong></span></td>                  
 			   </tr> 
 			   </tbody></table>
@@ -60,40 +60,27 @@
             <td><strong>结果</strong></td>
         </tr>
      
-        <tr class="case-tr warning">
+        <tr class="case-tr error">
             <td>1.0</td>
             <td>图灵api接口</td>
             <td>aaaa</td>
             <td>{'password':'1222'}</td>
-            <td>http://www.tuling123.com/openapi/api</td>
+            <td>/openapi/api</td>
             <td>POST</td>
             <td>code=40001</td>
-            <td>{'code': 40007, 'text': '您的请求内容为空。'}</td>
-            <td bgcolor="fail">fail</td>
+            <td>post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22aaaa%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000035C5BA8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))</td>
+            <td bgcolor="crimson">exect</td>
         </tr>
     
-        <tr class="case-tr warning">
+        <tr class="case-tr error">
             <td>2.0</td>
             <td>图灵api接口</td>
             <td>dfeb1cc8125943d29764a2f2f5c33739</td>
             <td>{'password':'1222'}</td>
-            <td>http://www.tuling123.com/openapi/api
-</td>
+            <td>/openapi/api</td>
             <td>POST</td>
             <td>code=40002</td>
-            <td>{'code': 40007, 'text': '您的请求内容为空。'}</td>
-            <td bgcolor="fail">fail</td>
-        </tr>
-    
-        <tr class="case-tr error">
-            <td>3.0</td>
-            <td>豆瓣api</td>
-            <td>dfeb1cc8125943d29764a2f2f5c33739</td>
-            <td>{'password':'1222'}</td>
-            <td>https://api.douban.com/v2/photo/:id</td>
-            <td>GET</td>
-            <td></td>
-            <td>填写测试预期值</td>
+            <td>post请求出错，出错原因:HTTPConnectionPool(host='127.0.0.1', port=8888): Max retries exceeded with url: http://www.tuling123.com/openapi/api?%7B%22key%22:%20%22dfeb1cc8125943d29764a2f2f5c33739%22,%20%22info%22:%20%22%7B'password':'1222'%7D%22%7D (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000481D198>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',)))</td>
             <td bgcolor="crimson">exect</td>
         </tr>
     </div></div></table><script src="https://code.jquery.com/jquery.js"></script>
