@@ -12,6 +12,7 @@
 
 ## (目前在部分window上会出现FileNotFoundError [Errno 2] No such file or directory，这个bug是路径过长,解决方案为吧log日志放在当前目录，或者修改动态生成的文件的名字，给了第一种方式，测试日志放在当前目录）
 ## qq交流群：194704520  一群   683894834 二群
+# 个人公众号![Alt text](https://github.com/liwanlei/jiekou-python3/blob/master/img/weixin.png) 
 ### 使用的库 requests，绝大部分是基于Python原有的库进行的，这样简单方便，
 # 友情推荐本人其他开源代码：
 #      1.python接口测试平台版本!https://github.com/liwanlei/FXTest
