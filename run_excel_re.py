@@ -16,7 +16,8 @@ def start():
     starttime = datetime.datetime.now()
     m = datetime.datetime.now().strftime("%Y%m%d")
     basdir = os.path.abspath(os.path.dirname(__file__))
-    listid, listkey, listconeent, listurl, listfangshi, listqiwang, listname = datacel()
+    path = os.getcwd() + '//test_case_data//case.xlsx'
+    listid, listkey, listconeent, listurl, listfangshi, listqiwang, listname = datacel(path)
     listrelust, list_fail, list_pass, list_json = testinterface()
     filepath = os.path.join(basdir + '\\test_Report\\%s-result.xls' % m)
     if os.path.exists(filepath) is False:

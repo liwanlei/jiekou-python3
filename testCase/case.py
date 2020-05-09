@@ -8,7 +8,7 @@ from Public.log import LOG, logger
 import os
 from config.config_T import Config_Try_Num, TestPlanUrl
 
-path = os.getcwd() + '\\test_case_data\\case.xlsx'
+path = os.getcwd() + '//test_case_data//case.xlsx'
 listid, listkey, listconeent, listurl, listfangshi, listqiwang, listname = datacel(path)
 from Public.panduan import assert_in
 
