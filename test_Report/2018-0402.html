@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,49 +8,57 @@
     <title>http接口测试报告</title>
     <meta name="generator" content="BSTestRunner 0.8.4"/>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    
-<style type="text/css" media="screen">
 
-/* -- css div popup ------------------------------------------------------------------------ */
-.popup_window {
-    display: none;
-    position: relative;
-    left: 0px;
-    top: 0px;
-    /*border: solid #627173 1px; */
-    padding: 10px;
-    background-color: #99CCFF;
-    font-family: "Lucida Console", "Courier New", Courier, monospace;
-    text-align: left;
-    font-size: 10pt;
-    width: 1200px;
-}
+    <style type="text/css" media="screen">
 
-/* -- report ------------------------------------------------------------------------ */
+        /* -- css div popup ------------------------------------------------------------------------ */
+        .popup_window {
+            display: none;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            /*border: solid #627173 1px; */
+            padding: 10px;
+            background-color: #99CCFF;
+            font-family: "Lucida Console", "Courier New", Courier, monospace;
+            text-align: left;
+            font-size: 10pt;
+            width: 1200px;
+        }
 
-#show_detail_line .label {
-    font-size: 85%;
-    cursor: pointer;
-}
+        /* -- report ------------------------------------------------------------------------ */
 
-#show_detail_line {
-    margin: 2em auto 1em auto;
-}
+        #show_detail_line .label {
+            font-size: 85%;
+            cursor: pointer;
+        }
 
-#total_row  { font-weight: bold; }
-.hiddenRow  { display: none; }
-.testcase   { margin-left: 2em; }
+        #show_detail_line {
+            margin: 2em auto 1em auto;
+        }
 
-</style>
+        #total_row {
+            font-weight: bold;
+        }
+
+        .hiddenRow {
+            display: none;
+        }
+
+        .testcase {
+            margin-left: 2em;
+        }
+
+    </style>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 <body>
 <script language="javascript" type="text/javascript"><!--
 output_list = Array();
@@ -61,19 +69,17 @@ function showCase(level) {
     for (var i = 0; i < trs.length; i++) {
         tr = trs[i];
         id = tr.id;
-        if (id.substr(0,2) == 'ft') {
+        if (id.substr(0, 2) == 'ft') {
             if (level < 1) {
                 tr.className = 'hiddenRow';
-            }
-            else {
+            } else {
                 tr.className = '';
             }
         }
-        if (id.substr(0,2) == 'pt') {
+        if (id.substr(0, 2) == 'pt') {
             if (level > 1) {
                 tr.className = '';
-            }
-            else {
+            } else {
                 tr.className = 'hiddenRow';
             }
         }
@@ -85,7 +91,7 @@ function showClassDetail(cid, count) {
     var id_list = Array(count);
     var toHide = 1;
     for (var i = 0; i < count; i++) {
-        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid0 = 't' + cid.substr(1) + '.' + (i + 1);
         tid = 'f' + tid0;
         tr = document.getElementById(tid);
         if (!tr) {
@@ -100,34 +106,32 @@ function showClassDetail(cid, count) {
     for (var i = 0; i < count; i++) {
         tid = id_list[i];
         if (toHide) {
-            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById('div_' + tid).style.display = 'none'
             document.getElementById(tid).className = 'hiddenRow';
-        }
-        else {
+        } else {
             document.getElementById(tid).className = '';
         }
     }
 }
 
 
-function showTestDetail(div_id){
+function showTestDetail(div_id) {
     var details_div = document.getElementById(div_id)
     var displayState = details_div.style.display
     // alert(displayState)
-    if (displayState != 'block' ) {
+    if (displayState != 'block') {
         displayState = 'block'
         details_div.style.display = 'block'
-    }
-    else {
+    } else {
         details_div.style.display = 'none'
     }
 }
 
 
 function html_escape(s) {
-    s = s.replace(/&/g,'&amp;');
-    s = s.replace(/</g,'&lt;');
-    s = s.replace(/>/g,'&gt;');
+    s = s.replace(/&/g, '&amp;');
+    s = s.replace(/</g, '&lt;');
+    s = s.replace(/>/g, '&gt;');
     return s;
 }
 
@@ -149,57 +153,67 @@ function showOutput(id, name) {
 
 <div class="container">
     <div class='heading'>
-<h1>http接口测试报告</h1>
-<p><strong>Start Time:</strong> 2018-04-02 10:53:02</p>
-<p><strong>Duration:</strong> 0:00:02.914166</p>
-<p><strong>Status:</strong> <span class="text text-success">Pass <strong>2</strong></span> <span class="text text-warning">Error <strong>1</strong></span></p>
+        <h1>http接口测试报告</h1>
+        <p><strong>Start Time:</strong> 2018-04-02 10:53:02</p>
+        <p><strong>Duration:</strong> 0:00:02.914166</p>
+        <p><strong>Status:</strong> <span class="text text-success">Pass <strong>2</strong></span> <span
+                class="text text-warning">Error <strong>1</strong></span></p>
 
-<p class='description'>测试结果</p>
-</div>
+        <p class='description'>测试结果</p>
+    </div>
 
 
-    
-<p id='show_detail_line'>
-<span class="label label-primary" onclick="showCase(0)">Summary</span>
-<span class="label label-danger" onclick="showCase(1)">Failed</span>
-<span class="label label-default" onclick="showCase(2)">All</span>
-</p>
-<table id='result_table' class="table">
-    <thead>
+    <p id='show_detail_line'>
+        <span class="label label-primary" onclick="showCase(0)">Summary</span>
+        <span class="label label-danger" onclick="showCase(1)">Failed</span>
+        <span class="label label-default" onclick="showCase(2)">All</span>
+    </p>
+    <table id='result_table' class="table">
+        <thead>
         <tr id='header_row'>
-            <th>Test Group/Test case</td>
-            <th>Count</td>
-            <th>Pass</td>
-            <th>Fail</td>
-            <th>Error</td>
-            <th>View</td>
+            <th>Test Group/Test case
+            </td>
+            <th>Count
+            </td>
+            <th>Pass
+            </td>
+            <th>Fail
+            </td>
+            <th>Error
+            </td>
+            <th>View
+            </td>
         </tr>
-    </thead>
-    <tbody>
-        
-<tr class='text text-warning'>
-    <td>testCase.ddt_case.MyTest</td>
-    <td>3</td>
-    <td>2</td>
-    <td>0</td>
-    <td>1</td>
-    <td><a class="btn btn-xs btn-primary"href="javascript:showClassDetail('c1',3)">Detail</a></td>
-</tr>
+        </thead>
+        <tbody>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='text text-success'><div class='testcase'>test_api_1</div></td>
-    <td colspan='5' align='center'>
+        <tr class='text text-warning'>
+            <td>testCase.ddt_case.MyTest</td>
+            <td>3</td>
+            <td>2</td>
+            <td>0</td>
+            <td>1</td>
+            <td><a class="btn btn-xs btn-primary" href="javascript:showClassDetail('c1',3)">Detail</a></td>
+        </tr>
 
-    <!--css div popup start-->
-    <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        pass</a>
+        <tr id='pt1.1' class='hiddenRow'>
+            <td class='text text-success'>
+                <div class='testcase'>test_api_1</div>
+            </td>
+            <td colspan='5' align='center'>
 
-    <div id='div_pt1.1' class="popup_window">
-        <div style='text-align: right;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
+                <!--css div popup start-->
+                <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();'
+                   href="javascript:showTestDetail('div_pt1.1')">
+                    pass</a>
+
+                <div id='div_pt1.1' class="popup_window">
+                    <div style='text-align: right;cursor:pointer'>
+                        <a onfocus='this.blur();'
+                           onclick="document.getElementById('div_pt1.1').style.display = 'none' ">
+                            [x]</a>
+                    </div>
+                    <pre>
         
 pt1.1: [2018-04-02 10:53:02.332375] INFO: jiekou: 测试用例开始执行
 [2018-04-02 10:53:02.332375] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：POST
@@ -212,26 +226,30 @@ pt1.1: [2018-04-02 10:53:02.332375] INFO: jiekou: 测试用例开始执行
 
 
         </pre>
-    </div>
-    <!--css div popup end-->
+                </div>
+                <!--css div popup end-->
 
-    </td>
-</tr>
+            </td>
+        </tr>
 
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='text text-success'><div class='testcase'>test_api_2</div></td>
-    <td colspan='5' align='center'>
+        <tr id='pt1.2' class='hiddenRow'>
+            <td class='text text-success'>
+                <div class='testcase'>test_api_2</div>
+            </td>
+            <td colspan='5' align='center'>
 
-    <!--css div popup start-->
-    <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-        pass</a>
+                <!--css div popup start-->
+                <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();'
+                   href="javascript:showTestDetail('div_pt1.2')">
+                    pass</a>
 
-    <div id='div_pt1.2' class="popup_window">
-        <div style='text-align: right;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
+                <div id='div_pt1.2' class="popup_window">
+                    <div style='text-align: right;cursor:pointer'>
+                        <a onfocus='this.blur();'
+                           onclick="document.getElementById('div_pt1.2').style.display = 'none' ">
+                            [x]</a>
+                    </div>
+                    <pre>
         
 pt1.2: [2018-04-02 10:53:02.364376] INFO: jiekou: 测试用例开始执行
 [2018-04-02 10:53:02.364376] INFO: jiekou: 输入参数：url:http://www.tuling123.com/openapi/api
@@ -246,26 +264,30 @@ pt1.2: [2018-04-02 10:53:02.364376] INFO: jiekou: 测试用例开始执行
 
 
         </pre>
-    </div>
-    <!--css div popup end-->
+                </div>
+                <!--css div popup end-->
 
-    </td>
-</tr>
+            </td>
+        </tr>
 
-<tr id='ft1.3' class='none'>
-    <td class='text text-warning'><div class='testcase'>test_api_3</div></td>
-    <td colspan='5' align='center'>
+        <tr id='ft1.3' class='none'>
+            <td class='text text-warning'>
+                <div class='testcase'>test_api_3</div>
+            </td>
+            <td colspan='5' align='center'>
 
-    <!--css div popup start-->
-    <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
-        error</a>
+                <!--css div popup start-->
+                <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();'
+                   href="javascript:showTestDetail('div_ft1.3')">
+                    error</a>
 
-    <div id='div_ft1.3' class="popup_window">
-        <div style='text-align: right;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
+                <div id='div_ft1.3' class="popup_window">
+                    <div style='text-align: right;cursor:pointer'>
+                        <a onfocus='this.blur();'
+                           onclick="document.getElementById('div_ft1.3').style.display = 'none' ">
+                            [x]</a>
+                    </div>
+                    <pre>
         
 ft1.3: [2018-04-02 10:53:02.391378] INFO: jiekou: 测试用例开始执行
 [2018-04-02 10:53:02.391378] INFO: jiekou: 输入参数：url:https://api.douban.com/v2/photo/:id,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：GET
@@ -289,14 +311,14 @@ TypeError: exceptions must derive from BaseException
 
 
         </pre>
-    </div>
-    <!--css div popup end-->
+                </div>
+                <!--css div popup end-->
 
-    </td>
-</tr>
+            </td>
+        </tr>
 
-    </tbody>
-    <tfoot>
+        </tbody>
+        <tfoot>
         <tr id='total_row'>
             <td>Total</td>
             <td>3</td>
@@ -305,8 +327,8 @@ TypeError: exceptions must derive from BaseException
             <td class="text text-warning">1</td>
             <td>&nbsp;</td>
         </tr>
-    </tfoot>
-</table>
+        </tfoot>
+    </table>
 
     <div id='ending'>&nbsp;</div>
 </div>

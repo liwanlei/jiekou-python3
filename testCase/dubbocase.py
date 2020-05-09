@@ -4,12 +4,15 @@
 @time: 2018/3/29 12:47 
 """
 from Interface.dubbo_feng import DubboInterface
-from Public.log import LOG,logger
+from Public.log import LOG, logger
 from Public.panduan import assert_in
-from  Public.get_excel import datacel
+from Public.get_excel import datacel
 import os
-path=os.getcwd()+'\\test_case_data\\dubbocase.xlsx'
-listid,listurl,listinterface,listmeth,listfobject,listparam,listassert=datacel(path)
+
+path = os.getcwd() + '\\test_case_data\\dubbocase.xlsx'
+listid, listurl, listinterface, listmeth, listfobject, listparam, listassert = datacel(path)
+
+
 @logger('dubbo接口测试')
 def testdubbointerface():
     list_pass = 0
@@ -19,8 +22,9 @@ def testdubbointerface():
     list_weizhi = 0
     list_exption = 0
     for i in range(len(listid)):
-        dubboapi=DubboInterface(url=listurl,interface=listinterface[i],method=listmeth[i],param=listfobject[i],**(eval(listparam[i])))
-        dubboapireslu=dubboapi.getresult()
+        dubboapi = DubboInterface(url=listurl, interface=listinterface[i], method=listmeth[i], param=listfobject[i],
+                                  **(eval(listparam[i])))
+        dubboapireslu = dubboapi.getresult()
         if dubboapireslu['code'] == 0:
             LOG.info('inputdata> 参数:%s, url:%s ,返回:%s,预期:%s' % (listparam[i], listurl[i], dubboapireslu, listassert[i]))
             assert_re = assert_in(asserqiwang=listassert[i], fanhuijson=dubboapireslu)
