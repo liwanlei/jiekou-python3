@@ -15,7 +15,8 @@
 ### 5.report 存放测试报告，
 ### 6.run_excel_re.py/run_html.py 主运行文件。运行后可以生成相应的测试报告
 ##
-
+##  欢迎大家关注我的公众号
+![Alt text](https://github.com/liwanlei/jiekou-python3/blob/master/img/%E5%85%AC%E4%BC%97%E5%8F%B7%E6%B5%B7%E6%8A%A5.jpeg) 
 ## 产生的html测试报告如下
 ![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/cebaogaotu.png)
 ##
