@@ -1,0 +1,24 @@
+[2020-11-22 11:22:16.519830] INFO: jiekou: 当前模块 requests封装
+[2020-11-22 11:22:16.520192] INFO: jiekou: 全部args参数参数信息 , ()
+[2020-11-22 11:22:16.520296] INFO: jiekou: 全部kwargs参数信息 , {}
+[2020-11-22 11:22:16.565993] INFO: jiekou: 当前模块 生成数据驱动所用数据
+[2020-11-22 11:22:16.566186] INFO: jiekou: 全部args参数参数信息 , ()
+[2020-11-22 11:22:16.566293] INFO: jiekou: 全部kwargs参数信息 , {}
+[2020-11-22 11:22:16.587815] INFO: jiekou: 测试用例开始执行
+[2020-11-22 11:22:16.587974] INFO: jiekou: 输入参数：url:/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：POST
+[2020-11-22 11:22:16.588069] INFO: jiekou: 输入参数：url:/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：None
+[2020-11-22 11:22:16.589757] INFO: jiekou: post请求出错，出错原因:Invalid URL '/openapi/api': No schema supplied. Perhaps you meant http:///openapi/api?
+[2020-11-22 11:22:16.590439] INFO: jiekou: 返回结果:{'code': 1, 'result': "post请求出错，出错原因:Invalid URL '/openapi/api': No schema supplied. Perhaps you meant http:///openapi/api?"}
+[2020-11-22 11:22:16.590706] INFO: jiekou: 当前模块 断言测试结果
+[2020-11-22 11:22:16.590836] INFO: jiekou: 全部args参数参数信息 , ()
+[2020-11-22 11:22:16.590936] INFO: jiekou: 全部kwargs参数信息 , {'asserqingwang': 'code=40001'}
+[2020-11-22 11:22:16.591054] INFO: jiekou: 测试用例执行完毕
+[2020-11-22 11:22:16.591211] INFO: jiekou: 测试用例开始执行
+[2020-11-22 11:22:16.591322] INFO: jiekou: 输入参数：url:/openapi/api,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：POST
+[2020-11-22 11:22:16.591412] INFO: jiekou: 输入参数：url:/openapi/api,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：None
+[2020-11-22 11:22:16.591800] INFO: jiekou: post请求出错，出错原因:Invalid URL '/openapi/api': No schema supplied. Perhaps you meant http:///openapi/api?
+[2020-11-22 11:22:16.591918] INFO: jiekou: 返回结果:{'code': 1, 'result': "post请求出错，出错原因:Invalid URL '/openapi/api': No schema supplied. Perhaps you meant http:///openapi/api?"}
+[2020-11-22 11:22:16.592009] INFO: jiekou: 当前模块 断言测试结果
+[2020-11-22 11:22:16.592090] INFO: jiekou: 全部args参数参数信息 , ()
+[2020-11-22 11:22:16.592170] INFO: jiekou: 全部kwargs参数信息 , {'asserqingwang': 'code=40002'}
+[2020-11-22 11:22:16.592265] INFO: jiekou: 测试用例执行完毕

@@ -2,11 +2,11 @@
 # @Time    : 2017/6/4 20:35
 # @Author  : lileilei
 # @File    : get_excel.py
-import xlrd
+import xlrd,os
 from Public.log import LOG, logger
 
 
-@logger('解析测试用例文件')
+# @logger('解析测试用例文件')
 def datacel(filrpath):
     try:
         file = xlrd.open_workbook(filrpath)
@@ -34,7 +34,8 @@ def datacel(filrpath):
         return
 @logger('生成数据驱动所用数据')
 def makedata():
-    listid, listkey, listconeent, listurl, listfangshi, listqiwang, listname=datacel()
+    path = os.getcwd() + '//test_case_data//case.xlsx'
+    listid, listkey, listconeent, listurl, listfangshi, listqiwang, listname=datacel(path)
     i=0
     make_data=[]
     for i in range(len(listid)):

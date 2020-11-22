@@ -4,6 +4,7 @@
 ## qq交流群：194704520  
 ### 使用的库 requests，绝大部分是基于Python原有的库进行的，这样简单方便，
 ### 使用脚本参数分离等思想，尽可能降低代码的耦合度。
+###   如果你不配置钉钉机器人，注释到机器人相关的代码
 # 首先我们来看下我们的目录
 ##
 ![Alt text](https://github.com/liwanlei/jiekou-python3/blob/master/img/xiangmujiegoutu.png)

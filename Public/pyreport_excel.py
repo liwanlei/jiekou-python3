@@ -56,7 +56,7 @@ def yangshique(me):
 
 def create(filename, list_pass, list_fail, listids, listnames, listkeys, listconeents, listurls, listfangshis,
            listqiwangs, list_json, listrelust):
-    filepath = open(r'.\config\test_report.yaml', encoding='utf-8')
+    filepath = open(r'./config/test_report.yaml', encoding='utf-8')
     file_config = yaml.load(filepath)
     file = Workbook(filename)
     table = file.add_sheet('测试结果', cell_overwrite_ok=True)
