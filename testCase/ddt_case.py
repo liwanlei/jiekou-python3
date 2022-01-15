@@ -1,8 +1,8 @@
 from Interface.testFengzhuang import TestApi
-from Public.get_excel import datacel, makedata
-from Public.log import LOG, logger
+from Public.get_excel import makedata
+from Public.log import LOG
 from Public.panduan import assertre
-import ddt, unittest, time, os
+import ddt, unittest
 
 data_test = makedata()
 
@@ -25,5 +25,5 @@ class MyTest(unittest.TestCase):
                                                        data_test['fangshi']))))
         apijson = api.getJson()
         LOG.info('返回结果:%s' % apijson)
-        qingwang = assertre(asserqingwang=data_test['qiwang'])
-        self.assertNotEqual(dict(qingwang), dict(apijson), msg='预期和返回不一致')
+        assertall = assertre(asserqingwang=data_test['qiwang'])
+        self.assertNotEqual(dict(assertall), dict(apijson), msg='预期和返回不一致')

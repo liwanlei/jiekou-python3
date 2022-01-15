@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>接口测试报告</title>
+    <title>报告</title>
     <meta name="generator" content="BSTestRunner 0.8.4"/>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
     
 <style type="text/css" media="screen">
 
@@ -49,15 +50,145 @@
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <![endif]-->
   </head>
 <body>
-<script language="javascript" type="text/javascript"><!--
+<div class="container">
+    
+ <div class='heading'>
+     <div style='width: 50%;float:left;margin-top:inherit'>
+<h1>报告</h1>
+<p><strong>开始时间:</strong> 2022-01-15 14:27:09</p>
+<p><strong>持续时间:</strong> 0:00:00.003047</p>
+<p><strong>状态:</strong> <span class="text text-success">通过 <strong>2</strong></span></p>
+
+<p class='description'>测试报告</p>
+</div> 
+
+<div id='container2' style='width:50%;float:left;margin-top:20px;height:200px;'>
+    </div>
+</div >
+<div id='containerchart' style='height: 300px;margin-top: 20%;'></div>
+    
+    
+<p id='show_detail_line'>
+<span class="label label-primary" onclick="showCase(0)">公用</span>
+<span class="label label-danger" onclick="showCase(1)">失败</span>
+<span class="label label-default" onclick="showCase(2)">所有</span>
+</p>
+<table id='result_table' class="table">
+    <thead>
+        <tr id='header_row'>
+            <th>测试组/测试用例</td>
+            <th>数量</td>
+            <th>失败</td>
+            <th>通过</td>
+            <th>错误</td>
+            <th>查看</td>
+        </tr>
+    </thead>
+    <tbody>
+        
+<tr class='text text-success'>
+    <td>testCase.ddt_case.MyTest</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a class="btn btn-xs btn-primary"href="javascript:showClassDetail('c1',2)">详情</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='text text-success'><div class='testcase'>test_api_1</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='text text-success'><div class='testcase'>test_api_2</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+    </tbody>
+    <tfoot>
+        <tr id='total_row'>
+            <td>总计</td>
+            <td>2</td>
+            <td class="text text-success">2</td>
+            <td class="text text-danger">0</td>
+            <td class="text text-warning">0</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tfoot>
+</table>
+
+    <div id='ending'>&nbsp;</div>
+</div>
+ 
+    <script language='javascript' type='text/javascript'>
+var dom = document.getElementById('containerchart');
+var myChart = echarts.init(dom);
+var domone = document.getElementById('container2');
+var myChartone = echarts.init(domone);
+var optionsone;
+optionsone = {
+    title: {
+        text: '历史记录'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data: ['成功', '失败','错误']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['2022_01_15_14_26_57', '2022_01_15_14_26_21', '2022_01_15_14_27_09']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+            name: '成功',
+            type: 'line',
+            stack: '总量',
+            data: ['2', '2', '2']
+        },
+        {
+            name: '失败',
+            type: 'line',
+            stack: '总量',
+            data: ['0', '0', '0']
+        },
+        {
+            name: '错误',
+            type: 'line',
+            stack: '总量',
+            data: ['0', '0', '0']
+        }
+
+    ]
+};
+if (optionsone && typeof optionsone === 'object') {
+    myChartone.setOption(optionsone);
+}
 output_list = Array();
 
 /* level - 0:Summary; 1:Failed; 2:All */
 function showCase(level) {
-    trs = document.getElementsByTagName("tr");
+    trs = document.getElementsByTagName('tr');
     for (var i = 0; i < trs.length; i++) {
         tr = trs[i];
         id = tr.id;
@@ -113,7 +244,6 @@ function showClassDetail(cid, count) {
 function showTestDetail(div_id){
     var details_div = document.getElementById(div_id)
     var displayState = details_div.style.display
-    // alert(displayState)
     if (displayState != 'block' ) {
         displayState = 'block'
         details_div.style.display = 'block'
@@ -122,149 +252,13 @@ function showTestDetail(div_id){
         details_div.style.display = 'none'
     }
 }
-
-
 function html_escape(s) {
     s = s.replace(/&/g,'&amp;');
     s = s.replace(/</g,'&lt;');
     s = s.replace(/>/g,'&gt;');
     return s;
 }
-
-/* obsoleted by detail in <div>
-function showOutput(id, name) {
-    var w = window.open("", //url
-                    name,
-                    "resizable,scrollbars,status,width=800,height=450");
-    d = w.document;
-    d.write("<pre>");
-    d.write(html_escape(output_list[id]));
-    d.write("\n");
-    d.write("<a href='javascript:window.close()'>close</a>\n");
-    d.write("</pre>\n");
-    d.close();
-}
-*/
---></script>
-
-<div class="container">
-    <div class='heading'>
-<h1>接口测试报告</h1>
-<p><strong>Start Time:</strong> 2022-01-15 13:41:51</p>
-<p><strong>Duration:</strong> 0:00:00.003556</p>
-<p><strong>Status:</strong> <span class="text text-success">Pass <strong>2</strong></span></p>
-
-<p class='description'>测试结果</p>
-</div>
-
-
-    
-<p id='show_detail_line'>
-<span class="label label-primary" onclick="showCase(0)">Summary</span>
-<span class="label label-danger" onclick="showCase(1)">Failed</span>
-<span class="label label-default" onclick="showCase(2)">All</span>
-</p>
-<table id='result_table' class="table">
-    <thead>
-        <tr id='header_row'>
-            <th>Test Group/Test case</td>
-            <th>Count</td>
-            <th>Pass</td>
-            <th>Fail</td>
-            <th>Error</td>
-            <th>View</td>
-        </tr>
-    </thead>
-    <tbody>
-        
-<tr class='text text-success'>
-    <td>testCase.ddt_case.MyTest</td>
-    <td>2</td>
-    <td>2</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a class="btn btn-xs btn-primary"href="javascript:showClassDetail('c1',2)">Detail</a></td>
-</tr>
-
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='text text-success'><div class='testcase'>test_api_1</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        pass</a>
-
-    <div id='div_pt1.1' class="popup_window">
-        <div style='text-align: right;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.1: [2022-01-15 13:41:51.307929] INFO: jiekou: 测试用例开始执行
-[2022-01-15 13:41:51.308125] INFO: jiekou: 输入参数：url:/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：POST
-[2022-01-15 13:41:51.308411] INFO: jiekou: 输入参数：url:/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：None
-[2022-01-15 13:41:51.309817] INFO: jiekou: 返回结果:{'code': 1, 'result': "请求异常:Invalid URL '/openapi/api': No schema supplied. Perhaps you meant http:///openapi/api?"}
-[2022-01-15 13:41:51.309979] INFO: jiekou: 当前模块 断言测试结果
-[2022-01-15 13:41:51.310077] INFO: jiekou: 全部args参数参数信息 , ()
-[2022-01-15 13:41:51.310160] INFO: jiekou: 全部kwargs参数信息 , {'asserqingwang': 'code=40001'}
-[2022-01-15 13:41:51.310261] INFO: jiekou: 测试用例执行完毕
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='text text-success'><div class='testcase'>test_api_2</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-        pass</a>
-
-    <div id='div_pt1.2' class="popup_window">
-        <div style='text-align: right;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.2: [2022-01-15 13:41:51.310391] INFO: jiekou: 测试用例开始执行
-[2022-01-15 13:41:51.310482] INFO: jiekou: 输入参数：url:/openapi/api,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：POST
-[2022-01-15 13:41:51.310559] INFO: jiekou: 输入参数：url:/openapi/api,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：None
-[2022-01-15 13:41:51.310906] INFO: jiekou: 返回结果:{'code': 1, 'result': "请求异常:Invalid URL '/openapi/api': No schema supplied. Perhaps you meant http:///openapi/api?"}
-[2022-01-15 13:41:51.311002] INFO: jiekou: 当前模块 断言测试结果
-[2022-01-15 13:41:51.311085] INFO: jiekou: 全部args参数参数信息 , ()
-[2022-01-15 13:41:51.311161] INFO: jiekou: 全部kwargs参数信息 , {'asserqingwang': 'code=40002'}
-[2022-01-15 13:41:51.311249] INFO: jiekou: 测试用例执行完毕
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-    </tbody>
-    <tfoot>
-        <tr id='total_row'>
-            <td>Total</td>
-            <td>2</td>
-            <td class="text text-success">2</td>
-            <td class="text text-danger">0</td>
-            <td class="text text-warning">0</td>
-            <td>&nbsp;</td>
-        </tr>
-    </tfoot>
-</table>
-
-    <div id='ending'>&nbsp;</div>
-</div>
-
+</script>
 </body>
 </html>
+    

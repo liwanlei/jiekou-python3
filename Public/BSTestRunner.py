@@ -93,12 +93,11 @@ Version in 0.7.1
 # TODO: simplify javascript using ,ore than 1 class in the class attribute?
 
 import datetime
-from io import StringIO as StringIO
-import sys
-import time
 import unittest
 from xml.sax import saxutils
-
+import os
+import sys, copy
+from io import StringIO as StringIO
 
 # ------------------------------------------------------------------------
 # The redirectors below are used to capture output during testing. Output
@@ -185,12 +184,12 @@ class Template_mixin(object):
     """
 
     STATUS = {
-        0: 'pass',
-        1: 'fail',
-        2: 'error',
+        0: '通过',
+        1: '失败',
+        2: '错误',
     }
 
-    DEFAULT_TITLE = 'Unit Test Report'
+    DEFAULT_TITLE = '测试报告'
     DEFAULT_DESCRIPTION = ''
 
     # ------------------------------------------------------------------------
@@ -206,6 +205,7 @@ class Template_mixin(object):
     <title>%(title)s</title>
     <meta name="generator" content="%(generator)s"/>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
     %(stylesheet)s
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -213,15 +213,328 @@ class Template_mixin(object):
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <![endif]-->
   </head>
 <body>
-<script language="javascript" type="text/javascript"><!--
+<div class="container">
+    %(heading)s
+    %(report)s
+    %(ending)s
+</div>
+ %(scripts)s
+"""
+    # variables: (title, generator, stylesheet, heading, report, ending)
+
+    # ------------------------------------------------------------------------
+    # Stylesheet
+    #
+    # alternatively use a <link> for external style sheet, e.g.
+    #   <link rel="stylesheet" href="$url" type="text/css">
+
+    STYLESHEET_TMPL = """
+<style type="text/css" media="screen">
+
+/* -- css div popup ------------------------------------------------------------------------ */
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #99CCFF;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 10pt;
+    width: 1200px;
+}
+
+/* -- report ------------------------------------------------------------------------ */
+
+#show_detail_line .label {
+    font-size: 85%;
+    cursor: pointer;
+}
+
+#show_detail_line {
+    margin: 2em auto 1em auto;
+}
+
+#total_row  { font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+</style>
+"""
+
+    # ------------------------------------------------------------------------
+    # Heading
+    #
+
+    HEADING_TMPL = """<div class='heading'>
+     <div >
+<h1>%(title)s</h1>
+%(parameters)s
+<p class='description'>%(description)s</p>
+</div> </div >
+"""
+    HEADING_TMPL_New="""
+ <div class='heading'>
+     <div style='width: 50%%;float:left;margin-top:inherit'>
+<h1>%(title)s</h1>
+%(parameters)s
+<p class='description'>%(description)s</p>
+</div> 
+
+<div id='container2' style='width:50%%;float:left;margin-top:20px;height:200px;'>
+    </div>
+</div >
+<div id='containerchart' style='height: 300px;margin-top: 20%%;'></div>
+    """
+    HEADING_OLD = """<div class='heading'>
+    <h1>%(title)s</h1>
+    %(parameters)s
+    <p class='description'>%(description)s</p>
+    </div>
+    """
+    HEADING_ATTRIBUTE_TMPL = """<p><strong>%(name)s:</strong> %(value)s</p>
+"""  # variables: (name, value)
+
+    # ------------------------------------------------------------------------
+    # Report
+    #
+
+    REPORT_TMPL = """
+<p id='show_detail_line'>
+<span class="label label-primary" onclick="showCase(0)">公用</span>
+<span class="label label-danger" onclick="showCase(1)">失败</span>
+<span class="label label-default" onclick="showCase(2)">所有</span>
+</p>
+<table id='result_table' class="table">
+    <thead>
+        <tr id='header_row'>
+            <th>测试组/测试用例</td>
+            <th>数量</td>
+            <th>失败</td>
+            <th>通过</td>
+            <th>错误</td>
+            <th>查看</td>
+        </tr>
+    </thead>
+    <tbody>
+        %(test_list)s
+    </tbody>
+    <tfoot>
+        <tr id='total_row'>
+            <td>总计</td>
+            <td>%(count)s</td>
+            <td class="text text-success">%(Pass)s</td>
+            <td class="text text-danger">%(fail)s</td>
+            <td class="text text-warning">%(error)s</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tfoot>
+</table>
+"""  # variables: (test_list, count, Pass, fail, error)
+
+    REPORT_CLASS_TMPL = r"""
+<tr class='%(style)s'>
+    <td>%(desc)s</td>
+    <td>%(count)s</td>
+    <td>%(Pass)s</td>
+    <td>%(fail)s</td>
+    <td>%(error)s</td>
+    <td><a class="btn btn-xs btn-primary"href="javascript:showClassDetail('%(cid)s',%(count)s)">详情</a></td>
+</tr>
+"""  # variables: (style, desc, count, Pass, fail, error, cid)
+
+    REPORT_TEST_WITH_OUTPUT_TMPL = r"""
+<tr id='%(tid)s' class='%(Class)s'>
+    <td class='%(style)s'><div class='testcase'>%(desc)s</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();' href="javascript:showTestDetail('div_%(tid)s')" >
+        %(status)s</a>
+
+    <div id='div_%(tid)s' class="popup_window">
+        <div style='text-align: right;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_%(tid)s').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        %(script)s
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+"""  # variables: (tid, Class, style, desc, status)
+
+    REPORT_TEST_NO_OUTPUT_TMPL = r"""
+<tr id='%(tid)s' class='%(Class)s'>
+    <td class='%(style)s'><div class='testcase'>%(desc)s</div></td>
+    <td colspan='5' align='center'>%(status)s</td>
+</tr>
+"""  # variables: (tid, Class, style, desc, status)
+
+    REPORT_TEST_OUTPUT_TMPL = r"""
+%(id)s: %(output)s
+"""  # variables: (id, output)
+
+    # ------------------------------------------------------------------------
+    # ENDING
+    #
+
+    ENDING_TMPL = """<div id='ending'>&nbsp;</div>"""
+    SCRPICTold="""
+      <script language='javascript' type='text/javascript'>
+      output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName('tr');
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+
+</body>
+</html>
+    """
+
+
+    SCRPICTDATA=r"""
+    <script language='javascript' type='text/javascript'>
+var dom = document.getElementById('containerchart');
+var myChart = echarts.init(dom);
+var domone = document.getElementById('container2');
+var myChartone = echarts.init(domone);
+var optionsone;
+optionsone = {
+    title: {
+        text: '历史记录'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data: ['成功', '失败','错误']
+    },
+    grid: {
+        left: '3%%',
+        right: '4%%',
+        bottom: '3%%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: %(reslutname)s
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+            name: '成功',
+            type: 'line',
+            stack: '总量',
+            data: %(success)s
+        },
+        {
+            name: '失败',
+            type: 'line',
+            stack: '总量',
+            data: %(fail)s
+        },
+        {
+            name: '错误',
+            type: 'line',
+            stack: '总量',
+            data: %(error)s
+        }
+
+    ]
+};
+if (optionsone && typeof optionsone === 'object') {
+    myChartone.setOption(optionsone);
+}
 output_list = Array();
 
 /* level - 0:Summary; 1:Failed; 2:All */
 function showCase(level) {
-    trs = document.getElementsByTagName("tr");
+    trs = document.getElementsByTagName('tr');
     for (var i = 0; i < trs.length; i++) {
         tr = trs[i];
         id = tr.id;
@@ -277,7 +590,6 @@ function showClassDetail(cid, count) {
 function showTestDetail(div_id){
     var details_div = document.getElementById(div_id)
     var displayState = details_div.style.display
-    // alert(displayState)
     if (displayState != 'block' ) {
         displayState = 'block'
         details_div.style.display = 'block'
@@ -286,200 +598,23 @@ function showTestDetail(div_id){
         details_div.style.display = 'none'
     }
 }
-
-
 function html_escape(s) {
     s = s.replace(/&/g,'&amp;');
     s = s.replace(/</g,'&lt;');
     s = s.replace(/>/g,'&gt;');
     return s;
 }
-
-/* obsoleted by detail in <div>
-function showOutput(id, name) {
-    var w = window.open("", //url
-                    name,
-                    "resizable,scrollbars,status,width=800,height=450");
-    d = w.document;
-    d.write("<pre>");
-    d.write(html_escape(output_list[id]));
-    d.write("\n");
-    d.write("<a href='javascript:window.close()'>close</a>\n");
-    d.write("</pre>\n");
-    d.close();
-}
-*/
---></script>
-
-<div class="container">
-    %(heading)s
-    %(report)s
-    %(ending)s
-</div>
-
+</script>
 </body>
 </html>
-"""
-    # variables: (title, generator, stylesheet, heading, report, ending)
-
-    # ------------------------------------------------------------------------
-    # Stylesheet
-    #
-    # alternatively use a <link> for external style sheet, e.g.
-    #   <link rel="stylesheet" href="$url" type="text/css">
-
-    STYLESHEET_TMPL = """
-<style type="text/css" media="screen">
-
-/* -- css div popup ------------------------------------------------------------------------ */
-.popup_window {
-    display: none;
-    position: relative;
-    left: 0px;
-    top: 0px;
-    /*border: solid #627173 1px; */
-    padding: 10px;
-    background-color: #99CCFF;
-    font-family: "Lucida Console", "Courier New", Courier, monospace;
-    text-align: left;
-    font-size: 10pt;
-    width: 1200px;
-}
-
-/* -- report ------------------------------------------------------------------------ */
-
-#show_detail_line .label {
-    font-size: 85%;
-    cursor: pointer;
-}
-
-#show_detail_line {
-    margin: 2em auto 1em auto;
-}
-
-#total_row  { font-weight: bold; }
-.hiddenRow  { display: none; }
-.testcase   { margin-left: 2em; }
-
-</style>
-"""
-
-    # ------------------------------------------------------------------------
-    # Heading
-    #
-
-    HEADING_TMPL = """<div class='heading'>
-<h1>%(title)s</h1>
-%(parameters)s
-<p class='description'>%(description)s</p>
-</div>
-
-"""  # variables: (title, parameters, description)
-
-    HEADING_ATTRIBUTE_TMPL = """<p><strong>%(name)s:</strong> %(value)s</p>
-"""  # variables: (name, value)
-
-    # ------------------------------------------------------------------------
-    # Report
-    #
-
-    REPORT_TMPL = """
-<p id='show_detail_line'>
-<span class="label label-primary" onclick="showCase(0)">Summary</span>
-<span class="label label-danger" onclick="showCase(1)">Failed</span>
-<span class="label label-default" onclick="showCase(2)">All</span>
-</p>
-<table id='result_table' class="table">
-    <thead>
-        <tr id='header_row'>
-            <th>Test Group/Test case</td>
-            <th>Count</td>
-            <th>Pass</td>
-            <th>Fail</td>
-            <th>Error</td>
-            <th>View</td>
-        </tr>
-    </thead>
-    <tbody>
-        %(test_list)s
-    </tbody>
-    <tfoot>
-        <tr id='total_row'>
-            <td>Total</td>
-            <td>%(count)s</td>
-            <td class="text text-success">%(Pass)s</td>
-            <td class="text text-danger">%(fail)s</td>
-            <td class="text text-warning">%(error)s</td>
-            <td>&nbsp;</td>
-        </tr>
-    </tfoot>
-</table>
-"""  # variables: (test_list, count, Pass, fail, error)
-
-    REPORT_CLASS_TMPL = r"""
-<tr class='%(style)s'>
-    <td>%(desc)s</td>
-    <td>%(count)s</td>
-    <td>%(Pass)s</td>
-    <td>%(fail)s</td>
-    <td>%(error)s</td>
-    <td><a class="btn btn-xs btn-primary"href="javascript:showClassDetail('%(cid)s',%(count)s)">Detail</a></td>
-</tr>
-"""  # variables: (style, desc, count, Pass, fail, error, cid)
-
-    REPORT_TEST_WITH_OUTPUT_TMPL = r"""
-<tr id='%(tid)s' class='%(Class)s'>
-    <td class='%(style)s'><div class='testcase'>%(desc)s</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link btn btn-xs btn-default" onfocus='this.blur();' href="javascript:showTestDetail('div_%(tid)s')" >
-        %(status)s</a>
-
-    <div id='div_%(tid)s' class="popup_window">
-        <div style='text-align: right;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_%(tid)s').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        %(script)s
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-"""  # variables: (tid, Class, style, desc, status)
-
-    REPORT_TEST_NO_OUTPUT_TMPL = r"""
-<tr id='%(tid)s' class='%(Class)s'>
-    <td class='%(style)s'><div class='testcase'>%(desc)s</div></td>
-    <td colspan='5' align='center'>%(status)s</td>
-</tr>
-"""  # variables: (tid, Class, style, desc, status)
-
-    REPORT_TEST_OUTPUT_TMPL = r"""
-%(id)s: %(output)s
-"""  # variables: (id, output)
-
-    # ------------------------------------------------------------------------
-    # ENDING
-    #
-
-    ENDING_TMPL = """<div id='ending'>&nbsp;</div>"""
-
-
+    """
 # -------------------- The end of the Template class -------------------
 
 
 TestResult = unittest.TestResult
-
-
-class _TestResult(TestResult):
-    # note: _TestResult is a pure representation of results.
-    # It lacks the output and reporting ability compares to unittest._TextTestResult.
-
-    def __init__(self, verbosity=1):
+class MyResult(TestResult):
+    def __init__(self, verbosity=1, trynum=1):
+        # 默认次数是0
         TestResult.__init__(self)
         self.outputBuffer = StringIO()
         self.stdout0 = None
@@ -488,32 +623,17 @@ class _TestResult(TestResult):
         self.failure_count = 0
         self.error_count = 0
         self.verbosity = verbosity
-
-        # result is a list of result in 4 tuple
-        # (
-        #   result code (0: success; 1: fail; 2: error),
-        #   TestCase object,
-        #   Test output (byte string),
-        #   stack trace,
-        # )
+        self.trynnum = trynum
         self.result = []
+        self.trys = 0  #
+        self.istry = False
 
     def startTest(self, test):
         TestResult.startTest(self, test)
-        # just one buffer for both stdout and stderr  更改
-        self.outputBuffer = StringIO()
-        stdout_redirector.fp = self.outputBuffer
-        stderr_redirector.fp = self.outputBuffer
         self.stdout0 = sys.stdout
         self.stderr0 = sys.stderr
-        sys.stdout = stdout_redirector
-        sys.stderr = stderr_redirector
 
     def complete_output(self):
-        """
-        Disconnect output redirection and return buffer.
-        Safe to call multiple times.
-        """
         if self.stdout0:
             sys.stdout = self.stdout0
             sys.stderr = self.stderr0
@@ -522,12 +642,33 @@ class _TestResult(TestResult):
         return self.outputBuffer.getvalue()
 
     def stopTest(self, test):
-        # Usually one of addSuccess, addError or addFailure would have been called.
-        # But there are some path in unittest that would bypass this.
-        # We must disconnect stdout in stopTest(), which is guaranteed to be called.
+        # 判断是否要重试
+        if self.istry is True:
+            # 如果执行的次数小于重试的次数 就重试
+            if self.trys < self.trynnum:
+                # 删除最后一个结果
+                reslut = self.result.pop(-1)
+                # 判断结果，如果是错误就把错误的个数减掉
+                # 如果是失败，就把失败的次数减掉
+                if reslut[0] == 1:
+                    self.failure_count -= 1
+                else:
+                    self.error_count -= 1
+                sys.stderr.write('{}:用例正在重试中。。。'.format(test.id()) + '\n')
+                # 深copy用例
+                test = copy.copy(test)
+                # 重试次数增加+1
+                self.trys += 1
+                # 测试
+                test(self)
+            else:
+                self.istry = False
+                self.trys = 0
         self.complete_output()
 
     def addSuccess(self, test):
+        # 成功就不要重试
+        self.istry = False
         self.success_count += 1
         TestResult.addSuccess(self, test)
         output = self.complete_output()
@@ -540,6 +681,8 @@ class _TestResult(TestResult):
             sys.stderr.write('.')
 
     def addError(self, test, err):
+        # 重试+1，错误次数+1
+        self.istry = True
         self.error_count += 1
         TestResult.addError(self, test, err)
         _, _exc_str = self.errors[-1]
@@ -553,6 +696,8 @@ class _TestResult(TestResult):
             sys.stderr.write('E')
 
     def addFailure(self, test, err):
+        self.istry = True
+        TestResult.startTestRun(self)
         self.failure_count += 1
         TestResult.addFailure(self, test, err)
         _, _exc_str = self.failures[-1]
@@ -565,14 +710,36 @@ class _TestResult(TestResult):
         else:
             sys.stderr.write('F')
 
+    def stop(self) -> None:
+        pass
+
+
+
+class _TestResult(MyResult):
+    # note: _TestResult is a pure representation of results.
+    # It lacks the output and reporting ability compares to unittest._TextTestResult.
+
+    def __init__(self, verbosity=1, trynum=1):
+        TestResult.__init__(self)
+        super().__init__(verbosity, trynum)
+
 
 class BSTestRunner(Template_mixin):
     """
     """
 
-    def __init__(self, stream=sys.stdout, verbosity=1, title=None, description=None):
+    def __init__(self, stream=sys.stdout,
+                 verbosity=1,
+                 title=None,
+                 description=None,
+                 trynum=1,
+                 is_show=False,
+                 filepath=""):
         self.stream = stream
         self.verbosity = verbosity
+        self.trynum = trynum
+        self.is_show=is_show
+        self.filepath=filepath
         if title is None:
             self.title = self.DEFAULT_TITLE
         else:
@@ -586,12 +753,17 @@ class BSTestRunner(Template_mixin):
 
     def run(self, test):
         "Run the given test case or test suite."
-        result = _TestResult(self.verbosity)
+        result = _TestResult(self.verbosity, trynum=self.trynum)
         try:
             test(result)
         except TypeError:
             pass
         self.stopTime = datetime.datetime.now()
+        if self.is_show:
+            name=os.path.join(self.filepath,self.stopTime.strftime('%Y_%m_%d_%H_%M_%S')+'.txt')
+            with open(name,'w+') as f:
+                f.write(result.success_count.__str__()+"_"+result.error_count.__str__()+"_"+result.failure_count.__str__())
+                f.close()
         self.generateReport(test, result)
         print('\n测试耗时: %s' % (self.stopTime - self.startTime))
         return result
@@ -619,19 +791,19 @@ class BSTestRunner(Template_mixin):
         duration = str(self.stopTime - self.startTime)
         status = []
         if result.success_count: status.append(
-            '<span class="text text-success">Pass <strong>%s</strong></span>' % result.success_count)
+            '<span class="text text-success">通过 <strong>%s</strong></span>' % result.success_count)
         if result.failure_count: status.append(
-            '<span class="text text-danger">Failure <strong>%s</strong></span>' % result.failure_count)
+            '<span class="text text-danger">失败 <strong>%s</strong></span>' % result.failure_count)
         if result.error_count:   status.append(
-            '<span class="text text-warning">Error <strong>%s</strong></span>' % result.error_count)
+            '<span class="text text-warning">错误 <strong>%s</strong></span>' % result.error_count)
         if status:
             status = ' '.join(status)
         else:
             status = 'none'
         return [
-            ('Start Time', startTime),
-            ('Duration', duration),
-            ('Status', status),
+            ('开始时间', startTime),
+            ('持续时间', duration),
+            ('状态', status),
         ]
 
     def generateReport(self, test, result):
@@ -641,35 +813,62 @@ class BSTestRunner(Template_mixin):
         heading = self._generate_heading(report_attrs)
         report = self._generate_report(result)
         ending = self._generate_ending()
+        if self.is_show:
+            scrpit=self.___generate_scrpitone()
+        else:
+            scrpit=self._generate_scrpit()
         output = self.HTML_TMPL % dict(
             title=saxutils.escape(self.title),
             generator=generator,
             stylesheet=stylesheet,
+            scripts=scrpit,
             heading=heading,
             report=report,
-            ending=ending,
+            ending=ending
         )
-        self.stream.write(output.encode('utf-8'))
+        self.stream.write(output.encode("utf-8"))
 
     def _generate_stylesheet(self):
         return self.STYLESHEET_TMPL
 
     def _generate_heading(self, report_attrs):
-        a_lines = []
-        for name, value in report_attrs:
-            line = self.HEADING_ATTRIBUTE_TMPL % dict(
-                name=saxutils.escape(name),  ####更改
-                # value = saxutils.escape(value),
+        ISSHOWPERDATA=True
+        if ISSHOWPERDATA:
+            a_lines = []
+            for name, value in report_attrs:
+                line = self.HEADING_ATTRIBUTE_TMPL % dict(
+                    name=saxutils.escape(name),  ####更改
+                    # value = saxutils.escape(value),
 
-                value=value,
+                    value=value,
+                )
+                a_lines.append(line)
+            if self.is_show:
+                heading = self.HEADING_TMPL_New % dict(
+                    title=saxutils.escape(self.title),parameters=''.join(a_lines),description=saxutils.escape(self.description),)
+            else:
+                heading = self.HEADING_TMPL % dict(
+                    title=saxutils.escape(self.title),
+                    parameters=''.join(a_lines),
+                    description=saxutils.escape(self.description),
+                )
+            return heading
+        else:
+            a_lines = []
+            for name, value in report_attrs:
+                line = self.HEADING_ATTRIBUTE_TMPL % dict(
+                    name=saxutils.escape(name),  ####更改
+                    # value = saxutils.escape(value),
+
+                    value=value,
+                )
+                a_lines.append(line)
+            heading = self.HEADING_OLD % dict(
+                title=saxutils.escape(self.title),
+                parameters=''.join(a_lines),
+                description=saxutils.escape(self.description),
             )
-            a_lines.append(line)
-        heading = self.HEADING_TMPL % dict(
-            title=saxutils.escape(self.title),
-            parameters=''.join(a_lines),
-            description=saxutils.escape(self.description),
-        )
-        return heading
+            return heading
 
     def _generate_report(self, result):
         rows = []
@@ -760,6 +959,29 @@ class BSTestRunner(Template_mixin):
 
     def _generate_ending(self):
         return self.ENDING_TMPL
+    def ___generate_scrpitone(self):
+        namerun,faillist,success,error=self._readresult()
+        return self.SCRPICTDATA% dict(reslutname=namerun,
+                                      success=success,
+                                      fail=faillist,
+                                      error=error)
+    def   _readresult(self):
+        namerun=[]
+        faillist=[]
+        success=[]
+        error=[]
+        for root,dirs,files in os.walk(self.filepath):
+            for file in files:
+                if file.endswith(".txt"):
+                    namerun.append(file.split(".")[0].split("/")[-1])
+                    with open(os.path.join(root,file),'r') as f:
+                        reslut=f.readline().split('\n')[0].split("_")
+                        success.append(reslut[0])
+                        error.append(reslut[1])
+                        faillist.append(reslut[2])
+        return namerun,faillist,success,error
+    def _generate_scrpit(self):
+        return self.SCRPICTold
 
 
 ##############################################################################
@@ -790,5 +1012,4 @@ main = TestProgram
 # Executing this module from the command line
 ##############################################################################
 
-if __name__ == "__main__":
-    main(module=None)
+

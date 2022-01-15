@@ -3,7 +3,7 @@
 from testCase.ddt_case import MyTest
 import unittest, time, os
 from Public import BSTestRunner
-
+BASH_DIR="history"
 if __name__ == '__main__':
     suite = unittest.TestSuite()
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(MyTest))
@@ -12,5 +12,10 @@ if __name__ == '__main__':
     file_dir = os.path.join(basedir, 'test_Report')
     file = os.path.join(file_dir, (now + '.html'))
     re_open = open(file, 'wb')
-    runner = BSTestRunner.BSTestRunner(stream=re_open, title='接口测试报告', description='测试结果')
-    runner.run(suite)
+    besautiful = BSTestRunner.BSTestRunner(title="报告",
+                              description="测试报告",
+                              stream=re_open,
+                              trynum=3,
+                              filepath=BASH_DIR,
+                              is_show=True)
+    besautiful.run(suite)
