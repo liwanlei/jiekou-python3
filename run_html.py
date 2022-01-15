@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 # @Author  : leizi
-import unittest, os, datetime, time
+import os, datetime, time
 from testCase.case import testinterface
 from Public.py_Html import createHtml
 from Public.get_excel import datacel
-from Public.emmail import sendemali
 from Public.create_report import save_result
 import threading
 
@@ -12,12 +11,11 @@ import threading
 def stast():
     starttime = datetime.datetime.now()
     day = time.strftime("%Y%m%d%H%M", time.localtime(time.time()))
-
-    path = os.getcwd() + '//test_case_data//case.xlsx'
+    path=os.path.join(os.path.join(os.getcwd(),'test_case_data'),'case.xlsx')
     basdir = os.path.abspath(os.path.dirname(__file__))
     listid, listkey, listconeent, listurl, listfangshi, listqiwang, listname = datacel(path)
     listrelust, list_fail, list_pass, list_json, list_exption, list_weizhi= testinterface()
-    filepath = os.path.join(basdir + '//test_Report//%s-result.html' % day)
+    filepath = os.path.join(os.path.join(basdir,'test_Report'), '%s-result.html' % day)
     if os.path.exists(filepath) is False:
         os.system(r'touch %s' % filepath)
     save_result(starttime, len(listrelust), ((list_pass)), list_fail)
