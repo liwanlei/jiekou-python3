@@ -8,7 +8,8 @@ from Public.log import LOG, logger
 from Public.panduan import assert_in
 from Public.get_excel import datacel
 import os
-path =os.path.join(os.path.join(os.getcwd(),'test_case_data'),'dubbocase.xlsx')
+
+path = os.path.join(os.path.join(os.getcwd(), 'test_case_data'), 'dubbocase.xlsx')
 listid, listurl, listinterface, listmeth, listfobject, listparam, listassert = datacel(path)
 
 

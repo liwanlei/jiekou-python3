@@ -99,6 +99,7 @@ import os
 import sys, copy
 from io import StringIO as StringIO
 
+
 # ------------------------------------------------------------------------
 # The redirectors below are used to capture output during testing. Output
 # sent to sys.stdout and sys.stderr are automatically captured. However
@@ -278,7 +279,7 @@ class Template_mixin(object):
 <p class='description'>%(description)s</p>
 </div> </div >
 """
-    HEADING_TMPL_New="""
+    HEADING_TMPL_New = """
  <div class='heading'>
      <div style='width: 50%%;float:left;margin-top:inherit'>
 <h1>%(title)s</h1>
@@ -388,7 +389,7 @@ class Template_mixin(object):
     #
 
     ENDING_TMPL = """<div id='ending'>&nbsp;</div>"""
-    SCRPICTold="""
+    SCRPICTold = """
       <script language='javascript' type='text/javascript'>
       output_list = Array();
 
@@ -468,8 +469,7 @@ function html_escape(s) {
 </html>
     """
 
-
-    SCRPICTDATA=r"""
+    SCRPICTDATA = r"""
     <script language='javascript' type='text/javascript'>
 var dom = document.getElementById('containerchart');
 var myChart = echarts.init(dom);
@@ -608,10 +608,14 @@ function html_escape(s) {
 </body>
 </html>
     """
+
+
 # -------------------- The end of the Template class -------------------
 
 
 TestResult = unittest.TestResult
+
+
 class MyResult(TestResult):
     def __init__(self, verbosity=1, trynum=1):
         # 默认次数是0
@@ -714,7 +718,6 @@ class MyResult(TestResult):
         pass
 
 
-
 class _TestResult(MyResult):
     # note: _TestResult is a pure representation of results.
     # It lacks the output and reporting ability compares to unittest._TextTestResult.
@@ -738,8 +741,8 @@ class BSTestRunner(Template_mixin):
         self.stream = stream
         self.verbosity = verbosity
         self.trynum = trynum
-        self.is_show=is_show
-        self.filepath=filepath
+        self.is_show = is_show
+        self.filepath = filepath
         if title is None:
             self.title = self.DEFAULT_TITLE
         else:
@@ -760,9 +763,10 @@ class BSTestRunner(Template_mixin):
             pass
         self.stopTime = datetime.datetime.now()
         if self.is_show:
-            name=os.path.join(self.filepath,self.stopTime.strftime('%Y_%m_%d_%H_%M_%S')+'.txt')
-            with open(name,'w+') as f:
-                f.write(result.success_count.__str__()+"_"+result.error_count.__str__()+"_"+result.failure_count.__str__())
+            name = os.path.join(self.filepath, self.stopTime.strftime('%Y_%m_%d_%H_%M_%S') + '.txt')
+            with open(name, 'w+') as f:
+                f.write(
+                    result.success_count.__str__() + "_" + result.error_count.__str__() + "_" + result.failure_count.__str__())
                 f.close()
         self.generateReport(test, result)
         print('\n测试耗时: %s' % (self.stopTime - self.startTime))
@@ -814,9 +818,9 @@ class BSTestRunner(Template_mixin):
         report = self._generate_report(result)
         ending = self._generate_ending()
         if self.is_show:
-            scrpit=self.___generate_scrpitone()
+            scrpit = self.___generate_scrpitone()
         else:
-            scrpit=self._generate_scrpit()
+            scrpit = self._generate_scrpit()
         output = self.HTML_TMPL % dict(
             title=saxutils.escape(self.title),
             generator=generator,
@@ -832,7 +836,7 @@ class BSTestRunner(Template_mixin):
         return self.STYLESHEET_TMPL
 
     def _generate_heading(self, report_attrs):
-        ISSHOWPERDATA=True
+        ISSHOWPERDATA = True
         if ISSHOWPERDATA:
             a_lines = []
             for name, value in report_attrs:
@@ -845,7 +849,8 @@ class BSTestRunner(Template_mixin):
                 a_lines.append(line)
             if self.is_show:
                 heading = self.HEADING_TMPL_New % dict(
-                    title=saxutils.escape(self.title),parameters=''.join(a_lines),description=saxutils.escape(self.description),)
+                    title=saxutils.escape(self.title), parameters=''.join(a_lines),
+                    description=saxutils.escape(self.description), )
             else:
                 heading = self.HEADING_TMPL % dict(
                     title=saxutils.escape(self.title),
@@ -959,27 +964,30 @@ class BSTestRunner(Template_mixin):
 
     def _generate_ending(self):
         return self.ENDING_TMPL
+
     def ___generate_scrpitone(self):
-        namerun,faillist,success,error=self._readresult()
-        return self.SCRPICTDATA% dict(reslutname=namerun,
-                                      success=success,
-                                      fail=faillist,
-                                      error=error)
-    def   _readresult(self):
-        namerun=[]
-        faillist=[]
-        success=[]
-        error=[]
-        for root,dirs,files in os.walk(self.filepath):
+        namerun, faillist, success, error = self._readresult()
+        return self.SCRPICTDATA % dict(reslutname=namerun,
+                                       success=success,
+                                       fail=faillist,
+                                       error=error)
+
+    def _readresult(self):
+        namerun = []
+        faillist = []
+        success = []
+        error = []
+        for root, dirs, files in os.walk(self.filepath):
             for file in files:
                 if file.endswith(".txt"):
                     namerun.append(file.split(".")[0].split("/")[-1])
-                    with open(os.path.join(root,file),'r') as f:
-                        reslut=f.readline().split('\n')[0].split("_")
+                    with open(os.path.join(root, file), 'r') as f:
+                        reslut = f.readline().split('\n')[0].split("_")
                         success.append(reslut[0])
                         error.append(reslut[1])
                         faillist.append(reslut[2])
-        return namerun,faillist,success,error
+        return namerun, faillist, success, error
+
     def _generate_scrpit(self):
         return self.SCRPICTold
 
@@ -1011,5 +1019,3 @@ main = TestProgram
 ##############################################################################
 # Executing this module from the command line
 ##############################################################################
-
-

@@ -9,19 +9,21 @@ reques = requ()
 
 
 class TestApi(object):
-    def __init__(self, url, key, connent, fangshi):
+    def __init__(self, url, parame, method):
         self.url = url
-        self.key = key
-        self.connent = connent
-        self.fangshi = fangshi
+        self.parame = parame
+        self.method = method
 
     def testapi(self):
-        if self.fangshi == 'POST':
-            self.parem = {'key': self.key, 'info': self.connent}
-            self.response = reques.post(self.url, self.parem)
-        elif self.fangshi == "GET":
-            self.parem = {'key': self.key, 'info': self.connent}
-            self.response = reques.get(url=self.url, params=self.parem)
+        if self.method == 'POST':
+            self.response = reques.post(self.url, self.parame)
+        elif self.method == "GET":
+            self.response = reques.get(url=self.url, params=self.parame)
+        elif self.method == "PUT":
+            self.response = reques.putparams(url=self.url, params=self.parame)
+        elif self.method == "DELETE":
+            self.response = reques.delparams(url=self.url, params=self.parame)
+
         return self.response
 
     def getJson(self):

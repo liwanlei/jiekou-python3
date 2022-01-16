@@ -2,7 +2,7 @@
 # @Time    : 2017/6/4 20:35
 # @Author  : lileilei
 # @File    : get_excel.py
-import xlrd,os
+import xlrd, os
 from Public.log import LOG, logger
 
 
@@ -33,13 +33,19 @@ def datacel(filepath):
         print(e)
         LOG.info('打开测试用例失败，原因是:%s' % e)
         return
+
+
 @logger('生成数据驱动所用数据')
 def makedata():
-    path = os.path.join(os.path.join(os.getcwd(),'test_case_data'),'case.xlsx')
-    listid, listkey, listconeent, listurl, listfangshi, listqiwang, listname=datacel(path)
-    i=0
-    make_data=[]
+    path = os.path.join(os.path.join(os.getcwd(), 'test_case_data'), 'case.xlsx')
+    listid, listkey, listconeent, listurl, listfangshi, listqiwang, listname = datacel(path)
+
+    make_data = []
     for i in range(len(listid)):
-        make_data.append({'url':listurl[i],'key':listkey[i],'coneent':listconeent[i],'fangshi':listfangshi[i],'qiwang':listqiwang[i]})
-        i+=1
+        make_data.append({'url': listurl[i], 'key': listkey[i],
+                          'coneent': listconeent[i], 'fangshi': listfangshi[i],
+                          'qiwang': listqiwang[i],
+                          'id': listid[i]},
+                         )
+        i += 1
     return make_data

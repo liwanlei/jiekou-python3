@@ -6,9 +6,9 @@ from Interface.testFengzhuang import TestApi
 from Public.get_excel import datacel
 from Public.log import LOG, logger
 import os
-from config.config_T import Config_Try_Num, TestPlanUrl
+from config.config import Config_Try_Num, TestPlanUrl
 
-path =  os.path.join(os.path.join(os.getcwd(),'test_case_data'),'case.xlsx')
+path = os.path.join(os.path.join(os.getcwd(), 'test_case_data'), 'case.xlsx')
 
 listid, listkey, listconeent, listurl, listfangshi, listqiwang, listname = datacel(path)
 from Public.panduan import assert_in
@@ -25,7 +25,10 @@ def testinterface():
     error_num = 0
     for i in range(len(listurl)):
         while error_num <= Config_Try_Num + 1:
-            api = TestApi(url=TestPlanUrl + listurl[i], key=listkey[i], connent=listconeent[i], fangshi=listfangshi[i])
+            parem = {'key': listkey[i]}
+            parem.update({'info': eval(listconeent[i])})
+            #parem=eval(data_test[listconeent[i])
+            api = TestApi(url=TestPlanUrl + listurl[i], parame=parem, method=listfangshi[i])
             apijson = api.getJson()
             if apijson['code'] == 0:
                 LOG.info('inputdata> 参数:%s, url:%s ,返回:%s,预期:%s' % (listconeent[i], listurl[i], apijson, listqiwang[i]))

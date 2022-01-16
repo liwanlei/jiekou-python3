@@ -5,7 +5,7 @@
 """
 '''封装钉钉群发消息'''
 import requests, json
-from config.config_T import Dingtalk_access_token
+from config.config import Dingtalk_access_token
 
 
 def send_ding(content):

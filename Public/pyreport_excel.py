@@ -4,7 +4,7 @@
 @file: pyreport_excel.py
 @time: 2017/6/7 8:47
 """
-import xlrd, os, xlwt, yaml, xlsxwriter  # 导入库
+import os, xlwt, yaml
 from xlwt import *
 
 
@@ -56,9 +56,8 @@ def yangshique(me):
 
 def create(filename, list_pass, list_fail, listids, listnames, listkeys, listconeents, listurls, listfangshis,
            listqiwangs, list_json, listrelust):
-
-    filepath = open(    os.path.join(os.path.join(os.getcwd(),'config'),'test_report.yaml'), encoding='utf-8')
-    file_config = yaml.load(filepath,Loader=yaml.FullLoader)
+    filepath = open(os.path.join(os.path.join(os.getcwd(), 'config'), 'test_report.yaml'), encoding='utf-8')
+    file_config = yaml.load(filepath, Loader=yaml.FullLoader)
     file = Workbook(filename)
     table = file.add_sheet('测试结果', cell_overwrite_ok=True)
     style = yangshi1()

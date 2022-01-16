@@ -1,5 +1,8 @@
 # 接口测试框架（基于json格式、http请求,python3,不兼容python2.x版本） 
 ## 注：现在基于Excel文件管理测试用例基本实现,)
+## 备注：大家在运行的时候，如果参数不需要key，只需要字典，可以在ddt_case.py和case.py改造parame,注释掉现在的parem，启用新的即可
+## 依赖用例支持用例执行，在testCase的ddt_case.py有实现，逻辑在代码中有写，参数的格式{"name":"$case1=data"}即代表name的值是case1的data字段，简单的实现。
+## 依赖用例是简单的实现，具体在业务上面还有很多复杂的要处理，知识实现了，部分的思路。
 ## (目前在部分window上会出现FileNotFoundError [Errno 2] No such file or directory，这个bug是路径过长,解决方案为吧log日志放在当前目录，或者修改动态生成的文件的名字，给了第一种方式，测试日志放在当前目录）
 ## qq交流群：194704520  
 ### 使用的库 requests，绝大部分是基于Python原有的库进行的，这样简单方便，

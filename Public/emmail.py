@@ -2,15 +2,15 @@
 # @Author  : leizi
 import smtplib, time, os
 from email.mime.text import MIMEText
-from email.utils import formataddr, parseaddr
 from email.mime.multipart import MIMEMultipart
-from email.mime.base import MIMEBase
+import yaml
 
 
 def load_emil_setting():  # 从配置文件中加载获取email的相关信息
-    import yaml
-    data_file = open(r".\\config\\email.yaml", "r")
-    datas = yaml.load(data_file)
+    filepath = os.path.join(os.path.join(os.getcwd(), 'config'), 'email.yaml')
+
+    data_file = open(filepath, "r")
+    datas = yaml.load(data_file, Loader=yaml.FullLoader)
     data_file.close()
     return (datas['foremail'], datas['password'], datas['toeamil'], datas['title'])
 
