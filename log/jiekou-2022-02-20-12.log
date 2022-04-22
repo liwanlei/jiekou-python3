@@ -1,0 +1,6 @@
+[2022-02-20 12:44:50.852541] INFO: jiekou: 当前模块 生成数据驱动所用数据
+[2022-02-20 12:44:50.853016] INFO: jiekou: 全部args参数参数信息 , ()
+[2022-02-20 12:44:50.853153] INFO: jiekou: 全部kwargs参数信息 , {}
+[2022-02-20 12:44:50.853307] INFO: jiekou: 当前模块 解析测试用例文件
+[2022-02-20 12:44:50.853429] INFO: jiekou: 全部args参数参数信息 , ('/Users/lileilei/Desktop/testplan/jiekou-python3/test_case_data/case.xlsx',)
+[2022-02-20 12:44:50.853548] INFO: jiekou: 全部kwargs参数信息 , {}

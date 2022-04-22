@@ -1,0 +1,10 @@
+1.0:
+  code: 0
+  result:
+    code: 40007
+    text: 您的请求内容为空。
+2.0:
+  code: 0
+  result:
+    code: 40007
+    text: 您的请求内容为空。

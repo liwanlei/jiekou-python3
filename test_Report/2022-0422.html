@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>报告</title>
+    <meta name="generator" content="BSTestRunner 0.8.4"/>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    
+<style type="text/css" media="screen">
+
+/* -- css div popup ------------------------------------------------------------------------ */
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #99CCFF;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 10pt;
+    width: 1200px;
+}
+
+/* -- report ------------------------------------------------------------------------ */
+
+#show_detail_line .label {
+    font-size: 85%;
+    cursor: pointer;
+}
+
+#show_detail_line {
+    margin: 2em auto 1em auto;
+}
+
+#total_row  { font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+</style>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+<body>
+<div class="container">
+    
+ <div class='heading'>
+     <div style='width: 50%;float:left;margin-top:inherit'>
+<h1>报告</h1>
+<p><strong>开始时间:</strong> 2022-04-22 17:22:51</p>
+<p><strong>持续时间:</strong> 0:00:00.347419</p>
+<p><strong>状态:</strong> <span class="text text-success">通过 <strong>2</strong></span></p>
+
+<p class='description'>测试报告</p>
+</div> 
+
+<div id='container2' style='width:50%;float:left;margin-top:20px;height:200px;'>
+    </div>
+</div >
+<div id='containerchart' style='height: 300px;margin-top: 20%;'></div>
+    
+    
+<p id='show_detail_line'>
+<span class="label label-primary" onclick="showCase(0)">公用</span>
+<span class="label label-danger" onclick="showCase(1)">失败</span>
+<span class="label label-default" onclick="showCase(2)">所有</span>
+</p>
+<table id='result_table' class="table">
+    <thead>
+        <tr id='header_row'>
+            <th>测试组/测试用例</td>
+            <th>数量</td>
+            <th>失败</td>
+            <th>通过</td>
+            <th>错误</td>
+            <th>查看</td>
+        </tr>
+    </thead>
+    <tbody>
+        
+<tr class='text text-success'>
+    <td>testCase.ddt_case.MyTest</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a class="btn btn-xs btn-primary"href="javascript:showClassDetail('c1',2)">详情</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='text text-success'><div class='testcase'>test_api_1: 1.处理参数</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='text text-success'><div class='testcase'>test_api_2: 1.处理参数</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+    </tbody>
+    <tfoot>
+        <tr id='total_row'>
+            <td>总计</td>
+            <td>2</td>
+            <td class="text text-success">2</td>
+            <td class="text text-danger">0</td>
+            <td class="text text-warning">0</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tfoot>
+</table>
+
+    <div id='ending'>&nbsp;</div>
+</div>
+ 
+    <script language='javascript' type='text/javascript'>
+var dom = document.getElementById('containerchart');
+var myChart = echarts.init(dom);
+var domone = document.getElementById('container2');
+var myChartone = echarts.init(domone);
+var optionsone;
+optionsone = {
+    title: {
+        text: '历史记录'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data: ['成功', '失败','错误']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['2022_01_16_09_43_50', '2022_01_16_09_43_56', '2022_01_16_09_41_37', '2022_04_22_17_22_51', '2022_01_16_09_39_12', '2022_01_15_14_26_21', '2022_01_16_09_41_00', '2022_01_16_09_39_32', '2022_01_16_09_44_26', '2022_01_16_09_46_33', '2022_01_16_09_43_15', '2022_01_16_09_44_35', '2022_01_16_09_45_12', '2022_01_16_09_39_51', '2022_01_16_09_42_37', '2022_01_16_09_38_16', '2022_01_16_09_36_13']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+            name: '成功',
+            type: 'line',
+            stack: '总量',
+            data: ['2', '2', '2', '2', '0', '2', '0', '0', '2', '2', '2', '2', '2', '0', '2', '0', '0']
+        },
+        {
+            name: '失败',
+            type: 'line',
+            stack: '总量',
+            data: ['0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0']
+        },
+        {
+            name: '错误',
+            type: 'line',
+            stack: '总量',
+            data: ['0', '0', '0', '0', '2', '0', '2', '2', '0', '0', '0', '0', '0', '2', '0', '2', '2']
+        }
+
+    ]
+};
+if (optionsone && typeof optionsone === 'object') {
+    myChartone.setOption(optionsone);
+}
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName('tr');
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+</body>
+</html>
+    

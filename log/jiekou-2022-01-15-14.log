@@ -1,0 +1,22 @@
+[2022-01-15 14:27:09.437035] INFO: jiekou: 当前模块 生成数据驱动所用数据
+[2022-01-15 14:27:09.437977] INFO: jiekou: 全部args参数参数信息 , ()
+[2022-01-15 14:27:09.438118] INFO: jiekou: 全部kwargs参数信息 , {}
+[2022-01-15 14:27:09.438263] INFO: jiekou: 当前模块 解析测试用例文件
+[2022-01-15 14:27:09.438360] INFO: jiekou: 全部args参数参数信息 , ('/Users/lileilei/Desktop/testplan/jiekou-python3/test_case_data/case.xlsx',)
+[2022-01-15 14:27:09.438552] INFO: jiekou: 全部kwargs参数信息 , {}
+[2022-01-15 14:27:09.455070] INFO: jiekou: 测试用例开始执行
+[2022-01-15 14:27:09.455222] INFO: jiekou: 输入参数：url:/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：POST
+[2022-01-15 14:27:09.455321] INFO: jiekou: 输入参数：url:/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：None
+[2022-01-15 14:27:09.456489] INFO: jiekou: 返回结果:{'code': 1, 'result': "请求异常:Invalid URL '/openapi/api': No schema supplied. Perhaps you meant http:///openapi/api?"}
+[2022-01-15 14:27:09.456612] INFO: jiekou: 当前模块 断言测试结果
+[2022-01-15 14:27:09.456709] INFO: jiekou: 全部args参数参数信息 , ()
+[2022-01-15 14:27:09.456797] INFO: jiekou: 全部kwargs参数信息 , {'asserqingwang': 'code=40001'}
+[2022-01-15 14:27:09.456898] INFO: jiekou: 测试用例执行完毕
+[2022-01-15 14:27:09.457025] INFO: jiekou: 测试用例开始执行
+[2022-01-15 14:27:09.457124] INFO: jiekou: 输入参数：url:/openapi/api,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：POST
+[2022-01-15 14:27:09.457211] INFO: jiekou: 输入参数：url:/openapi/api,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：None
+[2022-01-15 14:27:09.457530] INFO: jiekou: 返回结果:{'code': 1, 'result': "请求异常:Invalid URL '/openapi/api': No schema supplied. Perhaps you meant http:///openapi/api?"}
+[2022-01-15 14:27:09.457637] INFO: jiekou: 当前模块 断言测试结果
+[2022-01-15 14:27:09.457731] INFO: jiekou: 全部args参数参数信息 , ()
+[2022-01-15 14:27:09.457816] INFO: jiekou: 全部kwargs参数信息 , {'asserqingwang': 'code=40002'}
+[2022-01-15 14:27:09.457914] INFO: jiekou: 测试用例执行完毕

@@ -1,0 +1,22 @@
+[2022-01-16 09:46:33.662871] INFO: jiekou: 当前模块 生成数据驱动所用数据
+[2022-01-16 09:46:33.664217] INFO: jiekou: 全部args参数参数信息 , ()
+[2022-01-16 09:46:33.664333] INFO: jiekou: 全部kwargs参数信息 , {}
+[2022-01-16 09:46:33.664468] INFO: jiekou: 当前模块 解析测试用例文件
+[2022-01-16 09:46:33.664560] INFO: jiekou: 全部args参数参数信息 , ('/Users/lileilei/Desktop/testplan/jiekou-python3/test_case_data/case.xlsx',)
+[2022-01-16 09:46:33.664642] INFO: jiekou: 全部kwargs参数信息 , {}
+[2022-01-16 09:46:33.685922] INFO: jiekou: 测试用例开始执行
+[2022-01-16 09:46:33.686171] INFO: jiekou: 输入参数：url:/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：POST
+[2022-01-16 09:46:33.686288] INFO: jiekou: 输入参数：url:/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：None
+[2022-01-16 09:46:33.750325] INFO: jiekou: 返回结果:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}
+[2022-01-16 09:46:33.750550] INFO: jiekou: 当前模块 断言测试结果
+[2022-01-16 09:46:33.750662] INFO: jiekou: 全部args参数参数信息 , ()
+[2022-01-16 09:46:33.750769] INFO: jiekou: 全部kwargs参数信息 , {'asserqingwang': 'code=40001'}
+[2022-01-16 09:46:33.750898] INFO: jiekou: 测试用例执行完毕
+[2022-01-16 09:46:33.751105] INFO: jiekou: 测试用例开始执行
+[2022-01-16 09:46:33.751315] INFO: jiekou: 输入参数：url:/openapi/api,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：POST
+[2022-01-16 09:46:33.751432] INFO: jiekou: 输入参数：url:/openapi/api,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：None
+[2022-01-16 09:46:33.782704] INFO: jiekou: 返回结果:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}
+[2022-01-16 09:46:33.782947] INFO: jiekou: 当前模块 断言测试结果
+[2022-01-16 09:46:33.783049] INFO: jiekou: 全部args参数参数信息 , ()
+[2022-01-16 09:46:33.783166] INFO: jiekou: 全部kwargs参数信息 , {'asserqingwang': 'code=40002'}
+[2022-01-16 09:46:33.783281] INFO: jiekou: 测试用例执行完毕

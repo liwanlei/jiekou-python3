@@ -60,10 +60,6 @@ class MyTest(unittest.TestCase):
         except:
             self.assertTrue(False,msg="参数格式不对")
 
-        # try:
-            #parem=eval(data_test['coneent'])
-        # except:
-        #     self.assertTrue(False, msg="参数格式不对")
         api = TestApi(url=TestPlanUrl+data_test['url'],
                       parame=parem,
                       method=data_test['fangshi'])
