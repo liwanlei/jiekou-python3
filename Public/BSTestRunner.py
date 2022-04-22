@@ -205,7 +205,7 @@ class Template_mixin(object):
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>%(title)s</title>
     <meta name="generator" content="%(generator)s"/>
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" ">
     <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
     %(stylesheet)s
 
@@ -316,8 +316,8 @@ class Template_mixin(object):
         <tr id='header_row'>
             <th>测试组/测试用例</td>
             <th>数量</td>
-            <th>失败</td>
             <th>通过</td>
+            <th>失败</td>
             <th>错误</td>
             <th>查看</td>
         </tr>
