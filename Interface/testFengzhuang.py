@@ -5,25 +5,23 @@
 # @File    : testFengzhuang.py
 from Public.test_requests import requ
 
-reques = requ()
-
 
 class TestApi(object):
     def __init__(self, url, parame, method):
         self.url = url
         self.parame = parame
         self.method = method
+        self.reques = requ()
 
     def testapi(self):
         if self.method == 'POST':
-            self.response = reques.post(self.url, self.parame)
+            self.response = self.reques.post(self.url, self.parame)
         elif self.method == "GET":
-            self.response = reques.get(url=self.url, params=self.parame)
+            self.response = self.reques.get(url=self.url, params=self.parame)
         elif self.method == "PUT":
-            self.response = reques.putparams(url=self.url, params=self.parame)
+            self.response = self.reques.putparams(url=self.url, params=self.parame)
         elif self.method == "DELETE":
-            self.response = reques.delparams(url=self.url, params=self.parame)
-
+            self.response = self.reques.delparams(url=self.url, params=self.parame)
         return self.response
 
     def getJson(self):

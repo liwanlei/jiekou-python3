@@ -6,11 +6,11 @@ from .log import LOG, logger
 
 
 @logger('断言测试结果')
-def assert_in(asserqiwang, fanhuijson):
-    if len(asserqiwang.split('=')) > 1:
-        data = asserqiwang.split('&')
+def assert_in(asserassert, returnjson):
+    if len(asserassert.split('=')) > 1:
+        data = asserassert.split('&')
         result = dict([(item.split('=')) for item in data])
-        value1 = ([(str(res(fanhuijson, key))) for key in result.keys()])
+        value1 = ([(str(res(returnjson, key))) for key in result.keys()])
         value2 = ([(str(value)) for value in result.values()])
         if value1 == value2:
             return {'code': 0, "result": 'pass'}
@@ -22,9 +22,9 @@ def assert_in(asserqiwang, fanhuijson):
 
 
 @logger('断言测试结果')
-def assertre(asserqingwang):
-    if len(asserqingwang.split('=')) > 1:
-        data = asserqingwang.split('&')
+def assertre(asserassert):
+    if len(asserassert.split('=')) > 1:
+        data = asserassert.split('&')
         result = dict([(item.split('=')) for item in data])
         return result
     else:

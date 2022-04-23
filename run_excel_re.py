@@ -17,14 +17,15 @@ def start():
     basdir = os.path.abspath(os.path.dirname(__file__))
 
     path = os.path.join(os.path.join(os.getcwd(), 'test_case_data'), 'case.xlsx')
-    listid, listkey, listconeent, listurl, listfangshi, listqiwang, listname = datacel(path)
+    listid, listkey, listconeent, listurl, listmethod, listqiwang, listname = datacel(path)
     listrelust, list_fail, list_pass, list_json, list_weizhi, listone = testinterface()
     filepath = os.path.join(os.path.join(basdir, 'test_Report'), '%s-result.xls' % mtime)
     if os.path.exists(filepath) is False:
         os.system(r'touch %s' % filepath)
     save_result(starttime, len(listrelust), ((list_pass)), list_fail)
     create(filename=filepath, list_fail=list_fail, list_pass=list_pass, list_json=list_json, listurls=listurl,
-           listkeys=listkey, listconeents=listconeent, listfangshis=listfangshi, listqiwangs=listqiwang,
+           listkeys=listkey, listconeents=listconeent, listfangshis=listmethod,
+           listqiwangs=listqiwang,
            listids=listid, listrelust=listrelust, listnames=listname)
 
 
