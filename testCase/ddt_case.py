@@ -75,5 +75,5 @@ class MyTest(unittest.TestCase):
         reslut[data_test['id']] = apijson
         write(reslut)
         LOG.info('返回结果:%s' % apijson)
-        assertall = assertre(asserqingwang=data_test['qiwang'])
+        assertall = assertre(asserassert=data_test['qiwang'])
         self.assertNotEqual(dict(assertall), dict(apijson), msg='预期和返回不一致')
