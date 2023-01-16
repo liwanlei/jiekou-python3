@@ -27,7 +27,7 @@ def testdubbointerface():
         dubboapireslu = dubboapi.getresult()
         if dubboapireslu['code'] == 0:
             LOG.info('inputdata> 参数:%s, url:%s ,返回:%s,预期:%s' % (listparam[i], listurl[i], dubboapireslu, listassert[i]))
-            assert_re = assert_in(asserqiwang=listassert[i], fanhuijson=dubboapireslu)
+            assert_re = assert_in(asserassert=listassert[i], returnjson=dubboapireslu)
             if assert_re['code'] == 0:
                 list_json.append(dubboapireslu['result'])
                 listrelust.append('pass')
