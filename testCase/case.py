@@ -32,7 +32,7 @@ def testinterface():
             apijson = api.getJson()
             if apijson['code'] == 0:
                 LOG.info('inputdata> 参数:%s, url:%s ,返回:%s,预期:%s' % (listconeent[i], listurl[i], apijson, listqiwang[i]))
-                assert_re = assert_in(asserqiwang=listqiwang[i], fanhuijson=apijson)
+                assert_re = assert_in(asserassert=listqiwang[i], asserassert=apijson)
                 if assert_re['code'] == 0:
                     list_json.append(apijson['result'])
                     listrelust.append('pass')
