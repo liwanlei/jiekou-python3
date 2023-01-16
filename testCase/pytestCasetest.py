@@ -59,6 +59,6 @@ class TestParametrize(object):
         reslut = {}
         reslut[data_test['id']] = apijson
         LOG.info('返回结果:%s' % apijson)
-        assertall = assertre(asserqingwang=data_test['qiwang'])
+        assertall = assertre(asserassert=data_test['qiwang'])
 
         assert dict(assertall) == dict(apijson)
