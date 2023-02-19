@@ -3,7 +3,7 @@
 # @Author  : lileilei
 # @File    : get_excel.py
 import xlrd, os
-from Public.log import LOG, logger
+from public.log import LOG, logger
 
 
 @logger('解析测试用例文件')
@@ -42,8 +42,8 @@ def makedata():
     make_data = []
     for i in range(len(listid)):
         make_data.append({'url': listurl[i], 'key': listkey[i],
-                          'coneent': listconeent[i], 'fangshi': listmethod[i],
-                          'qiwang': listassert[i],
+                          'coneent': listconeent[i], 'method': listmethod[i],
+                          'assertconnect': listassert[i],
                           'id': listid[i]},
                          )
         i += 1

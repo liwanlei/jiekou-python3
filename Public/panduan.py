@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Date    : 2017-08-02 21:54:08
 # @Author  : lileilei
-from Public.fengzhuang_dict import res
+from public.fengzhuang_dict import res
 from .log import LOG, logger
 
 

@@ -1,8 +1,8 @@
 import ddt, unittest, os, yaml
 from Interface.testFengzhuang import TestApi
-from Public.get_excel import makedata
-from Public.log import LOG
-from Public.panduan import assertre
+from public.get_excel import makedata
+from public.log import LOG
+from public.panduan import assertre
 from config.config import TestPlanUrl
 
 file_dir = os.path.join(os.getcwd(), 'test_Report')
@@ -62,18 +62,18 @@ class MyTest(unittest.TestCase):
             parem.update({'info': parem_dict})
         except:
             self.assertTrue(False, msg="参数格式不对")
-
+        LOG.info(parem)
         api = TestApi(url=TestPlanUrl + data_test['url'],
                       parame=parem,
-                      method=data_test['fangshi'])
-        LOG.info('输入参数：url:%s,key:%s,参数:%s,请求方式：%s' % (data_test['url'], data_test['key'], data_test['coneent'],
+                      method=data_test['method'])
+        LOG.info('输入参数：url:%s,key:%s,参数:%s,请求方式：%s' % (data_test['url'], data_test['key'], data_test['assertconnect'],
                                                        LOG.info('输入参数：url:%s,key:%s,参数:%s,请求方式：%s' % (
-                                                           data_test['url'], data_test['key'], data_test['coneent'],
-                                                           data_test['fangshi']))))
+                                                           data_test['url'], data_test['key'], data_test['assertconnect'],
+                                                           data_test['method']))))
         apijson = api.getJson()
         reslut = {}
         reslut[data_test['id']] = apijson
         write(reslut)
         LOG.info('返回结果:%s' % apijson)
-        assertall = assertre(asserassert=data_test['qiwang'])
+        assertall = assertre(asserassert=data_test['assertconnect'])
         self.assertNotEqual(dict(assertall), dict(apijson), msg='预期和返回不一致')

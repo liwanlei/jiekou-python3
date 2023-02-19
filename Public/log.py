@@ -15,13 +15,13 @@ if not os.path.exists(LOG_DIR):
     file_stream = True
 
 
-def get_logger(name='jiekou', file_log=file_stream, level=''):
+def get_logger(name='interface_case_run', file_log=file_stream, level=''):
     """ get logger Factory function """
     logbook.set_datetime_format('local')
     ColorizedStderrHandler(bubble=False, level=level).push_thread()
     logbook.TimedRotatingFileHandler(
         os.path.join(LOG_DIR, '%s.log' % name),
-        date_format='%Y-%m-%d-%H', bubble=True, encoding='utf-8').push_thread()
+        date_format='%Y_%m_%d_%H', bubble=True, encoding='utf-8').push_thread()
     return logbook.Logger(name)
 
 

@@ -5,7 +5,7 @@
 """
 from pyhessian.client import HessianProxy
 from pyhessian import protocol
-from Public.log import LOG, logger
+from public.log import LOG, logger
 
 
 @logger('dubbo接口')

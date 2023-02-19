@@ -18,8 +18,9 @@
 ### 4.Public 展示测试报告相关的脚本，这里可以自己封装，也可以使用现成的，我这里是基于我自己封装的，最后生成的测试报告更加易懂，出错可以尽快排查相关原因
 ### 5.report 存放测试报告，
 ### 6.run_excel_re.py/run_html.py 主运行文件。运行后可以生成相应的测试报告
+### 7.run_new新版执行方式，重写了unittest方法，利用ddt驱动，生成漂亮的测试报告
 ##
-##  欢迎大家关注我的公众号
+##  除了在github的开源项目的分享，我也运营了自己的公众号，欢迎大家关注我的公众号
 ![Alt text](https://github.com/liwanlei/jiekou-python3/blob/master/img/%E5%85%AC%E4%BC%97%E5%8F%B7%E6%B5%B7%E6%8A%A5.jpeg) 
 ## 产生的html测试报告如下
 ![Alt text](https://github.com/liwanlei/jiekou/blob/master/img/cebaogaotu.png)

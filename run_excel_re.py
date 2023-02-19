@@ -4,11 +4,11 @@
 @file: run_excel_re.py
 @time: 2017/6/9 12:45
 """
-from Public.pyreport_excel import create
+from public.pyreport_excel import create
 import os, threading, datetime
 from testCase.case import testinterface
-from Public.get_excel import datacel
-from Public.create_report import save_result
+from public.get_excel import datacel
+from public.create_report import save_result
 
 
 def start():

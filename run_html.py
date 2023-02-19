@@ -2,9 +2,9 @@
 # @Author  : leizi
 import os, datetime, time
 from testCase.case import testinterface
-from Public.py_Html import createHtml
-from Public.get_excel import datacel
-from Public.create_report import save_result
+from public.py_Html import createHtml
+from public.get_excel import datacel
+from public.create_report import save_result
 import threading
 
 

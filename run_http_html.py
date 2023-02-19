@@ -2,10 +2,10 @@
 # @Author  : leizi
 import os, datetime, time
 from testCase.case import testinterface
-from Public.py_Html import createHtml
-from Public.get_excel import datacel
+from public.py_Html import createHtml
+from public.get_excel import datacel
 
-from Public.Dingtalk import send_ding
+from public.Dingtalk import send_ding
 
 '''执行测试的主要文件'''
 

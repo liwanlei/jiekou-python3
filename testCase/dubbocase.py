@@ -4,9 +4,9 @@
 @time: 2018/3/29 12:47 
 """
 from Interface.dubbo_feng import DubboInterface
-from Public.log import LOG, logger
-from Public.panduan import assert_in
-from Public.get_excel import datacel
+from public.log import LOG, logger
+from public.panduan import assert_in
+from public.get_excel import datacel
 import os
 
 path = os.path.join(os.path.join(os.getcwd(), 'test_case_data'), 'dubbocase.xlsx')

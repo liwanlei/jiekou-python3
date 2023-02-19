@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>http接口自动化测试报告</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .hidden-detail,.hidden-tr{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+	
+<div  class='col-md-4 col-md-offset-4' style='margin-left:3%;'>
+<h1>接口测试的结果</h1>
+    <table  class="table table-hover table-condensed">
+            <tbody>
+                <tr>
+		<td><strong>开始时间:</strong> 2023-02-19 18:06:22.576639</td>
+		</tr>
+		<td><strong>结束时间:</strong> 2023-02-19 18:06:23.111143</td></tr>
+		<td><strong>耗时:</strong> 0:00:00.534504</td></tr>
+		<td><strong>结果:</strong>
+			<span >Pass: <strong >0</strong>
+			Fail: <strong >2</strong>
+			       exception: <strong >0</strong> 
+			       weizhicuowu : <strong >0</strong></span></td>                  
+			   </tr> 
+			   </tbody></table>
+			   </div> <div class="row " style="margin:60px">
+        <div style='    margin-top: 18%;' >
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" id="check-all" class="btn btn-primary">所有用例</button>
+            <button type="button" id="check-success" class="btn btn-success">成功用例</button>
+            <button type="button" id="check-danger" class="btn btn-danger">失败用例</button>
+            <button type="button" id="check-warning" class="btn btn-warning">错误用例</button>
+            <button type="button" id="check-except" class="btn btn-defult">异常用例</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="...">
+        </div>
+        <table class="table table-hover table-condensed table-bordered" style="word-wrap:break-word; word-break:break-all;  margin-top: 7px;">
+		<tr >
+            <td ><strong>用例ID&nbsp;</strong></td>
+            <td><strong>用例名字</strong></td>
+            <td><strong>key</strong></td>
+            <td><strong>请求内容</strong></td>
+            <td><strong>url</strong></td>
+            <td><strong>请求方式</strong></td>
+            <td><strong>预期</strong></td>
+            <td><strong>实际返回</strong></td>  
+            <td><strong>结果</strong></td>
+        </tr>
+     
+        <tr class="case-tr warning">
+            <td>1.0</td>
+            <td>图灵api接口</td>
+            <td>aaaa</td>
+            <td>{'password':'1222'}</td>
+            <td>/openapi/api</td>
+            <td>POST</td>
+            <td>code=40001</td>
+            <td>{'code': 40007, 'text': '您的请求内容为空。'}</td>
+            <td bgcolor="fail">fail</td>
+        </tr>
+    
+        <tr class="case-tr warning">
+            <td>2.0</td>
+            <td>图灵api接口</td>
+            <td>dfeb1cc8125943d29764a2f2f5c33739</td>
+            <td>{'password':'1222'}</td>
+            <td>/openapi/api</td>
+            <td>POST</td>
+            <td>code=40002</td>
+            <td>{'code': 40007, 'text': '您的请求内容为空。'}</td>
+            <td bgcolor="fail">fail</td>
+        </tr>
+    </div></div></table><script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$("#check-danger").click(function(e){
+	    $(".case-tr").removeClass("hidden-tr");
+        $(".success").addClass("hidden-tr");
+        $(".warning").addClass("hidden-tr");
+        $(".error").addClass("hidden-tr");
+	});
+	$("#check-warning").click(function(e){
+		 $(".case-tr").removeClass("hidden-tr");
+        $(".success").addClass("hidden-tr");
+        $(".danger").addClass("hidden-tr");
+        $(".error").addClass("hidden-tr");
+	});
+	$("#check-success").click(function(e){
+		 $(".case-tr").removeClass("hidden-tr");
+        $(".warning").addClass("hidden-tr");
+        $(".danger").addClass("hidden-tr");
+        $(".error").addClass("hidden-tr");
+	});
+	$("#check-except").click(function(e){
+		 $(".case-tr").removeClass("hidden-tr");
+        $(".warning").addClass("hidden-tr");
+        $(".danger").addClass("hidden-tr");
+        $(".success").addClass("hidden-tr");
+	});
+	$("#check-all").click(function(e){
+	    $(".case-tr").removeClass("hidden-tr");
+	});
+</script>
+</body></html>

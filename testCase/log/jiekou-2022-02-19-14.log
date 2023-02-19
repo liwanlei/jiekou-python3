@@ -1,7 +1,0 @@
-[2022-02-19 14:48:50.453153] INFO: jiekou: 当前模块 生成数据驱动所用数据
-[2022-02-19 14:48:50.454468] INFO: jiekou: 全部args参数参数信息 , ()
-[2022-02-19 14:48:50.454722] INFO: jiekou: 全部kwargs参数信息 , {}
-[2022-02-19 14:48:50.454956] INFO: jiekou: 当前模块 解析测试用例文件
-[2022-02-19 14:48:50.455119] INFO: jiekou: 全部args参数参数信息 , ('/Users/lileilei/Desktop/testplan/jiekou-python3/testCase/test_case_data/case.xlsx',)
-[2022-02-19 14:48:50.455266] INFO: jiekou: 全部kwargs参数信息 , {}
-[2022-02-19 14:48:50.455514] INFO: jiekou: 打开测试用例失败，原因是:[Errno 2] No such file or directory: '/Users/lileilei/Desktop/testplan/jiekou-python3/testCase/test_case_data/case.xlsx'

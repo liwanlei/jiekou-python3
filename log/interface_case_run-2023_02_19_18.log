@@ -1,0 +1,48 @@
+[2023-02-19 18:10:29.859856] INFO: interface_case_run: 当前模块 生成数据驱动所用数据
+[2023-02-19 18:10:29.860589] INFO: interface_case_run: 全部args参数参数信息 , ()
+[2023-02-19 18:10:29.860726] INFO: interface_case_run: 全部kwargs参数信息 , {}
+[2023-02-19 18:10:29.860902] INFO: interface_case_run: 当前模块 解析测试用例文件
+[2023-02-19 18:10:29.861022] INFO: interface_case_run: 全部args参数参数信息 , ('/Users/lileilei/Desktop/testplan/jiekou-python3/test_case_data/case.xlsx',)
+[2023-02-19 18:10:29.861131] INFO: interface_case_run: 全部kwargs参数信息 , {}
+[2023-02-19 18:10:29.890171] INFO: interface_case_run: 测试用例开始执行
+[2023-02-19 18:10:29.890499] INFO: interface_case_run: {'key': 'aaaa', 'info': {'password': '1222'}}
+[2023-02-19 18:10:29.890675] INFO: interface_case_run: 输入参数：url:/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：POST
+[2023-02-19 18:10:29.890808] INFO: interface_case_run: 输入参数：url:/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：None
+[2023-02-19 18:10:29.963764] INFO: interface_case_run: 返回结果:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}
+[2023-02-19 18:10:29.964209] INFO: interface_case_run: 当前模块 断言测试结果
+[2023-02-19 18:10:29.964440] INFO: interface_case_run: 全部args参数参数信息 , ()
+[2023-02-19 18:10:29.964621] INFO: interface_case_run: 全部kwargs参数信息 , {'asserassert': 'code=40001'}
+[2023-02-19 18:10:29.964853] INFO: interface_case_run: 测试用例执行完毕
+[2023-02-19 18:10:29.965177] INFO: interface_case_run: 测试用例开始执行
+[2023-02-19 18:10:29.965522] INFO: interface_case_run: {'key': 'dfeb1cc8125943d29764a2f2f5c33739', 'info': {'password': '1222'}}
+[2023-02-19 18:10:29.965771] INFO: interface_case_run: 输入参数：url:/openapi/api,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：POST
+[2023-02-19 18:10:29.965956] INFO: interface_case_run: 输入参数：url:/openapi/api,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：None
+[2023-02-19 18:10:30.008491] INFO: interface_case_run: 返回结果:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}
+[2023-02-19 18:10:30.008802] INFO: interface_case_run: 当前模块 断言测试结果
+[2023-02-19 18:10:30.009003] INFO: interface_case_run: 全部args参数参数信息 , ()
+[2023-02-19 18:10:30.009179] INFO: interface_case_run: 全部kwargs参数信息 , {'asserassert': 'code=40002'}
+[2023-02-19 18:10:30.009398] INFO: interface_case_run: 测试用例执行完毕
+[2023-02-19 18:10:47.409761] INFO: interface_case_run: 当前模块 生成数据驱动所用数据
+[2023-02-19 18:10:47.410094] INFO: interface_case_run: 全部args参数参数信息 , ()
+[2023-02-19 18:10:47.410218] INFO: interface_case_run: 全部kwargs参数信息 , {}
+[2023-02-19 18:10:47.410376] INFO: interface_case_run: 当前模块 解析测试用例文件
+[2023-02-19 18:10:47.410492] INFO: interface_case_run: 全部args参数参数信息 , ('/Users/lileilei/Desktop/testplan/jiekou-python3/test_case_data/case.xlsx',)
+[2023-02-19 18:10:47.410600] INFO: interface_case_run: 全部kwargs参数信息 , {}
+[2023-02-19 18:10:47.430403] INFO: interface_case_run: 测试用例开始执行
+[2023-02-19 18:10:47.430650] INFO: interface_case_run: {'key': 'aaaa', 'info': {'password': '1222'}}
+[2023-02-19 18:10:47.430796] INFO: interface_case_run: 输入参数：url:/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：POST
+[2023-02-19 18:10:47.430936] INFO: interface_case_run: 输入参数：url:/openapi/api,key:aaaa,参数:{'password':'1222'},请求方式：None
+[2023-02-19 18:10:47.481670] INFO: interface_case_run: 返回结果:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}
+[2023-02-19 18:10:47.482034] INFO: interface_case_run: 当前模块 断言测试结果
+[2023-02-19 18:10:47.482468] INFO: interface_case_run: 全部args参数参数信息 , ()
+[2023-02-19 18:10:47.482886] INFO: interface_case_run: 全部kwargs参数信息 , {'asserassert': 'code=40001'}
+[2023-02-19 18:10:47.483244] INFO: interface_case_run: 测试用例执行完毕
+[2023-02-19 18:10:47.483554] INFO: interface_case_run: 测试用例开始执行
+[2023-02-19 18:10:47.483789] INFO: interface_case_run: {'key': 'dfeb1cc8125943d29764a2f2f5c33739', 'info': {'password': '1222'}}
+[2023-02-19 18:10:47.483958] INFO: interface_case_run: 输入参数：url:/openapi/api,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：POST
+[2023-02-19 18:10:47.484095] INFO: interface_case_run: 输入参数：url:/openapi/api,key:dfeb1cc8125943d29764a2f2f5c33739,参数:{'password':'1222'},请求方式：None
+[2023-02-19 18:10:47.527872] INFO: interface_case_run: 返回结果:{'code': 0, 'result': {'code': 40007, 'text': '您的请求内容为空。'}}
+[2023-02-19 18:10:47.528236] INFO: interface_case_run: 当前模块 断言测试结果
+[2023-02-19 18:10:47.528482] INFO: interface_case_run: 全部args参数参数信息 , ()
+[2023-02-19 18:10:47.528716] INFO: interface_case_run: 全部kwargs参数信息 , {'asserassert': 'code=40002'}
+[2023-02-19 18:10:47.528998] INFO: interface_case_run: 测试用例执行完毕

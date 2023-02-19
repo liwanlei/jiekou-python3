@@ -4,7 +4,7 @@
 @file: create_report.py
 @time: 2017/8/3 12:27
 """
-from Public.log import LOG, logger
+from public.log import LOG, logger
 
 
 @logger('保存测试结果')

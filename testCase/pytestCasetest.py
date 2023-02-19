@@ -3,13 +3,13 @@
   @auther         leizi
 '''
 from Interface.testFengzhuang import TestApi
-from Public.log import LOG
-from Public.panduan import assertre
+from public.log import LOG
+from public.panduan import assertre
 from  config.config import TestPlanUrl
 import pytest
 import  os
 import  yaml
-from Public.get_excel import makedata
+from public.get_excel import makedata
 file_dir = os.path.join(os.getcwd(), 'test_Report')
 file_reslut = os.path.join(file_dir, 'caseresult.yaml')
 

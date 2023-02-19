@@ -2,7 +2,7 @@
 # @Author  : leizi
 from testCase.ddt_case import MyTest
 import unittest, time, os
-from Public import BSTestRunner
+from public import BSTestRunner
 
 BASH_DIR = "history"
 if __name__ == '__main__':
