@@ -5,6 +5,7 @@
 ## 依赖用例是简单的实现，具体在业务上面还有很多复杂的要处理，知识实现了，部分的思路。
 ## (目前在部分window上会出现FileNotFoundError [Errno 2] No such file or directory，这个bug是路径过长,解决方案为吧log日志放在当前目录，或者修改动态生成的文件的名字，给了第一种方式，测试日志放在当前目录）
 ## qq交流群：194704520  
+![Alt text](https://github.com/liwanlei/FXTest/blob/master/image/wx.jpeg)
 ### 使用的库 requests，绝大部分是基于Python原有的库进行的，这样简单方便，
 ### 使用脚本参数分离等思想，尽可能降低代码的耦合度。
 ###   如果你不配置钉钉机器人，注释到机器人相关的代码
